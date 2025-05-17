@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparative Lexicon - Virginia Algonquian Language Learner</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .lexicon-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .lexicon-intro {
+      margin-bottom: 2rem;
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .lexicon-intro h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      font-family: 'Cinzel', serif;
+    }
+    
+    .lexicon-intro h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: var(--accent);
+      border-radius: 1.5px;
+    }
+    
+    .lexicon-intro p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    
+    .search-box {
+      display: flex;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    #search-input {
+      flex-grow: 1;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      font-size: 1rem;
+    }
+    
+    .search-button {
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.2rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    
+    .search-button:hover {
+      background-color: var(--secondary);
+    }
+    
+    .filter-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .language-filter {
+      background-color: var(--primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border: 2px solid var(--primary);
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .language-filter:hover,
+    .language-filter.active {
+      background-color: var(--secondary);
+      border-color: var(--secondary);
+      color: white;
+    }
+    
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .comparison-table th {
+      background-color: var(--primary);
+      color: white;
+      padding: 1rem;
+      text-align: left;
+      font-weight: bold;
+      position: sticky;
+      top: 0;
+    }
+    
+    .comparison-table td {
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid var(--light);
+    }
+    
+    .comparison-table tr:hover {
+      background-color: var(--light);
+    }
+    
+    .comparison-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .word-va {
+      color: var(--earth);
+      font-weight: bold;
+    }
+    
+    .notes {
+      font-size: 0.9rem;
+      color: var(--secondary);
+      font-style: italic;
+    }
+    
+    .cognate-highlight {
+      background-color: rgba(var(--accent-rgb), 0.2);
+      padding: 0 3px;
+      border-radius: 3px;
+    }
+    
+    .legend {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: var(--light);
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+    
+    .legend h3 {
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+    
+    .legend ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .legend li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+    
+    .legend-item {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-right: 0.5rem;
+      border-radius: 3px;
+    }
+    
+    .legend-cognate {
+      background-color: rgba(var(--accent-rgb), 0.2);
+    }
+    
+    @media (max-width: 768px) {
+      .comparison-table {
+        font-size: 0.9rem;
+      }
+      
+      .comparison-table th,
+      .comparison-table td {
+        padding: 0.6rem 0.8rem;
+      }
+      
+      .filter-options {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VIRGINIA ALGONQUIAN LANGUAGE LEARNER</h1>
+    <p class="intro">Revitalizing the Virginia Algonquian (Powhatan) Language</p>
+    
+    <div class="header-nav">
+      <a href="index.html" class="header-link">Learning Interface</a>
+      <a href="about.html" class="header-link">About Project</a>
+      <a href="phonetic-grammar-rules.html" class="header-link">Phonetic & Grammar Rules</a>
+      <a href="grammar.html" class="header-link">Grammar Guide</a>
+      <a href="modern-vocab.html" class="header-link">Modern Vocabulary</a>
+      <a href="vocab-list.html" class="header-link">Complete Vocab List</a>
+      <a href="comparative-lexicon.html" class="header-link">Comparative Lexicon</a>
+    </div>
+  </header>
+  
+  <div class="lexicon-container">
+    <div class="lexicon-intro">
+      <h2>Comparative Algonquian Lexicon</h2>
+      <p>This lexicon compares Virginia Algonquian words with cognates from related Algonquian languages. Such comparisons are vital for reconstructing aspects of Virginia Algonquian that are not well-documented in historical sources.</p>
+      <p>The comparative analysis helps identify patterns of linguistic evolution and shared roots across the Algonquian language family, which aids in reconstruction efforts of the Virginia Algonquian language.</p>
+    </div>
+    
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search for words in any language...">
+      <button class="search-button" id="search-button">Search</button>
+    </div>
+    
+    <div class="filter-options">
+      <button class="language-filter active" data-language="all">Show All Languages</button>
+      <button class="language-filter" data-language="va">Virginia Algonquian</button>
+      <button class="language-filter" data-language="lenape">Lenape (Delaware)</button>
+      <button class="language-filter" data-language="mohegan">Mohegan-Pequot</button>
+      <button class="language-filter" data-language="nanticoke">Nanticoke</button>
+      <button class="language-filter" data-language="abenaki">Abenaki (Eastern)</button>
+    </div>
+    
+    <table class="comparison-table" id="lexicon-table">
+      <thead>
+        <tr>
+          <th>English</th>
+          <th>Virginia Algonquian</th>
+          <th>Lenape (Delaware)</th>
+          <th>Mohegan-Pequot</th>
+          <th>Nanticoke</th>
+          <th>Abenaki (Eastern)</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>bear</td>
+          <td class="word-va">monacock</td>
+          <td><span class="cognate-highlight">maxk</span></td>
+          <td><span class="cognate-highlight">makq</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">awasos</span></td>
+          <td class="notes">Shows sound shift patterns</td>
+        </tr>
+        <tr>
+          <td>beaver</td>
+          <td class="word-va">appoumes</td>
+          <td><span class="cognate-highlight">amochk</span></td>
+          <td><span class="cognate-highlight">amunk</span></td>
+          <td><span class="cognate-highlight">tamaque</span></td>
+          <td><span class="cognate-highlight">temaᵏʷ</span></td>
+          <td class="notes">Shows consistent initial vowel pattern in VA and M-P</td>
+        </tr>
+        <tr>
+          <td>blood</td>
+          <td class="word-va">netahcat</td>
+          <td><span class="cognate-highlight">mokum</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td><span class="cognate-highlight">mᵏʷikʷ</span></td>
+          <td class="notes">Different roots used across languages</td>
+        </tr>
+        <tr>
+          <td>boat/canoe</td>
+          <td class="word-va">aquointayne</td>
+          <td><span class="cognate-highlight">amochol</span></td>
+          <td><span class="cognate-highlight">mishoon</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">agwiden</span></td>
+          <td class="notes">VA form shares roots with Abenaki</td>
+        </tr>
+        <tr>
+          <td>bow</td>
+          <td class="word-va">attaup</td>
+          <td><span class="cognate-highlight">achtooch</span></td>
+          <td><span class="cognate-highlight">antuock</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">pᵊdəgʷαn</span></td>
+          <td class="notes">Similar in VA and M-P</td>
+        </tr>
+        <tr>
+          <td>bread</td>
+          <td class="word-va">appoans</td>
+          <td><span class="cognate-highlight">achpoan</span></td>
+          <td><span class="cognate-highlight">punnêeg</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">apon</span></td>
+          <td class="notes">Clear cognate across languages</td>
+        </tr>
+        <tr>
+          <td>brother</td>
+          <td class="word-va">neckauw</td>
+          <td><span class="cognate-highlight">nitis</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td><span class="cognate-highlight">nidobα</span></td>
+          <td class="notes">Shows nasal prefix pattern</td>
+        </tr>
+        <tr>
+          <td>corn</td>
+          <td class="word-va">attan, attacoone</td>
+          <td><span class="cognate-highlight">xasquem</span></td>
+          <td><span class="cognate-highlight">skanmunea</span></td>
+          <td><span class="cognate-highlight">jeskᵏʷëm</span></td>
+          <td><span class="cognate-highlight">skamōnal</span></td>
+          <td class="notes">Diverse terms indicating different borrowing patterns</td>
+        </tr>
+        <tr>
+          <td>deer</td>
+          <td class="word-va">attecenna</td>
+          <td><span class="cognate-highlight">achtu</span></td>
+          <td><span class="cognate-highlight">attuck</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">nolka</span></td>
+          <td class="notes">Similar initial consonant in VA and M-P</td>
+        </tr>
+        <tr>
+          <td>dog</td>
+          <td class="word-va">attum</td>
+          <td><span class="cognate-highlight">allum</span></td>
+          <td><span class="cognate-highlight">ayum</span></td>
+          <td><span class="cognate-highlight">alum</span></td>
+          <td><span class="cognate-highlight">adia, alemos</span></td>
+          <td class="notes">Consistent pattern across languages</td>
+        </tr>
+        <tr>
+          <td>earth/land</td>
+          <td class="word-va">ohke</td>
+          <td><span class="cognate-highlight">hacki</span></td>
+          <td><span class="cognate-highlight">auke</span></td>
+          <td><span class="cognate-highlight">ahkee</span></td>
+          <td><span class="cognate-highlight">aki</span></td>
+          <td class="notes">Clear cognate across all languages</td>
+        </tr>
+        <tr>
+          <td>eat</td>
+          <td class="word-va">mecitchêh</td>
+          <td><span class="cognate-highlight">mitzin</span></td>
+          <td><span class="cognate-highlight">meech</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">mijin</span></td>
+          <td class="notes">Similar root across languages</td>
+        </tr>
+        <tr>
+          <td>father</td>
+          <td class="word-va">noughs</td>
+          <td><span class="cognate-highlight">noha</span></td>
+          <td><span class="cognate-highlight">osh</span></td>
+          <td><span class="cognate-highlight">nohsh</span></td>
+          <td><span class="cognate-highlight">nidα</span></td>
+          <td class="notes">Shows consistent n- possessive prefix</td>
+        </tr>
+        <tr>
+          <td>fire</td>
+          <td class="word-va">pohkhan</td>
+          <td><span class="cognate-highlight">tindey</span></td>
+          <td><span class="cognate-highlight">yote</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">skʷeda</span></td>
+          <td class="notes">VA term possibly related to Proto-Algonquian *pehkw- 'ignite'</td>
+        </tr>
+        <tr>
+          <td>fish</td>
+          <td class="word-va">nameeth</td>
+          <td><span class="cognate-highlight">namees</span></td>
+          <td><span class="cognate-highlight">names</span></td>
+          <td><span class="cognate-highlight">namais</span></td>
+          <td><span class="cognate-highlight">namēs</span></td>
+          <td class="notes">Very consistent across languages</td>
+        </tr>
+        <tr>
+          <td>five</td>
+          <td class="word-va">paranske</td>
+          <td><span class="cognate-highlight">palenach</span></td>
+          <td><span class="cognate-highlight">napanna</span></td>
+          <td><span class="cognate-highlight">nappahke</span></td>
+          <td><span class="cognate-highlight">nαlαn</span></td>
+          <td class="notes">Shows number system similarities</td>
+        </tr>
+        <tr>
+          <td>friend</td>
+          <td class="word-va">netap</td>
+          <td><span class="cognate-highlight">nitap</span></td>
+          <td><span class="cognate-highlight">neetop</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">nidα</span></td>
+          <td class="notes">Consistent across languages</td>
+        </tr>
+        <tr>
+          <td>good</td>
+          <td class="word-va">winger</td>
+          <td><span class="cognate-highlight">wulit</span></td>
+          <td><span class="cognate-highlight">wetu</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">wligek</span></td>
+          <td class="notes">Shows sound correspondence patterns</td>
+        </tr>
+        <tr>
+          <td>hand</td>
+          <td class="word-va">mêheock</td>
+          <td><span class="cognate-highlight">nachk</span></td>
+          <td><span class="cognate-highlight">nutch</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">pedin</span></td>
+          <td class="notes">Shows possessive prefixing</td>
+        </tr>
+        <tr>
+          <td>head</td>
+          <td class="word-va">mêttock</td>
+          <td><span class="cognate-highlight">wil</span></td>
+          <td><span class="cognate-highlight">uppuhq</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">mdagʷαn</span></td>
+          <td class="notes">Different roots across languages</td>
+        </tr>
+        <tr>
+          <td>heart</td>
+          <td class="word-va">ottehocannough</td>
+          <td><span class="cognate-highlight">wteh</span></td>
+          <td><span class="cognate-highlight">wuttah</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">-dé</span></td>
+          <td class="notes">Consistent -t- element across languages</td>
+        </tr>
+        <tr>
+          <td>house</td>
+          <td class="word-va">yehawkan</td>
+          <td><span class="cognate-highlight">wikwam</span></td>
+          <td><span class="cognate-highlight">wetu</span></td>
+          <td><span class="cognate-highlight">wikivam</span></td>
+          <td><span class="cognate-highlight">wigwαm</span></td>
+          <td class="notes">Shows sound correspondences</td>
+        </tr>
+        <tr>
+          <td>man</td>
+          <td class="word-va">nemarough</td>
+          <td><span class="cognate-highlight">lenno</span></td>
+          <td><span class="cognate-highlight">ren</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">sènəbe</span></td>
+          <td class="notes">Varies across languages</td>
+        </tr>
+        <tr>
+          <td>moon</td>
+          <td class="word-va">nepausche</td>
+          <td><span class="cognate-highlight">nipahum</span></td>
+          <td><span class="cognate-highlight">nepauz</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">kisos</span></td>
+          <td class="notes">VA and M-P show similar forms</td>
+        </tr>
+        <tr>
+          <td>mother</td>
+          <td class="word-va">anna</td>
+          <td><span class="cognate-highlight">gahowes</span></td>
+          <td><span class="cognate-highlight">okasu</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">-gʷisos</span></td>
+          <td class="notes">Varies across languages</td>
+        </tr>
+        <tr>
+          <td>mouth</td>
+          <td class="word-va">mettoone</td>
+          <td><span class="cognate-highlight">toon</span></td>
+          <td><span class="cognate-highlight">wuttone</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">mdon</span></td>
+          <td class="notes">Shows possessive prefixing</td>
+        </tr>
+        <tr>
+          <td>name</td>
+          <td class="word-va">yêhaukan</td>
+          <td><span class="cognate-highlight">wichdhaseen</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td><span class="cognate-highlight">-wizon</span></td>
+          <td class="notes">VA form possibly contains possessive prefix</td>
+        </tr>
+        <tr>
+          <td>night</td>
+          <td class="word-va">tapacoh</td>
+          <td><span class="cognate-highlight">tbkung</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td><span class="cognate-highlight">dəbəgʷ</span></td>
+          <td class="notes">Similar roots in VA and Abenaki</td>
+        </tr>
+        <tr>
+          <td>one</td>
+          <td class="word-va">nekut</td>
+          <td><span class="cognate-highlight">n'gutti</span></td>
+          <td><span class="cognate-highlight">nequt</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">pazekʷ</span></td>
+          <td class="notes">Similar in VA, Lenape, and M-P</td>
+        </tr>
+        <tr>
+          <td>rain</td>
+          <td class="word-va">kemowan</td>
+          <td><span class="cognate-highlight">sokelan</span></td>
+          <td><span class="cognate-highlight">sokanun</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">kimiwαn</span></td>
+          <td class="notes">VA form shares root with Abenaki</td>
+        </tr>
+        <tr>
+          <td>red</td>
+          <td class="word-va">nehessayew</td>
+          <td><span class="cognate-highlight">squi</span></td>
+          <td><span class="cognate-highlight">msqui</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">mskʷi</span></td>
+          <td class="notes">Color terms show consistent patterns</td>
+        </tr>
+        <tr>
+          <td>river</td>
+          <td class="word-va">seip</td>
+          <td><span class="cognate-highlight">sipu</span></td>
+          <td><span class="cognate-highlight">seip</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">sibo</span></td>
+          <td class="notes">Very consistent across languages</td>
+        </tr>
+        <tr>
+          <td>salt</td>
+          <td class="word-va">sawwone</td>
+          <td><span class="cognate-highlight">siquon</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td><span class="cognate-highlight">ziwan</span></td>
+          <td class="notes">Similar consonant pattern</td>
+        </tr>
+        <tr>
+          <td>sky</td>
+          <td class="word-va">arrokoth</td>
+          <td><span class="cognate-highlight">geshukwat</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td><span class="cognate-highlight">kiskʷ</span></td>
+          <td class="notes">Different roots used</td>
+        </tr>
+        <tr>
+          <td>sleep</td>
+          <td class="word-va">asapan</td>
+          <td><span class="cognate-highlight">gauwin</span></td>
+          <td><span class="cognate-highlight">kouwe</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">kawi</span></td>
+          <td class="notes">Shows sound shift patterns</td>
+        </tr>
+        <tr>
+          <td>snake</td>
+          <td class="word-va">ascook</td>
+          <td><span class="cognate-highlight">achgook</span></td>
+          <td><span class="cognate-highlight">askug</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">skʷαgʷ</span></td>
+          <td class="notes">Consistent initial and final sounds</td>
+        </tr>
+        <tr>
+          <td>snow</td>
+          <td class="word-va">macatêwh</td>
+          <td><span class="cognate-highlight">guhn</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td><span class="cognate-highlight">mkʷαn</span></td>
+          <td class="notes">Related roots in several languages</td>
+        </tr>
+        <tr>
+          <td>son</td>
+          <td class="word-va">neputtishow</td>
+          <td><span class="cognate-highlight">quis</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td><span class="cognate-highlight">-kʷisα</span></td>
+          <td class="notes">Different roots used</td>
+        </tr>
+        <tr>
+          <td>star</td>
+          <td class="word-va">punnahe</td>
+          <td><span class="cognate-highlight">alank</span></td>
+          <td><span class="cognate-highlight">anogqs</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">alαkʷs</span></td>
+          <td class="notes">Different roots used</td>
+        </tr>
+        <tr>
+          <td>stone</td>
+          <td class="word-va">assoone</td>
+          <td><span class="cognate-highlight">achsun</span></td>
+          <td><span class="cognate-highlight">soun</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">sen</span></td>
+          <td class="notes">Shows sound correspondence</td>
+        </tr>
+        <tr>
+          <td>sun</td>
+          <td class="word-va">keshowaugh</td>
+          <td><span class="cognate-highlight">kischux</span></td>
+          <td><span class="cognate-highlight">keesogh</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">kisos</span></td>
+          <td class="notes">Clear cognate across languages</td>
+        </tr>
+        <tr>
+          <td>three</td>
+          <td class="word-va">nuss</td>
+          <td><span class="cognate-highlight">ncha</span></td>
+          <td><span class="cognate-highlight">shwe</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">nəs</span></td>
+          <td class="notes">Number terms show clear relationship</td>
+        </tr>
+        <tr>
+          <td>tree</td>
+          <td class="word-va">mahtask</td>
+          <td><span class="cognate-highlight">mehittuk</span></td>
+          <td><span class="cognate-highlight">metoq</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">αbasi</span></td>
+          <td class="notes">Shows sound correspondences</td>
+        </tr>
+        <tr>
+          <td>two</td>
+          <td class="word-va">ningh</td>
+          <td><span class="cognate-highlight">nisha</span></td>
+          <td><span class="cognate-highlight">neese</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">nis</span></td>
+          <td class="notes">Number terms consistently related</td>
+        </tr>
+        <tr>
+          <td>water</td>
+          <td class="word-va">sucquehanna</td>
+          <td><span class="cognate-highlight">mbi</span></td>
+          <td><span class="cognate-highlight">nip</span></td>
+          <td><span class="cognate-highlight">nbée</span></td>
+          <td><span class="cognate-highlight">nebi</span></td>
+          <td class="notes">Different roots used in VA</td>
+        </tr>
+        <tr>
+          <td>white</td>
+          <td class="word-va">wompsipim</td>
+          <td><span class="cognate-highlight">wapsu</span></td>
+          <td><span class="cognate-highlight">wompi</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">wαbi</span></td>
+          <td class="notes">Shows consistent w- initial across languages</td>
+        </tr>
+        <tr>
+          <td>wife</td>
+          <td class="word-va">niourough</td>
+          <td><span class="cognate-highlight">wiwu</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td><span class="cognate-highlight">-wiwi</span></td>
+          <td class="notes">Different roots used</td>
+        </tr>
+        <tr>
+          <td>wind</td>
+          <td class="word-va">pahquiwh</td>
+          <td><span class="cognate-highlight">tewhen</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td><span class="cognate-highlight">wdαn</span></td>
+          <td class="notes">Different roots used</td>
+        </tr>
+        <tr>
+          <td>woman</td>
+          <td class="word-va">cusses</td>
+          <td><span class="cognate-highlight">ochqueu</span></td>
+          <td><span class="cognate-highlight">squaas</span></td>
+          <td>-</td>
+          <td><span class="cognate-highlight">phanem</span></td>
+          <td class="notes">Shows variation across languages</td>
+        </tr>
+        <tr>
+          <td>year</td>
+          <td class="word-va">popâpow</td>
+          <td><span class="cognate-highlight">gachteneye</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td class="notes">Limited data for comparison</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="legend">
+      <h3>Understanding the Comparative Lexicon</h3>
+      <ul>
+        <li><span class="legend-item legend-cognate"></span> Highlighted words are cognates (words with a common etymological origin)</li>
+        <li>The hyphen (-) indicates that no documented form is available in that language</li>
+        <li>The Notes column points out important sound correspondences and patterns</li>
+      </ul>
+      <p>Virginia Algonquian shows closest affinity to the Southern New England Algonquian languages (particularly Mohegan-Pequot) but also shares significant features with the Lenape (Delaware) languages. Some terms show unexpected similarities with more distant Abenaki, suggesting either ancient retentions or possible trade contacts.</p>
+      <p>The patterns observed in this comparative lexicon support Frank Siebert's analysis that Virginia Algonquian represents a distinct branch within Eastern Algonquian, having split from other languages in the family at an early date but maintaining ongoing contact with them through trade and cultural exchange.</p>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2025 Virginia Algonquian Language Revitalization</p>
+  </footer>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const languageFilters = document.querySelectorAll('.language-filter');
+      const searchInput = document.getElementById('search-input');
+      const searchButton = document.getElementById('search-button');
+      const table = document.getElementById('lexicon-table');
+      const rows = table.querySelectorAll('tbody tr');
+      
+      // Language filter functionality
+      languageFilters.forEach(filter => {
+        filter.addEventListener('click', function() {
+          const language = this.getAttribute('data-language');
+          
+          // Update active filter
+          languageFilters.forEach(f => f.classList.remove('active'));
+          this.classList.add('active');
+          
+          // Get column index for the selected language
+          let columnIndex;
+          switch(language) {
+            case 'va':
+              columnIndex = 1;
+              break;
+            case 'lenape':
+              columnIndex = 2;
+              break;
+            case 'mohegan':
+              columnIndex = 3;
+              break;
+            case 'nanticoke':
+              columnIndex = 4;
+              break;
+            case 'abenaki':
+              columnIndex = 5;
+              break;
+            default:
+              columnIndex = null; // All languages
+          }
+          
+          // Update table header
+          const headers = table.querySelectorAll('th');
+          headers.forEach((header, index) => {
+            if (columnIndex === null || index === 0 || index === columnIndex || index === 6) {
+              header.style.display = '';
+            } else {
+              header.style.display = 'none';
+            }
+          });
+          
+          // Update table rows
+          rows.forEach(row => {
+            const cells = row.querySelectorAll('td');
+            cells.forEach((cell, index) => {
+              if (columnIndex === null || index === 0 || index === columnIndex || index === 6) {
+                cell.style.display = '';
+              } else {
+                cell.style.display = 'none';
+              }
+            });
+          });
+        });
+      });
+      
+      // Search functionality
+      searchButton.addEventListener('click', performSearch);
+      searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          performSearch();
+        }
+      });
+      
+      function performSearch() {
+        const searchTerm = searchInput.value.toLowerCase();
+        
+        rows.forEach(row => {
+          const cells = row.querySelectorAll('td');
+          let matchFound = false;
+          
+          cells.forEach(cell => {
+            if (cell.textContent.toLowerCase().includes(searchTerm)) {
+              matchFound = true;
+            }
+          });
+          
+          if (matchFound) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

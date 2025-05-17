@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Project - Virginia Algonquian Language Learner</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .about-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .about-section {
+      margin-bottom: 2rem;
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .about-section h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      font-family: 'Cinzel', serif;
+    }
+    
+    .about-section h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: var(--accent);
+      border-radius: 1.5px;
+    }
+    
+    .about-section p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    
+    .source-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .source-list li {
+      margin-bottom: 0.75rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    
+    .source-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--secondary);
+    }
+    
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    
+    .map-container {
+      width: 100%;
+      height: 300px;
+      background-color: var(--light);
+      margin: 1.5rem 0;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .map-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0.8;
+      max-height: 300px;
+    }
+    
+    .map-caption {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--secondary);
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+    
+    .highlight-box {
+      background-color: var(--light);
+      border-left: 4px solid var(--earth);
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .timeline {
+      margin: 2rem 0;
+      position: relative;
+      padding-left: 30px;
+    }
+    
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 10px;
+      height: 100%;
+      width: 2px;
+      background-color: var(--secondary);
+    }
+    
+    .timeline-item {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -30px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: var(--accent);
+      border: 2px solid var(--primary);
+    }
+    
+    .timeline-year {
+      font-weight: bold;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+    }
+    
+    .language-sample {
+      background-color: var(--light);
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      font-family: "Courier New", monospace;
+    }
+    
+    .language-sample p {
+      margin-bottom: 0.5rem;
+    }
+    
+    .language-sample .english {
+      color: var(--dark);
+    }
+    
+    .language-sample .algonquian {
+      color: var(--earth);
+      font-weight: bold;
+    }
+    
+    .historical-map {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border: 3px solid var(--primary);
+      border-radius: 8px;
+      margin: 1.5rem auto;
+      display: block;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VIRGINIA ALGONQUIAN LANGUAGE LEARNER</h1>
+    <p class="intro">Revitalizing the Virginia Algonquian (Powhatan) Language</p>
+    
+    <div class="header-nav">
+      <a href="index.html" class="header-link">Learning Interface</a>
+      <a href="about.html" class="header-link">About Project</a>
+      <a href="phonetic-grammar-rules.html" class="header-link">Phonetic & Grammar Rules</a>
+      <a href="grammar.html" class="header-link">Grammar Guide</a>
+      <a href="modern-vocab.html" class="header-link">Modern Vocabulary</a>
+      <a href="vocab-list.html" class="header-link">Complete Vocab List</a>
+      <a href="comparative-lexicon.html" class="header-link">Comparative Lexicon</a>
+    </div>
+  </header>
+  
+  <div class="about-container">
+    <div class="about-section">
+      <h2>The Virginia Algonquian Language</h2>
+      <p>Virginia Algonquian, also known as Powhatan, was the language spoken by the indigenous peoples of the Tidewater region of Virginia, including the Powhatan confederacy led by Chief Wahunsonacock (known to the English as "Powhatan"), the father of Pocahontas.</p>
+      
+      <p>The language belongs to the Eastern Algonquian subgroup of the Algonquian language family, which is part of the larger Algic language family. It is closely related to other Eastern Algonquian languages like Lenape (Delaware), Nanticoke, Mohegan-Pequot, and Massachusett.</p>
+      
+      <img src="powhatan-map.jpg" alt="Map of the Powhatan paramount chiefdom in 1607" class="historical-map" width="600" height="auto" loading="lazy">
+      <div class="map-caption">Fig. 3.1. Map of the Powhatan paramount chiefdom in 1607. Courtesy of Helen C. Rountree.</div>
+      
+      <div class="map-container">
+        <img src="tsennacommacah.png" alt="Territory of the Powhatan Confederacy" width="100%" height="auto" loading="lazy">
+      </div>
+      <div class="map-caption">Approximate territory of the Powhatan Confederacy and surrounding tribes, early 17th century.</div>
+      
+      <p>Virginia Algonquian fell into disuse by the 1790s due to the devastating impact of European colonization on Native American communities. The last known speakers were reported in Thomas Jefferson's "Notes on the State of Virginia" (1782), where he mentioned there being some twelve pure-blooded Pamunkey Indians, of which "the older ones preserve their language in a small degree."</p>
+    </div>
+    
+    <div class="about-section">
+      <h2>Historical Documentation</h2>
+      <p>Our knowledge of Virginia Algonquian comes primarily from two historical sources:</p>
+      
+      <div class="highlight-box">
+        <p><strong>William Strachey's vocabulary (1610-1611)</strong>: Contains approximately 500 words. Strachey served as secretary and recorder for the Jamestown colony and interviewed two Indian men, Kemps and Machumps, who spoke English.</p>
+        
+        <p><strong>Captain John Smith's word list (1607-1609)</strong>: Contains approximately 50 words and some sentences. Linguists believe Smith may have recorded a pidgin or simplified form of the language used for trading.</p>
+      </div>
+      
+      <p>These sources, while limited, provide a crucial window into the language. Without them, almost nothing would be known of Virginia Algonquian today.</p>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">1607</div>
+          <p>English settlers establish Jamestown. Captain John Smith begins recording words from the local Virginia Algonquian-speaking peoples.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-year">1610-1611</div>
+          <p>William Strachey compiles a vocabulary of approximately 500 Virginia Algonquian words through interviews with Kemps and Machumps.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-year">1782</div>
+          <p>Thomas Jefferson notes that only a few elderly Pamunkey people still speak some Virginia Algonquian.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-year">c. 1790s</div>
+          <p>Virginia Algonquian believed to have fallen out of regular use.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-year">1975</div>
+          <p>Frank Siebert publishes "Resurrecting Virginia Algonquian from the Dead: The Reconstituted and Historical Phonology of Powhatan," providing a phonological reconstruction of the language.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-year">2005</div>
+          <p>Linguist Blair Rudes reconstructs Virginia Algonquian for the film "The New World," using related Algonquian languages to fill in gaps.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-year">Present Day</div>
+          <p>Ongoing efforts to revitalize and reconstruct the language through comparative linguistics and cultural heritage initiatives.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="about-section">
+      <h2>Language Features</h2>
+      <p>Virginia Algonquian shares many features with other Algonquian languages:</p>
+      
+      <ul class="source-list">
+        <li><strong>Polysynthetic Structure</strong>: Words are formed by combining many morphemes (word parts) together to create complex meanings.</li>
+        <li><strong>Animate/Inanimate Distinction</strong>: Nouns are classified as either animate (living beings, certain important objects) or inanimate (most objects, abstract concepts).</li>
+        <li><strong>Verb-Centered Grammar</strong>: The verb is the most important part of speech and carries much of the semantic information.</li>
+        <li><strong>Person Marking</strong>: Verbs and nouns are marked with prefixes to indicate person (my, your, his/her).</li>
+        <li><strong>Rich Sound System</strong>: The phonological system includes consonants and vowels common to Eastern Algonquian languages.</li>
+      </ul>
+      
+      <div class="language-sample">
+        <p class="english">Example: "I see him/her"</p>
+        <p class="algonquian">Ne-nummêch-āw</p>
+        <p><em>ne-</em> (1st person prefix) + <em>nummêch</em> (see) + <em>-āw</em> (3rd person animate object marker)</p>
+      </div>
+    </div>
+    
+    <div class="about-section">
+      <h2>Modern Reconstruction Efforts</h2>
+      <p>Several linguists have made significant contributions to reconstructing Virginia Algonquian:</p>
+      
+      <ul class="source-list">
+        <li><strong>Frank Siebert (1975)</strong>: Published "Resurrecting Virginia Algonquian from the Dead: The Reconstituted and Historical Phonology of Powhatan." He identified 263 "real" Powhatan words from Strachey's list and developed a phonological system for the language.</li>
+        <li><strong>Blair Rudes</strong>: Reconstructed the language for the 2005 film "The New World." He used Colonial-era word lists along with scholarly work and filled in linguistic gaps using better-attested Eastern Algonquian languages like Passamaquoddy.</li>
+      </ul>
+      
+      <p>Project ECHOFLAME builds on these foundations, using comparative linguistics and historical documentation to revitalize Virginia Algonquian for educational and cultural heritage purposes.</p>
+    </div>
+    
+    <div class="about-section">
+      <h2>Resources and References</h2>
+      <ul class="source-list">
+        <li>Frank T. Siebert Jr. (1975). "Resurrecting Virginia Algonquian from the Dead: The Reconstituted and Historical Phonology of Powhatan." In James M. Crawford (ed.), <em>Studies in Southeastern Indian Languages</em>. University of Georgia Press.</li>
+        <li>William Strachey (c. 1612). <em>A Dictionary of Powhatan</em>. Transcribed and edited from the original manuscripts.</li>
+        <li>John Smith (1612). <em>A Map of Virginia, with a Description of the Country, the Commodities, People, Government and Religion</em>.</li>
+        <li>Ives Goddard (1996). "The Description of the Native Languages of North America Before Boas." In Ives Goddard (ed.), <em>Handbook of North American Indians</em>, vol. 17: <em>Languages</em>. Smithsonian Institution.</li>
+        <li>Helen C. Rountree (1989). <em>The Powhatan Indians of Virginia: Their Traditional Culture</em>. University of Oklahoma Press.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2025 Virginia Algonquian Language Revitalization</p>
+  </footer>
+</body>
+</html>

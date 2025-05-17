@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Vocabulary - Virginia Algonquian Language Learner</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Prevent CORS issues with favicon -->
+  <link rel="icon" href="data:,">
+  <style>
+    .search-container {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+    
+    .search-input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 2px solid var(--primary);
+      border-radius: 25px;
+      font-size: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-family: 'Libre Baskerville', serif;
+    }
+    
+    .search-input:focus {
+      outline: none;
+      border-color: var(--secondary);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .vocab-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      border-top: 4px solid var(--secondary);
+      transition: all 0.3s ease;
+    }
+    
+    .vocab-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    .vocab-header {
+      padding: 1rem;
+      background-color: var(--light);
+      border-bottom: 1px solid var(--accent);
+    }
+    
+    .vocab-english {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: var(--dark);
+      margin-bottom: 0.25rem;
+    }
+    
+    .vocab-category {
+      font-size: 0.8rem;
+      background-color: var(--primary);
+      color: white;
+      padding: 0.2rem 0.5rem;
+      border-radius: 12px;
+      display: inline-block;
+    }
+    
+    .vocab-content {
+      padding: 1rem;
+    }
+    
+    .vocab-algonquian {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+      font-family: 'Cinzel', serif;
+    }
+    
+    .vocab-pronunciation {
+      font-style: italic;
+      color: var(--clay);
+      margin-bottom: 1rem;
+    }
+    
+    .vocab-note {
+      font-size: 0.9rem;
+      color: var(--dark);
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--accent);
+    }
+    
+    .tabs {
+      display: flex;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid var(--primary);
+    }
+    
+    .tab {
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      font-size: 1.1rem;
+      color: var(--dark);
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      font-family: 'Libre Baskerville', serif;
+    }
+    
+    .tab.active {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+      font-weight: bold;
+    }
+    
+    .tab:hover {
+      background-color: rgba(0,0,0,0.05);
+    }
+    
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .filter-btn {
+      background-color: var(--light);
+      border: 1px solid var(--accent);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+    
+    .filter-btn.active {
+      background-color: var(--secondary);
+      color: white;
+      border-color: var(--secondary);
+    }
+    
+    .no-results {
+      text-align: center;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    
+    .page-btn {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      cursor: pointer;
+      background-color: var(--light);
+      border: 1px solid var(--accent);
+      transition: all 0.3s ease;
+    }
+    
+    .page-btn.active {
+      background-color: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+    
+    .page-btn:hover:not(.active) {
+      background-color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VIRGINIA ALGONQUIAN LANGUAGE LEARNER</h1>
+    <p class="intro">Modern Vocabulary in Virginia Algonquian (Powhatan)</p>
+    
+    <div class="header-nav">
+  <a href="index.html" class="header-link">Learning Interface</a>
+  <a href="about.html" class="header-link">About Project</a>
+  <a href="phonetic-grammar-rules.html" class="header-link">Phonetic & Grammar Rules</a>
+  <a href="grammar.html" class="header-link">Grammar Guide</a>
+  <a href="modern-vocab.html" class="header-link">Modern Vocabulary</a>
+  <a href="vocab-list.html" class="header-link">Complete Vocab List</a>
+  <a href="comparative-lexicon.html" class="header-link">Comparative Lexicon</a>
+</div>
+  </header>
+  
+  <div class="content-container">
+    <div class="content-section">
+      <h2>Modern Virginia Algonquian Vocabulary</h2>
+      <p>This page presents reconstructed Virginia Algonquian words for modern concepts. These words have been created using the phonological patterns, morphological structure, and word-formation principles of the original language, while respecting its historical context.</p>
+      
+      <p>The methodology follows established linguistic principles for expanding indigenous languages to cover contemporary concepts, drawing on existing roots and patterns where possible.</p>
+      
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search for words..." id="search-input">
+      </div>
+      
+      <div class="tabs">
+        <button class="tab active" data-category="all">All Categories</button>
+        <button class="tab" data-category="technology">Technology</button>
+        <button class="tab" data-category="modern-concepts">Modern Concepts</button>
+        <button class="tab" data-category="environment">Environment</button>
+        <button class="tab" data-category="digital">Digital</button>
+      </div>
+      
+      <div class="vocab-grid" id="vocab-grid">
+        <!-- Technology Terms -->
+        <div class="vocab-card" data-category="technology">
+          <div class="vocab-header">
+            <div class="vocab-english">Cellphone</div>
+            <div class="vocab-category">Technology</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Netapon-nanté</div>
+            <div class="vocab-pronunciation">ne-ta-pon nan-té</div>
+            <div class="vocab-note">Literally "speaking/hearing at a distance device." Compound of <em>netap</em> (speak/hear) + <em>on</em> (distance marker) + <em>nanté</em> (device/tool).</div>
+          </div>
+        </div>
+        
+        <div class="vocab-card" data-category="technology">
+          <div class="vocab-header">
+            <div class="vocab-english">Computer</div>
+            <div class="vocab-category">Technology</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Mamehtessmen</div>
+            <div class="vocab-pronunciation">ma-meh-tess-men</div>
+            <div class="vocab-note">Literally "thinking/calculating machine." Derived from <em>mamantobpassewh</em> (to think/calculate) + <em>-men</em> (instrument suffix).</div>
+          </div>
+        </div>
+        
+        <div class="vocab-card" data-category="technology">
+          <div class="vocab-header">
+            <div class="vocab-english">Airplane</div>
+            <div class="vocab-category">Technology</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Pemiteyouqh-matchcôat</div>
+            <div class="vocab-pronunciation">pe-mi-te-youk match-côat</div>
+            <div class="vocab-note">Literally "flying vessel." Compound of <em>pemiteyouqh</em> (to fly) + <em>matchcôat</em> (vessel).</div>
+          </div>
+        </div>
+        
+        <div class="vocab-card" data-category="technology">
+          <div class="vocab-header">
+            <div class="vocab-english">Television</div>
+            <div class="vocab-category">Technology</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Nummêching-mehkenanahum</div>
+            <div class="vocab-pronunciation">num-mêch-ing meh-ke-na-na-hum</div>
+            <div class="vocab-note">Literally "seeing-box/image-container." Compound of <em>nummêching</em> (seeing) + <em>mehkenanahum</em> (box/container).</div>
+          </div>
+        </div>
+        
+        <!-- Modern Concepts -->
+        <div class="vocab-card" data-category="modern-concepts">
+          <div class="vocab-header">
+            <div class="vocab-english">Democracy</div>
+            <div class="vocab-category">Modern Concepts</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Mawapotowesewh</div>
+            <div class="vocab-pronunciation">ma-wa-po-to-we-sewh</div>
+            <div class="vocab-note">Literally "governing together/collective decision-making." Compound of <em>mawa</em> (together) + <em>potowesewh</em> (to govern/decide).</div>
+          </div>
+        </div>
+        
+        <div class="vocab-card" data-category="modern-concepts">
+          <div class="vocab-header">
+            <div class="vocab-english">Hospital</div>
+            <div class="vocab-category">Modern Concepts</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Muskié-yehawkan</div>
+            <div class="vocab-pronunciation">mus-kié ye-haw-kan</div>
+            <div class="vocab-note">Literally "medicine house/healing place." Compound of <em>muskié</em> (medicine/healing) + <em>yehawkan</em> (house).</div>
+          </div>
+        </div>
+        
+        <div class="vocab-card" data-category="modern-concepts">
+          <div class="vocab-header">
+            <div class="vocab-english">School</div>
+            <div class="vocab-category">Modern Concepts</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Keketehik-yehawkan</div>
+            <div class="vocab-pronunciation">ke-ke-te-hik ye-haw-kan</div>
+            <div class="vocab-note">Literally "learning house/teaching place." Compound of <em>keketehik</em> (to learn/teach) + <em>yehawkan</em> (house).</div>
+          </div>
+        </div>
+        
+        <div class="vocab-card" data-category="modern-concepts">
+          <div class="vocab-header">
+            <div class="vocab-english">Money</div>
+            <div class="vocab-category">Modern Concepts</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Mehtessâcansh</div>
+            <div class="vocab-pronunciation">meh-tess-â-cansh</div>
+            <div class="vocab-note">Literally "trading/value object." Derived from <em>mehtessâca</em> (to trade/value) + <em>-nsh</em> (object suffix).</div>
+          </div>
+        </div>
+        
+        <!-- Environment & Scientific Terms -->
+        <div class="vocab-card" data-category="environment">
+          <div class="vocab-header">
+            <div class="vocab-english">Electricity</div>
+            <div class="vocab-category">Environment</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Keihquwammesew</div>
+            <div class="vocab-pronunciation">keih-qu-wam-me-sew</div>
+            <div class="vocab-note">Literally "lightning/energy power." Derived from <em>keihquâscussun</em> (lightning) + <em>-ammesew</em> (essence/power).</div>
+          </div>
+        </div>
+        
+        <div class="vocab-card" data-category="environment">
+          <div class="vocab-header">
+            <div class="vocab-english">Plastic</div>
+            <div class="vocab-category">Environment</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Yatassipim</div>
+            <div class="vocab-pronunciation">ya-ta-ssi-pim</div>
+            <div class="vocab-note">Literally "formed/shaped material." Compound of <em>yata</em> (to form/shape) + <em>assipim</em> (material).</div>
+          </div>
+        </div>
+        
+        <div class="vocab-card" data-category="environment">
+          <div class="vocab-header">
+            <div class="vocab-english">Pollution</div>
+            <div class="vocab-category">Environment</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Matit-ohke</div>
+            <div class="vocab-pronunciation">ma-tit oh-ke</div>
+            <div class="vocab-note">Literally "spoiled/bad land/earth." Compound of <em>matit</em> (bad) + <em>ohke</em> (earth/land).</div>
+          </div>
+        </div>
+        
+        <div class="vocab-card" data-category="environment">
+          <div class="vocab-header">
+            <div class="vocab-english">Climate</div>
+            <div class="vocab-category">Environment</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Kessetensheek</div>
+            <div class="vocab-pronunciation">ke-sse-ten-sheek</div>
+            <div class="vocab-note">Literally "weather pattern/sky condition." Derived from <em>kesse</em> (weather) + <em>tensheek</em> (pattern/condition).</div>
+          </div>
+        </div>
+        
+        <!-- Digital Technology Vocabulary -->
+        <div class="vocab-card" data-category="digital">
+          <div class="vocab-header">
+            <div class="vocab-english">Website</div>
+            <div class="vocab-category">Digital</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Nummêching-mawapon-ohke</div>
+            <div class="vocab-pronunciation">num-mê-ching ma-wa-pon oh-ke</div>
+            <div class="vocab-note">Literally "seeing-communication-place." Compound of <em>nummêching</em> (seeing) + <em>mawapon</em> (communication) + <em>ohke</em> (place).</div>
+          </div>
+        </div>
+        
+        <div class="vocab-card" data-category="digital">
+          <div class="vocab-header">
+            <div class="vocab-english">Email</div>
+            <div class="vocab-category">Digital</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Yekûth-mehtonaca</div>
+            <div class="vocab-pronunciation">ye-kûth meh-to-na-ca</div>
+            <div class="vocab-note">Literally "speaking-message." Compound of <em>yekûth</em> (speaking) + <em>mehtonaca</em> (feather/message).</div>
+          </div>
+        </div>
+        
+        <div class="vocab-card" data-category="digital">
+          <div class="vocab-header">
+            <div class="vocab-english">Password</div>
+            <div class="vocab-category">Digital</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Nekepewetamuwh</div>
+            <div class="vocab-pronunciation">ne-ke-pe-we-ta-muwh</div>
+            <div class="vocab-note">Literally "secret key/protector." Reconstructed from secrecy/protection concepts.</div>
+          </div>
+        </div>
+        
+        <div class="vocab-card" data-category="digital">
+          <div class="vocab-header">
+            <div class="vocab-english">Software</div>
+            <div class="vocab-category">Digital</div>
+          </div>
+          <div class="vocab-content">
+            <div class="vocab-algonquian">Mamantobpass-ahcôtowvun</div>
+            <div class="vocab-pronunciation">ma-man-tob-pass ah-cô-tow-vun</div>
+            <div class="vocab-note">Literally "thinking-seed/core." Compound of <em>mamantobpass</em> (thinking) + <em>ahcôtowvun</em> (seed/core).</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="no-results" id="no-results" style="display: none;">
+        <p>No matching words found. Try another search term.</p>
+      </div>
+    </div>
+    
+    <div class="content-section">
+      <h2>Word Creation Methodology</h2>
+      <p>The modern Virginia Algonquian words presented here were created using the following methodological approaches:</p>
+      
+      <div class="rule-card">
+        <h4>Compounding</h4>
+        <p>Combining existing roots to form a new concept. For example, <em>Muskié-yehawkan</em> (hospital) combines "medicine" and "house".</p>
+      </div>
+      
+      <div class="rule-card">
+        <h4>Derivation</h4>
+        <p>Adding affixes to existing roots to create new meanings. For example, <em>Mehtessâcansh</em> (money) adds an object suffix to a verb root.</p>
+      </div>
+      
+      <div class="rule-card">
+        <h4>Semantic Extension</h4>
+        <p>Expanding the meaning of an existing word. For example, using a traditional tool name for a modern equivalent.</p>
+      </div>
+      
+      <div class="rule-card">
+        <h4>Descriptive Phrases</h4>
+        <p>Creating multi-word descriptions that may eventually be lexicalized. For example, <em>Nummêching-mehkenanahum</em> (television) as "seeing-box".</p>
+      </div>
+      
+      <p>All new words follow Virginia Algonquian phonological patterns and respect the language's grammatical structure. The creation process prioritizes authenticity, natural language evolution, and a balance between precision and usability.</p>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2025 Virginia Algonquian Language Revitalization</p>
+  </footer>
+  
+  <script>
+    // Search and filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('search-input');
+      const vocabGrid = document.getElementById('vocab-grid');
+      const noResults = document.getElementById('no-results');
+      const tabs = document.querySelectorAll('.tab');
+      const vocabCards = document.querySelectorAll('.vocab-card');
+      
+      let currentCategory = 'all';
+      
+      // Handle search input
+      searchInput.addEventListener('input', filterWords);
+      
+      // Handle tab clicks
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          tabs.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+          
+          currentCategory = this.dataset.category;
+          filterWords();
+        });
+      });
+      
+      function filterWords() {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        let visibleCount = 0;
+        
+        vocabCards.forEach(card => {
+          const english = card.querySelector('.vocab-english').textContent.toLowerCase();
+          const algonquian = card.querySelector('.vocab-algonquian').textContent.toLowerCase();
+          const category = card.dataset.category;
+          
+          // Check if matches both search term and selected category
+          const matchesSearch = searchTerm === '' || 
+                              english.includes(searchTerm) || 
+                              algonquian.includes(searchTerm);
+          
+          const matchesCategory = currentCategory === 'all' || category === currentCategory;
+          
+          if (matchesSearch && matchesCategory) {
+            card.style.display = 'block';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        
+        // Show/hide "No results" message
+        if (visibleCount === 0) {
+          noResults.style.display = 'block';
+          vocabGrid.style.display = 'none';
+        } else {
+          noResults.style.display = 'none';
+          vocabGrid.style.display = 'grid';
+        }
+      }
+    });
+  </script>
+</body>
+</html>

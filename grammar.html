@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grammar Guide - Virginia Algonquian Language Learner</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .grammar-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .grammar-section {
+      margin-bottom: 2rem;
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .grammar-section h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      font-family: 'Cinzel', serif;
+    }
+    
+    .grammar-section h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: var(--accent);
+      border-radius: 1.5px;
+    }
+    
+    .grammar-section h3 {
+      color: var(--secondary);
+      margin: 1.5rem 0 0.8rem;
+      font-weight: bold;
+    }
+    
+    .grammar-section p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    
+    .grammar-section ul, .grammar-section ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .grammar-section li {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+    
+    .grammar-example {
+      background-color: var(--light);
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+      font-family: "Courier New", monospace;
+    }
+    
+    .grammar-example .algonquian {
+      color: var(--earth);
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    
+    .grammar-example .english {
+      color: var(--dark);
+    }
+    
+    .grammar-example .breakdown {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+    
+    .grammar-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+    }
+    
+    .grammar-table th, .grammar-table td {
+      border: 1px solid var(--light-border);
+      padding: 0.8rem;
+      text-align: left;
+    }
+    
+    .grammar-table th {
+      background-color: var(--primary);
+      color: white;
+      font-weight: bold;
+    }
+    
+    .grammar-table tr:nth-child(even) {
+      background-color: var(--light);
+    }
+    
+    .grammar-notes {
+      background-color: var(--light);
+      border-left: 4px solid var(--earth);
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+    }
+    
+    .category-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      gap: 0.5rem;
+    }
+    
+    .category-tab {
+      padding: 0.8rem 1.2rem;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    
+    .category-tab:hover,
+    .category-tab.active {
+      background-color: var(--secondary);
+      color: white;
+    }
+    
+    @media (max-width: 768px) {
+      .category-tabs {
+        flex-direction: column;
+      }
+      
+      .grammar-table {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VIRGINIA ALGONQUIAN LANGUAGE LEARNER</h1>
+    <p class="intro">Revitalizing the Virginia Algonquian (Powhatan) Language</p>
+    
+    <div class="header-nav">
+      <a href="index.html" class="header-link">Learning Interface</a>
+      <a href="about.html" class="header-link">About Project</a>
+      <a href="phonetic-grammar-rules.html" class="header-link">Phonetic & Grammar Rules</a>
+      <a href="grammar.html" class="header-link">Grammar Guide</a>
+      <a href="modern-vocab.html" class="header-link">Modern Vocabulary</a>
+      <a href="vocab-list.html" class="header-link">Complete Vocab List</a>
+      <a href="comparative-lexicon.html" class="header-link">Comparative Lexicon</a>
+    </div>
+  </header>
+  
+  <div class="grammar-container">
+    <div class="grammar-section">
+      <h2>Virginia Algonquian Grammar Guide</h2>
+      <p>This comprehensive guide outlines the grammatical structures of Virginia Algonquian, based on historical documentation and comparative analysis with related Eastern Algonquian languages. Due to limited historical records, some aspects have been reconstructed using linguistic principles and comparison with better-documented related languages.</p>
+      
+      <div class="category-tabs">
+        <button class="category-tab active" data-target="nouns">Nouns</button>
+        <button class="category-tab" data-target="verbs">Verbs</button>
+        <button class="category-tab" data-target="pronouns">Pronouns</button>
+        <button class="category-tab" data-target="syntax">Syntax</button>
+        <button class="category-tab" data-target="sentences">Sentence Formation</button>
+      </div>
+    </div>
+    
+    <div class="grammar-section" id="nouns">
+      <h2>Noun Structure and Classification</h2>
+      
+      <h3>Animate and Inanimate Nouns</h3>
+      <p>Virginia Algonquian classifies all nouns as either animate or inanimate. This distinction affects verb conjugations, pluralization, and other grammatical features.</p>
+      
+      <ul>
+        <li><strong>Animate nouns</strong> include people, animals, spirits, and culturally significant objects like tobacco, certain tools, and celestial bodies.</li>
+        <li><strong>Inanimate nouns</strong> include most objects, abstract concepts, and natural elements like rocks and plants.</li>
+      </ul>
+      
+      <div class="grammar-example">
+        <div class="algonquian">Attass (inanimate) - "House"</div>
+        <div class="algonquian">Netāp (animate) - "Friend"</div>
+      </div>
+      
+      <h3>Noun Possession</h3>
+      <p>Virginia Algonquian marks possession through prefixes attached to the noun. These prefixes indicate who possesses the noun.</p>
+      
+      <table class="grammar-table">
+        <tr>
+          <th>Person</th>
+          <th>Prefix</th>
+          <th>Example</th>
+          <th>Meaning</th>
+        </tr>
+        <tr>
+          <td>1st person singular</td>
+          <td>ne-, n-</td>
+          <td>ne-mēk</td>
+          <td>my house</td>
+        </tr>
+        <tr>
+          <td>2nd person singular</td>
+          <td>ke-, k-</td>
+          <td>ke-mēk</td>
+          <td>your house</td>
+        </tr>
+        <tr>
+          <td>3rd person singular</td>
+          <td>w-, u-</td>
+          <td>w-mēk</td>
+          <td>his/her house</td>
+        </tr>
+        <tr>
+          <td>1st person plural</td>
+          <td>ne-...-unān</td>
+          <td>ne-mēk-unān</td>
+          <td>our house</td>
+        </tr>
+        <tr>
+          <td>2nd person plural</td>
+          <td>ke-...-uwāw</td>
+          <td>ke-mēk-uwāw</td>
+          <td>your (pl.) house</td>
+        </tr>
+        <tr>
+          <td>3rd person plural</td>
+          <td>w-...-uwaw</td>
+          <td>w-mēk-uwaw</td>
+          <td>their house</td>
+        </tr>
+      </table>
+      
+      <h3>Pluralization</h3>
+      <p>Pluralization in Virginia Algonquian differs based on whether the noun is animate or inanimate:</p>
+      
+      <ul>
+        <li><strong>Animate plurals</strong> typically use the suffix <em>-ak</em></li>
+        <li><strong>Inanimate plurals</strong> typically use the suffix <em>-ash</em></li>
+      </ul>
+      
+      <div class="grammar-example">
+        <div class="algonquian">Singular: Netāp - "Friend"</div>
+        <div class="algonquian">Plural: Netāp-ak - "Friends"</div>
+        <div class="algonquian">Singular: Attass - "House"</div>
+        <div class="algonquian">Plural: Attass-ash - "Houses"</div>
+      </div>
+      
+      <div class="grammar-notes">
+        <p><strong>Note:</strong> Some nouns may have irregular plural forms. These often involve sound changes at the boundary between the stem and the plural suffix.</p>
+      </div>
+    </div>
+    
+    <div class="grammar-section" id="verbs" style="display: none;">
+      <h2>Verb Structure and Conjugation</h2>
+      
+      <h3>Verb Types</h3>
+      <p>Virginia Algonquian has four main verb types, based on transitivity (whether the verb takes an object) and the animacy of the subject or object:</p>
+      
+      <ul>
+        <li><strong>Animate Intransitive (AI)</strong>: Verbs with an animate subject and no object</li>
+        <li><strong>Inanimate Intransitive (II)</strong>: Verbs with an inanimate subject and no object</li>
+        <li><strong>Transitive Animate (TA)</strong>: Verbs with an object that is animate</li>
+        <li><strong>Transitive Inanimate (TI)</strong>: Verbs with an object that is inanimate</li>
+      </ul>
+      
+      <div class="grammar-example">
+        <div class="algonquian">AI: Nepāw - "He/she sleeps"</div>
+        <div class="algonquian">II: Wāpāw - "It is white"</div>
+        <div class="algonquian">TA: Waāpamāw - "He/she sees him/her"</div>
+        <div class="algonquian">TI: Waāpatam - "He/she sees it"</div>
+      </div>
+      
+      <h3>Person and Number Marking</h3>
+      <p>Verbs are marked for the person and number of their subjects (and objects, for transitive verbs):</p>
+      
+      <table class="grammar-table">
+        <tr>
+          <th>Person</th>
+          <th>AI Verb (to walk)</th>
+          <th>Meaning</th>
+        </tr>
+        <tr>
+          <td>1st person singular</td>
+          <td>ne-pomiteyouqh</td>
+          <td>I walk</td>
+        </tr>
+        <tr>
+          <td>2nd person singular</td>
+          <td>ke-pomiteyouqh</td>
+          <td>You walk</td>
+        </tr>
+        <tr>
+          <td>3rd person singular</td>
+          <td>pomiteyouqh</td>
+          <td>He/she walks</td>
+        </tr>
+        <tr>
+          <td>1st person plural</td>
+          <td>ne-pomiteyouqh-men</td>
+          <td>We walk</td>
+        </tr>
+        <tr>
+          <td>2nd person plural</td>
+          <td>ke-pomiteyouqh-muw</td>
+          <td>You all walk</td>
+        </tr>
+        <tr>
+          <td>3rd person plural</td>
+          <td>pomiteyouqh-ak</td>
+          <td>They walk</td>
+        </tr>
+      </table>
+      
+      <h3>Tense and Aspect</h3>
+      <p>Virginia Algonquian marks various tenses and aspects through a system of prefixes and suffixes:</p>
+      
+      <ul>
+        <li><strong>Present/Continuous</strong>: Often unmarked or uses reduplication</li>
+        <li><strong>Past</strong>: Uses the prefix <em>ki-</em> or suffix changes</li>
+        <li><strong>Future</strong>: Uses the prefix <em>wih-</em></li>
+      </ul>
+      
+      <div class="grammar-example">
+        <div class="algonquian">Present: Ne-mecitchêh - "I eat"</div>
+        <div class="algonquian">Past: Ne-ki-mecitchêh - "I ate"</div>
+        <div class="algonquian">Future: Ne-wih-mecitchêh - "I will eat"</div>
+      </div>
+    </div>
+    
+    <div class="grammar-section" id="pronouns" style="display: none;">
+      <h2>Pronouns and Demonstratives</h2>
+      
+      <h3>Personal Pronouns</h3>
+      <p>Virginia Algonquian personal pronouns distinguish between singular and plural, as well as between inclusive and exclusive first person plural:</p>
+      
+      <table class="grammar-table">
+        <tr>
+          <th>Person</th>
+          <th>Pronoun</th>
+          <th>Meaning</th>
+        </tr>
+        <tr>
+          <td>1st person singular</td>
+          <td>Nīn</td>
+          <td>I, me</td>
+        </tr>
+        <tr>
+          <td>2nd person singular</td>
+          <td>Kīn</td>
+          <td>You</td>
+        </tr>
+        <tr>
+          <td>3rd person singular</td>
+          <td>Nēkama</td>
+          <td>He/she</td>
+        </tr>
+        <tr>
+          <td>1st person plural (inclusive)</td>
+          <td>Kīnawaw</td>
+          <td>We (including you)</td>
+        </tr>
+        <tr>
+          <td>1st person plural (exclusive)</td>
+          <td>Nīnawaw</td>
+          <td>We (excluding you)</td>
+        </tr>
+        <tr>
+          <td>2nd person plural</td>
+          <td>Kīnawaw</td>
+          <td>You all</td>
+        </tr>
+        <tr>
+          <td>3rd person plural</td>
+          <td>Nēkamawaw</td>
+          <td>They</td>
+        </tr>
+      </table>
+      
+      <h3>Demonstrative Pronouns</h3>
+      <p>Demonstratives indicate proximity to the speaker. They distinguish between animate and inanimate referents:</p>
+      
+      <table class="grammar-table">
+        <tr>
+          <th>Proximity</th>
+          <th>Animate</th>
+          <th>Inanimate</th>
+          <th>Meaning</th>
+        </tr>
+        <tr>
+          <td>Near speaker</td>
+          <td>Yōh</td>
+          <td>Yōt</td>
+          <td>This (near)</td>
+        </tr>
+        <tr>
+          <td>Away from speaker</td>
+          <td>Nāh</td>
+          <td>Nēt</td>
+          <td>That (away)</td>
+        </tr>
+        <tr>
+          <td>Remote</td>
+          <td>Ēwah</td>
+          <td>Ēwet</td>
+          <td>That (far away)</td>
+        </tr>
+      </table>
+      
+      <div class="grammar-example">
+        <div class="algonquian">Yōh netāp - "This friend (near me)"</div>
+        <div class="algonquian">Nēt attass - "That house (away from me)"</div>
+      </div>
+    </div>
+    
+    <div class="grammar-section" id="syntax" style="display: none;">
+      <h2>Sentence Structure and Word Order</h2>
+      
+      <h3>Basic Word Order</h3>
+      <p>Virginia Algonquian follows a Subject-Verb-Object (SVO) word order in basic sentences, but this can vary as the language puts greater emphasis on the verb and allows for significant flexibility:</p>
+      
+      <div class="grammar-example">
+        <div class="algonquian">Netāp waāpamāw atum</div>
+        <div class="english">"The friend sees the dog"</div>
+        <div class="breakdown">Netāp (friend) + waāpamāw (sees him/her) + atum (dog)</div>
+      </div>
+      
+      <h3>Topic-Prominence</h3>
+      <p>The language is somewhat topic-prominent, meaning that the topic of the sentence (what the sentence is about) often comes first, regardless of whether it is the subject, object, or another element:</p>
+      
+      <div class="grammar-example">
+        <div class="algonquian">Atum, netāp waāpamāw</div>
+        <div class="english">"As for the dog, the friend sees it"</div>
+        <div class="breakdown">Atum (dog) + netāp (friend) + waāpamāw (sees him/her)</div>
+      </div>
+      
+      <h3>Incorporation</h3>
+      <p>Virginia Algonquian, like other Algonquian languages, makes extensive use of noun incorporation, where a noun is combined with a verb to form a new verb:</p>
+      
+      <div class="grammar-example">
+        <div class="algonquian">Nātomēcho</div>
+        <div class="english">"He smokes tobacco"</div>
+        <div class="breakdown">Nāt- (smoke) + -āp- (tobacco) + -o (he/animate third person)</div>
+      </div>
+    </div>
+    
+    <div class="grammar-section" id="sentences" style="display: none;">
+      <h2>Sentence Formation and Complex Structures</h2>
+      
+      <h3>Questions</h3>
+      <p>Questions in Virginia Algonquian can be formed in several ways:</p>
+      
+      <ol>
+        <li><strong>Intonation</strong>: Using rising intonation at the end of a statement</li>
+        <li><strong>Question particles</strong>: Adding question particles at the beginning or end of a sentence</li>
+        <li><strong>Question words</strong>: Using specific question words</li>
+      </ol>
+      
+      <div class="grammar-example">
+        <div class="algonquian">Tān - "Where"</div>
+        <div class="algonquian">Tān ke-mēk? - "Where is your house?"</div>
+        <div class="algonquian">Kekoy - "What"</div>
+        <div class="algonquian">Kekoy nēkama? - "What is that?"</div>
+      </div>
+      
+      <h3>Negation</h3>
+      <p>Negation is typically formed by using the negative particle <em>matta</em> before the verb, often accompanied by changes to the verb form:</p>
+      
+      <div class="grammar-example">
+        <div class="algonquian">Ne-mecitchêh - "I eat"</div>
+        <div class="algonquian">Matta ne-mecitchêh - "I do not eat"</div>
+      </div>
+      
+      <h3>Subordinate Clauses</h3>
+      <p>Virginia Algonquian forms subordinate clauses through several methods, including the use of participles and specialized conjunct verb forms:</p>
+      
+      <div class="grammar-example">
+        <div class="algonquian">Ne-waāpamāw netāp noka pomiteyouqh</div>
+        <div class="english">"I see the friend who is walking"</div>
+        <div class="breakdown">Ne-waāpamāw (I see him/her) + netāp (friend) + noka (that/who) + pomiteyouqh (he/she walks - conjunct form)</div>
+      </div>
+      
+      <h3>Commands (Imperatives)</h3>
+      <p>Commands are formed using specific imperative forms of verbs:</p>
+      
+      <div class="grammar-example">
+        <div class="algonquian">Mecitchêh! - "Eat!" (singular)</div>
+        <div class="algonquian">Mecitchêhkw! - "Eat!" (plural)</div>
+      </div>
+      
+      <div class="grammar-notes">
+        <p><strong>Note:</strong> Due to limited historical documentation, some aspects of complex sentence formation have been reconstructed based on patterns in related Algonquian languages. The forms presented here represent the most likely structures based on available evidence.</p>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2025 Virginia Algonquian Language Revitalization</p>
+  </footer>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.category-tab');
+      const sections = document.querySelectorAll('.grammar-section');
+      
+      // Show initial section (nouns)
+      document.getElementById('nouns').style.display = 'block';
+      
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          const target = this.getAttribute('data-target');
+          
+          // Update active tab
+          tabs.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+          
+          // Hide all sections
+          sections.forEach(section => {
+            if (section.id === 'nouns' || section.id === 'verbs' || section.id === 'pronouns' || section.id === 'syntax' || section.id === 'sentences') {
+              section.style.display = 'none';
+            }
+          });
+          
+          // Show target section
+          document.getElementById(target).style.display = 'block';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

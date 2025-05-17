@@ -1,0 +1,2504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Vocabulary List - Virginia Algonquian Language Learner</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .vocab-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .vocab-intro {
+      margin-bottom: 2rem;
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .vocab-intro h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      font-family: 'Cinzel', serif;
+    }
+    
+    .vocab-intro h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: var(--accent);
+      border-radius: 1.5px;
+    }
+    
+    .vocab-intro p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    
+    .search-box {
+      display: flex;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    #search-input {
+      flex-grow: 1;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      font-size: 1rem;
+    }
+    
+    .search-button {
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.2rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    
+    .search-button:hover {
+      background-color: var(--secondary);
+    }
+    
+    .filter-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .filter-button {
+      background-color: var(--primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border: 2px solid var(--primary);
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .filter-button:hover,
+    .filter-button.active {
+      background-color: var(--secondary);
+      border-color: var(--secondary);
+      color: white;
+    }
+    
+    .word-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .word-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .word-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .word-algonquian {
+      color: var(--earth);
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      font-family: 'Cinzel', serif;
+    }
+    
+    .word-english {
+      font-size: 1.1rem;
+      color: var(--dark);
+      margin-bottom: 0.7rem;
+    }
+    
+    .word-details {
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+    
+    .word-type {
+      display: inline-block;
+      background-color: var(--primary);
+      color: white;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+    }
+    
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 2rem;
+    }
+    
+    .page-button {
+      background-color: var(--primary);
+      color: white;
+      border: 1px solid var(--primary);
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .page-button:hover,
+    .page-button.active {
+      background-color: var(--secondary);
+      border-color: var(--secondary);
+      color: white;
+    }
+    
+    .letter-navigation {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.3rem;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background-color: var(--light);
+      border-radius: 8px;
+    }
+    
+    .letter-button {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--primary);
+      color: white;
+      border: 1px solid var(--primary);
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    
+    .letter-button:hover,
+    .letter-button.active {
+      background-color: var(--secondary);
+      border-color: var(--secondary);
+      color: white;
+    }
+    
+    @media (max-width: 768px) {
+      .word-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      }
+      
+      .letter-navigation {
+        gap: 0.2rem;
+      }
+      
+      .letter-button {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VIRGINIA ALGONQUIAN LANGUAGE LEARNER</h1>
+    <p class="intro">Revitalizing the Virginia Algonquian (Powhatan) Language</p>
+    
+    <div class="header-nav">
+      <a href="index.html" class="header-link">Learning Interface</a>
+      <a href="about.html" class="header-link">About Project</a>
+      <a href="phonetic-grammar-rules.html" class="header-link">Phonetic & Grammar Rules</a>
+      <a href="grammar.html" class="header-link">Grammar Guide</a>
+      <a href="modern-vocab.html" class="header-link">Modern Vocabulary</a>
+      <a href="vocab-list.html" class="header-link">Complete Vocab List</a>
+      <a href="comparative-lexicon.html" class="header-link">Comparative Lexicon</a>
+    </div>
+  </header>
+  
+  <div class="vocab-container">
+    <div class="vocab-intro">
+      <h2>Complete Virginia Algonquian Vocabulary</h2>
+      <p>This comprehensive list contains all documented Virginia Algonquian words from historical sources, primarily William Strachey's vocabulary (1610-1611) and Captain John Smith's word list (1607-1609).</p>
+      <p>Use the search box or filters to find specific words, or browse the alphabetical listing below. Hover over each word card to see additional information.</p>
+    </div>
+    
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search in English or Algonquian...">
+      <button class="search-button" id="search-button">Search</button>
+    </div>
+    
+    <div class="filter-options">
+      <button class="filter-button active" data-filter="all">All Terms</button>
+      <button class="filter-button" data-filter="noun">Nouns</button>
+      <button class="filter-button" data-filter="verb">Verbs</button>
+      <button class="filter-button" data-filter="adjective">Adjectives</button>
+      <button class="filter-button" data-filter="adverb">Adverbs</button>
+      <button class="filter-button" data-filter="other">Other</button>
+    </div>
+    
+    <div class="letter-navigation">
+      <button class="letter-button active" data-letter="all">All</button>
+      <button class="letter-button" data-letter="A">A</button>
+      <button class="letter-button" data-letter="B">B</button>
+      <button class="letter-button" data-letter="C">C</button>
+      <button class="letter-button" data-letter="D">D</button>
+      <button class="letter-button" data-letter="E">E</button>
+      <button class="letter-button" data-letter="F">F</button>
+      <button class="letter-button" data-letter="G">G</button>
+      <button class="letter-button" data-letter="H">H</button>
+      <button class="letter-button" data-letter="I">I</button>
+      <button class="letter-button" data-letter="J">J</button>
+      <button class="letter-button" data-letter="K">K</button>
+      <button class="letter-button" data-letter="L">L</button>
+      <button class="letter-button" data-letter="M">M</button>
+      <button class="letter-button" data-letter="N">N</button>
+      <button class="letter-button" data-letter="O">O</button>
+      <button class="letter-button" data-letter="P">P</button>
+      <button class="letter-button" data-letter="Q">Q</button>
+      <button class="letter-button" data-letter="R">R</button>
+      <button class="letter-button" data-letter="S">S</button>
+      <button class="letter-button" data-letter="T">T</button>
+      <button class="letter-button" data-letter="U">U</button>
+      <button class="letter-button" data-letter="V">V</button>
+      <button class="letter-button" data-letter="W">W</button>
+      <button class="letter-button" data-letter="X">X</button>
+      <button class="letter-button" data-letter="Y">Y</button>
+      <button class="letter-button" data-letter="Z">Z</button>
+    </div>
+    
+    <div class="word-grid" id="word-container">
+      <!-- A Section Words -->
+      <div class="word-card" data-type="noun" data-initial="A">
+        <div class="word-algonquian">Ahcôtowvun</div>
+        <div class="word-english">Acorn</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="A">
+        <div class="word-algonquian">Oumaniens</div>
+        <div class="word-english">Alder tree</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="A">
+        <div class="word-algonquian">Apeing</div>
+        <div class="word-english">Alive</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="A">
+        <div class="word-algonquian">Attonce, Ashaham</div>
+        <div class="word-english">Arrow</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey, Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="A">
+        <div class="word-algonquian">Taquitock</div>
+        <div class="word-english">Autumn</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- B Section Words -->
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Neckamaish</div>
+        <div class="word-english">Baby</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Petawah</div>
+        <div class="word-english">Back (body part)</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="B">
+        <div class="word-algonquian">Matit</div>
+        <div class="word-english">Bad</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Manote</div>
+        <div class="word-english">Basket</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Monacock</div>
+        <div class="word-english">Bear (animal)</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Appoumes</div>
+        <div class="word-english">Beaver</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Tussâc</div>
+        <div class="word-english">Bed</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Picôn</div>
+        <div class="word-english">Beech tree</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="B">
+        <div class="word-algonquian">Necassunnûm</div>
+        <div class="word-english">Belch</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Chehip</div>
+        <div class="word-english">Bird</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="B">
+        <div class="word-algonquian">Matcherengo</div>
+        <div class="word-english">Black</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Matchcôat</div>
+        <div class="word-english">Blanket</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Netahcat</div>
+        <div class="word-english">Blood</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="B">
+        <div class="word-algonquian">Nipokatamen</div>
+        <div class="word-english">Blow</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="B">
+        <div class="word-algonquian">Oskeyu</div>
+        <div class="word-english">Blue</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Aquointayne</div>
+        <div class="word-english">Boat</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Mehkenanahum</div>
+        <div class="word-english">Body</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Attaup</div>
+        <div class="word-english">Bow</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Appoans</div>
+        <div class="word-english">Bread</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="B">
+        <div class="word-algonquian">Toshemaiin</div>
+        <div class="word-english">Break (something)</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Nytake</div>
+        <div class="word-english">Breath</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="B">
+        <div class="word-algonquian">Neckauw</div>
+        <div class="word-english">Brother</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="B">
+        <div class="word-algonquian">Pockatawer</div>
+        <div class="word-english">Burn</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- C Section Words -->
+      <div class="word-card" data-type="noun" data-initial="C">
+        <div class="word-algonquian">Aquintan</div>
+        <div class="word-english">Canoe</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="C">
+        <div class="word-algonquian">Mamtunnaaw</div>
+        <div class="word-english">Cheek</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="C">
+        <div class="word-algonquian">Nekaupot</div>
+        <div class="word-english">Child</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="C">
+        <div class="word-algonquian">Nâtakôam</div>
+        <div class="word-english">Cold</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="C">
+        <div class="word-algonquian">Coiscutterêweh</div>
+        <div class="word-english">Come here</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="C">
+        <div class="word-algonquian">Matassun</div>
+        <div class="word-english">Copper</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="C">
+        <div class="word-algonquian">Attan, Attacoone</div>
+        <div class="word-english">Corn (maize)</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="C">
+        <div class="word-algonquian">Ahquas</div>
+        <div class="word-english">Cough</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="C">
+        <div class="word-algonquian">Châraw</div>
+        <div class="word-english">Crow (bird)</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- D Section Words -->
+      <div class="word-card" data-type="verb" data-initial="D">
+        <div class="word-algonquian">Kantikantimiis</div>
+        <div class="word-english">Dance</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="D">
+        <div class="word-algonquian">Petayouch</div>
+        <div class="word-english">Darkness</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="D">
+        <div class="word-algonquian">Netough</div>
+        <div class="word-english">Daughter</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="D">
+        <div class="word-algonquian">Rawcosowgh</div>
+        <div class="word-english">Day</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="D">
+        <div class="word-algonquian">Nepawwêtowh</div>
+        <div class="word-english">Death</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="D">
+        <div class="word-algonquian">Attecenna</div>
+        <div class="word-english">Deer</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="D">
+        <div class="word-algonquian">Riokosick</div>
+        <div class="word-english">Devil</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="D">
+        <div class="word-algonquian">Attum</div>
+        <div class="word-english">Dog</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="D">
+        <div class="word-algonquian">Cuppaton</div>
+        <div class="word-english">Door</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="D">
+        <div class="word-algonquian">Netab</div>
+        <div class="word-english">Drink</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="D">
+        <div class="word-algonquian">Yataxen</div>
+        <div class="word-english">Dry</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="D">
+        <div class="word-algonquian">Piscoend</div>
+        <div class="word-english">Duck</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- E Section Words -->
+      <div class="word-card" data-type="noun" data-initial="E">
+        <div class="word-algonquian">Metawincs</div>
+        <div class="word-english">Ear</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="E">
+        <div class="word-algonquian">Ohke</div>
+        <div class="word-english">Earth</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="E">
+        <div class="word-algonquian">Mecitchêh</div>
+        <div class="word-english">Eat</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="E">
+        <div class="word-algonquian">Wahwûnnenehpiss</div>
+        <div class="word-english">Egg</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="E">
+        <div class="word-algonquian">Nusswash</div>
+        <div class="word-english">Eight</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="E">
+        <div class="word-algonquian">Mûsswack</div>
+        <div class="word-english">Elk</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="E">
+        <div class="word-algonquian">Marapo</div>
+        <div class="word-english">Enemy</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="E">
+        <div class="word-algonquian">Anacome</div>
+        <div class="word-english">Evening</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="E">
+        <div class="word-algonquian">Mesettink</div>
+        <div class="word-english">Eye</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- F Section Words -->
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Usckeintâp</div>
+        <div class="word-english">Face</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="F">
+        <div class="word-algonquian">Cattacaunssiminis</div>
+        <div class="word-english">Fall down</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Noughs</div>
+        <div class="word-english">Father</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Mehtonaca</div>
+        <div class="word-english">Feather</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="F">
+        <div class="word-algonquian">Netecaân</div>
+        <div class="word-english">Fight</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Pohkhan</div>
+        <div class="word-english">Fire</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Nameeth</div>
+        <div class="word-english">Fish</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Paranske</div>
+        <div class="word-english">Five</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Weyaus</div>
+        <div class="word-english">Flesh</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Massapo</div>
+        <div class="word-english">Flint</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Attattôpwooc</div>
+        <div class="word-english">Flour</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Mecawsun</div>
+        <div class="word-english">Food</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Mysetts</div>
+        <div class="word-english">Foot</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Matacôk</div>
+        <div class="word-english">Forest</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Yowgh</div>
+        <div class="word-english">Four</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Ahsounnecôck</div>
+        <div class="word-english">Fox</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Netap</div>
+        <div class="word-english">Friend</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="F">
+        <div class="word-algonquian">Ottucoys</div>
+        <div class="word-english">Frog</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- G Section Words -->
+      <div class="word-card" data-type="noun" data-initial="G">
+        <div class="word-algonquian">Usqua</div>
+        <div class="word-english">Girl</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="G">
+        <div class="word-algonquian">Mache</div>
+        <div class="word-english">Give</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="G">
+        <div class="word-algonquian">Moyatt</div>
+        <div class="word-english">Go</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="G">
+        <div class="word-algonquian">Ahone, Kiwassa</div>
+        <div class="word-english">God</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="G">
+        <div class="word-algonquian">Winger</div>
+        <div class="word-english">Good</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="G">
+        <div class="word-algonquian">Cohunks</div>
+        <div class="word-english">Goose</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="G">
+        <div class="word-algonquian">Attaskuss</div>
+        <div class="word-english">Grass</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="G">
+        <div class="word-algonquian">Wêroan</div>
+        <div class="word-english">Great</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="G">
+        <div class="word-algonquian">Asqwarevh</div>
+        <div class="word-english">Green</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="G">
+        <div class="word-algonquian">Pawcussac</div>
+        <div class="word-english">Gun</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <!-- H Section Words -->
+      <div class="word-card" data-type="noun" data-initial="H">
+        <div class="word-algonquian">Mehtaantequas</div>
+        <div class="word-english">Hair</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="H">
+        <div class="word-algonquian">Mêheock</div>
+        <div class="word-english">Hand</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="H">
+        <div class="word-algonquian">Mêttock</div>
+        <div class="word-english">Head</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="H">
+        <div class="word-algonquian">Nummawmaum</div>
+        <div class="word-english">Hear</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="H">
+        <div class="word-algonquian">Ottehocannough</div>
+        <div class="word-english">Heart</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="H">
+        <div class="word-algonquian">Okenies</div>
+        <div class="word-english">Heaven</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="H">
+        <div class="word-algonquian">Kequatan</div>
+        <div class="word-english">Heavy</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="H">
+        <div class="word-algonquian">Pocohiccora</div>
+        <div class="word-english">Hickory</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="H">
+        <div class="word-algonquian">Pomotawk</div>
+        <div class="word-english">Hill</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="H">
+        <div class="word-algonquian">Neke</div>
+        <div class="word-english">Home</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="H">
+        <div class="word-algonquian">Sucquateyough</div>
+        <div class="word-english">Hot</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="H">
+        <div class="word-algonquian">Yehawkan</div>
+        <div class="word-english">House</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="H">
+        <div class="word-algonquian">Nekateywsapooeksku</div>
+        <div class="word-english">Hundred</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="H">
+        <div class="word-algonquian">Nátougwessum</div>
+        <div class="word-english">Hungry</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="H">
+        <div class="word-algonquian">Nattewowan</div>
+        <div class="word-english">Hunt</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="H">
+        <div class="word-algonquian">Newssoanwâh</div>
+        <div class="word-english">Husband</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- I Section Words -->
+      <div class="word-card" data-type="noun" data-initial="I">
+        <div class="word-algonquian">Kepatewassuntank</div>
+        <div class="word-english">Ice</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="I">
+        <div class="word-algonquian">Tomahack</div>
+        <div class="word-english">Iron</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="I">
+        <div class="word-algonquian">Menâtaun</div>
+        <div class="word-english">Island</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- K Section Words -->
+      <div class="word-card" data-type="verb" data-initial="K">
+        <div class="word-algonquian">Nepahamôn</div>
+        <div class="word-english">Kill</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="K">
+        <div class="word-algonquian">Werowance</div>
+        <div class="word-english">King</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="K">
+        <div class="word-algonquian">Pamêhsacan</div>
+        <div class="word-english">Knife</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="K">
+        <div class="word-algonquian">Mowtchick</div>
+        <div class="word-english">Knot</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- L Section Words -->
+      <div class="word-card" data-type="noun" data-initial="L">
+        <div class="word-algonquian">Weyôk</div>
+        <div class="word-english">Lake</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="L">
+        <div class="word-algonquian">Onsekanakan</div>
+        <div class="word-english">Laugh</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="L">
+        <div class="word-algonquian">Nepinsh</div>
+        <div class="word-english">Leaf</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="L">
+        <div class="word-algonquian">Mehcat</div>
+        <div class="word-english">Leg</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="L">
+        <div class="word-algonquian">Awepewhôtonwh</div>
+        <div class="word-english">Light</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="L">
+        <div class="word-algonquian">Keihquâscussun</div>
+        <div class="word-english">Lightning</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="L">
+        <div class="word-algonquian">Keispeweyack</div>
+        <div class="word-english">Live</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="L">
+        <div class="word-algonquian">Nounghe</div>
+        <div class="word-english">Love</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="L">
+        <div class="word-algonquian">Pussôcunnûah</div>
+        <div class="word-english">Lynx</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- M Section Words -->
+      <div class="word-card" data-type="noun" data-initial="M">
+        <div class="word-algonquian">Nemarough</div>
+        <div class="word-english">Man</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="M">
+        <div class="word-algonquian">Masescum</div>
+        <div class="word-english">Maple tree</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="M">
+        <div class="word-algonquian">Weyaus</div>
+        <div class="word-english">Meat</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="M">
+        <div class="word-algonquian">Wisoccan</div>
+        <div class="word-english">Medicine</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="M">
+        <div class="word-algonquian">Nepausche</div>
+        <div class="word-english">Moon</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="M">
+        <div class="word-algonquian">Papasowh</div>
+        <div class="word-english">Morning</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="M">
+        <div class="word-algonquian">Anna</div>
+        <div class="word-english">Mother</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="M">
+        <div class="word-algonquian">Pomottawk</div>
+        <div class="word-english">Mountain</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="M">
+        <div class="word-algonquian">Mettoone</div>
+        <div class="word-english">Mouth</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- N Section Words -->
+      <div class="word-card" data-type="noun" data-initial="N">
+        <div class="word-algonquian">Yêhaukan</div>
+        <div class="word-english">Name</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="N">
+        <div class="word-algonquian">Memenchum</div>
+        <div class="word-english">Neck</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="N">
+        <div class="word-algonquian">Ahsâp</div>
+        <div class="word-english">Net</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="N">
+        <div class="word-algonquian">Tapacoh</div>
+        <div class="word-english">Night</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="N">
+        <div class="word-algonquian">Kyketawe</div>
+        <div class="word-english">Nine</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="N">
+        <div class="word-algonquian">Meschwipêcat</div>
+        <div class="word-english">Nose</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="N">
+        <div class="word-algonquian">Assinimmeis</div>
+        <div class="word-english">Nut</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- O Section Words -->
+      <div class="word-card" data-type="noun" data-initial="O">
+        <div class="word-algonquian">Mohomindge</div>
+        <div class="word-english">Oak tree</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="O">
+        <div class="word-algonquian">Aposoum</div>
+        <div class="word-english">Opossum</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="O">
+        <div class="word-algonquian">Cûttaquincheméns</div>
+        <div class="word-english">Otter</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- P Section Words -->
+      <div class="word-card" data-type="noun" data-initial="P">
+        <div class="word-algonquian">Amatêwh</div>
+        <div class="word-english">Pain</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="P">
+        <div class="word-algonquian">Uhcatéwh</div>
+        <div class="word-english">Paint</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="P">
+        <div class="word-algonquian">Mehct</div>
+        <div class="word-english">Path</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="P">
+        <div class="word-algonquian">Assemmowghsemina</div>
+        <div class="word-english">Peas</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="P">
+        <div class="word-algonquian">Pessemmins</div>
+        <div class="word-english">Persimmon</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="P">
+        <div class="word-algonquian">Wnssapih</div>
+        <div class="word-english">Pine tree</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="P">
+        <div class="word-algonquian">Apooke</div>
+        <div class="word-english">Pipe</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="P">
+        <div class="word-algonquian">Attass</div>
+        <div class="word-english">Plant</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="P">
+        <div class="word-algonquian">Mamantobpassewh</div>
+        <div class="word-english">Play</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="P">
+        <div class="word-algonquian">Macocks</div>
+        <div class="word-english">Pumpkin</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- Q Section Words -->
+      <div class="word-card" data-type="noun" data-initial="Q">
+        <div class="word-algonquian">Ohauhnoc</div>
+        <div class="word-english">Quail</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="Q">
+        <div class="word-algonquian">Utcheiscummens</div>
+        <div class="word-english">Quick</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- R Section Words -->
+      <div class="word-card" data-type="noun" data-initial="R">
+        <div class="word-algonquian">Wêhsacat</div>
+        <div class="word-english">Rabbit</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="R">
+        <div class="word-algonquian">Aroughcun</div>
+        <div class="word-english">Raccoon</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="R">
+        <div class="word-algonquian">Kemowan</div>
+        <div class="word-english">Rain</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="R">
+        <div class="word-algonquian">Nehessayew</div>
+        <div class="word-english">Red</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="R">
+        <div class="word-algonquian">Seip</div>
+        <div class="word-english">River</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="R">
+        <div class="word-algonquian">Othassik</div>
+        <div class="word-english">Rock</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="R">
+        <div class="word-algonquian">Pemuntah</div>
+        <div class="word-english">Rope</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="R">
+        <div class="word-algonquian">Pettecoagh</div>
+        <div class="word-english">Run</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- S Section Words -->
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Sawwone</div>
+        <div class="word-english">Salt</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Aggonshetôck</div>
+        <div class="word-english">Sand</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="S">
+        <div class="word-algonquian">Iynough</div>
+        <div class="word-english">Say</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Uttamamashaw</div>
+        <div class="word-english">Sea</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="S">
+        <div class="word-algonquian">Nummêching</div>
+        <div class="word-english">See</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Toppawoss</div>
+        <div class="word-english">Seven</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Aquewan</div>
+        <div class="word-english">Shirt</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Mockasin</div>
+        <div class="word-english">Shoe</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="S">
+        <div class="word-algonquian">Ottuwâigh</div>
+        <div class="word-english">Sing</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Nummisseshew</div>
+        <div class="word-english">Sister</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="S">
+        <div class="word-algonquian">Mattuttâish</div>
+        <div class="word-english">Sit</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Comotinch</div>
+        <div class="word-english">Six</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Nahawnonack</div>
+        <div class="word-english">Skin</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Arrokoth</div>
+        <div class="word-english">Sky</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="S">
+        <div class="word-algonquian">Asapan</div>
+        <div class="word-english">Sleep</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="S">
+        <div class="word-algonquian">Matasseyowh</div>
+        <div class="word-english">Small</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Ascook</div>
+        <div class="word-english">Snake</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Macatêwh</div>
+        <div class="word-english">Snow</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Neputtishow</div>
+        <div class="word-english">Son</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="S">
+        <div class="word-algonquian">Kettorauog</div>
+        <div class="word-english">Speak</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Mussanicka</div>
+        <div class="word-english">Squirrel</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Punnahe</div>
+        <div class="word-english">Star</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Mehtugkquash</div>
+        <div class="word-english">Stick</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Assoone</div>
+        <div class="word-english">Stone</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Wichasakon</div>
+        <div class="word-english">Strawberry</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="S">
+        <div class="word-algonquian">Weesecannôt</div>
+        <div class="word-english">Strong</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Cawqwaih</div>
+        <div class="word-english">Summer</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="S">
+        <div class="word-algonquian">Keshowaugh</div>
+        <div class="word-english">Sun</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="S">
+        <div class="word-algonquian">Wîngan</div>
+        <div class="word-english">Sweet</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="S">
+        <div class="word-algonquian">Tusshakehawh</div>
+        <div class="word-english">Swim</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- T Section Words -->
+      <div class="word-card" data-type="verb" data-initial="T">
+        <div class="word-algonquian">Necassunnamen</div>
+        <div class="word-english">Take</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="T">
+        <div class="word-algonquian">Yekûth</div>
+        <div class="word-english">Talk</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="T">
+        <div class="word-algonquian">Neputtetâssuacans</div>
+        <div class="word-english">Teeth</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="T">
+        <div class="word-algonquian">Cassacomêh</div>
+        <div class="word-english">Ten</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div> 
+
+      <div class="word-card" data-type="other" data-initial="T">
+        <div class="word-algonquian">Wingapo</div>
+        <div class="word-english">Thank you</div>
+        <div class="word-details">
+          <span class="word-type">Expression</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="other" data-initial="T">
+        <div class="word-algonquian">Nawwot</div>
+        <div class="word-english">That</div>
+        <div class="word-details">
+          <span class="word-type">Demonstrative</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="other" data-initial="T">
+        <div class="word-algonquian">Neuttah</div>
+        <div class="word-english">There</div>
+        <div class="word-details">
+          <span class="word-type">Adverb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="other" data-initial="T">
+        <div class="word-algonquian">Yêwogh</div>
+        <div class="word-english">They</div>
+        <div class="word-details">
+          <span class="word-type">Pronoun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="T">
+        <div class="word-algonquian">Mehcowewen</div>
+        <div class="word-english">Thigh</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="T">
+        <div class="word-algonquian">Netebôwh</div>
+        <div class="word-english">Think</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="T">
+        <div class="word-algonquian">Unquanshowaih</div>
+        <div class="word-english">Thirsty</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="T">
+        <div class="word-algonquian">Nuss</div>
+        <div class="word-english">Three</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="T">
+        <div class="word-algonquian">Uppocútamun</div>
+        <div class="word-english">Throw</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="T">
+        <div class="word-algonquian">Kawmêtowh</div>
+        <div class="word-english">Thunder</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="T">
+        <div class="word-algonquian">Yuhatquitschumumossum</div>
+        <div class="word-english">Today</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="T">
+        <div class="word-algonquian">Yraphê</div>
+        <div class="word-english">Tomorrow</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="T">
+        <div class="word-algonquian">Metetsheew</div>
+        <div class="word-english">Tongue</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="T">
+        <div class="word-algonquian">Nepetâssuac</div>
+        <div class="word-english">Tooth</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="T">
+        <div class="word-algonquian">Mahtask</div>
+        <div class="word-english">Tree</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="T">
+        <div class="word-algonquian">Monanaw</div>
+        <div class="word-english">Turkey</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="T">
+        <div class="word-algonquian">Comôtoah</div>
+        <div class="word-english">Turtle</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="T">
+        <div class="word-algonquian">Ningecuttaughwunshquenekâttough</div>
+        <div class="word-english">Twenty</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="T">
+        <div class="word-algonquian">Ningh</div>
+        <div class="word-english">Two</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- U Section Words -->
+      <div class="word-card" data-type="adjective" data-initial="U">
+        <div class="word-algonquian">Mumsayêwh</div>
+        <div class="word-english">Ugly</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- V Section Words -->
+      <div class="word-card" data-type="noun" data-initial="V">
+        <div class="word-algonquian">Mangôit</div>
+        <div class="word-english">Village</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- W Section Words -->
+      <div class="word-card" data-type="verb" data-initial="W">
+        <div class="word-algonquian">Pomiteyouqh</div>
+        <div class="word-english">Walk</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="W">
+        <div class="word-algonquian">Mowhchick</div>
+        <div class="word-english">War</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="W">
+        <div class="word-algonquian">Apôtekeyqwoh</div>
+        <div class="word-english">Warm</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="W">
+        <div class="word-algonquian">Nemarough</div>
+        <div class="word-english">Warrior</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="W">
+        <div class="word-algonquian">Sucquehanna</div>
+        <div class="word-english">Water</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="W">
+        <div class="word-algonquian">Kequassinum</div>
+        <div class="word-english">Weak</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="verb" data-initial="W">
+        <div class="word-algonquian">Namountamen</div>
+        <div class="word-english">Weep</div>
+        <div class="word-details">
+          <span class="word-type">Verb</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="W">
+        <div class="word-algonquian">Uttesheskayough</div>
+        <div class="word-english">West</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="W">
+        <div class="word-algonquian">Potewallonsheeah</div>
+        <div class="word-english">Whale</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="other" data-initial="W">
+        <div class="word-algonquian">Kekoy</div>
+        <div class="word-english">What</div>
+        <div class="word-details">
+          <span class="word-type">Question word</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="W">
+        <div class="word-algonquian">Wompsipim</div>
+        <div class="word-english">White</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="W">
+        <div class="word-algonquian">Niourough</div>
+        <div class="word-english">Wife</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="W">
+        <div class="word-algonquian">Pahquiwh</div>
+        <div class="word-english">Wind</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="W">
+        <div class="word-algonquian">Popanow</div>
+        <div class="word-english">Winter</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="W">
+        <div class="word-algonquian">Naantam</div>
+        <div class="word-english">Wolf</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="W">
+        <div class="word-algonquian">Cusses</div>
+        <div class="word-english">Woman</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Smith</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="W">
+        <div class="word-algonquian">Apook</div>
+        <div class="word-english">Wood</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <!-- Y Section Words -->
+      <div class="word-card" data-type="noun" data-initial="Y">
+        <div class="word-algonquian">Popâpow</div>
+        <div class="word-english">Year</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="adjective" data-initial="Y">
+        <div class="word-algonquian">Wussawhu</div>
+        <div class="word-english">Yellow</div>
+        <div class="word-details">
+          <span class="word-type">Adjective</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="noun" data-initial="Y">
+        <div class="word-algonquian">Ouskêo</div>
+        <div class="word-english">Yesterday</div>
+        <div class="word-details">
+          <span class="word-type">Noun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+      
+      <div class="word-card" data-type="other" data-initial="Y">
+        <div class="word-algonquian">Kêmatah</div>
+        <div class="word-english">You</div>
+        <div class="word-details">
+          <span class="word-type">Pronoun</span>
+          <span>Source: Strachey</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pagination">
+      <button class="page-button active">1</button>
+      <button class="page-button">2</button>
+      <button class="page-button">3</button>
+      <button class="page-button">4</button>
+      <button class="page-button">5</button>
+      <button class="page-button">→</button>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2025 Virginia Algonquian Language Revitalization</p>
+  </footer>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const wordCards = document.querySelectorAll('.word-card');
+      const filterButtons = document.querySelectorAll('.filter-button');
+      const letterButtons = document.querySelectorAll('.letter-button');
+      const searchInput = document.getElementById('search-input');
+      const searchButton = document.getElementById('search-button');
+      
+      // Filter by type
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const filterValue = this.getAttribute('data-filter');
+          
+          // Update active button
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+          
+          // Filter words
+          wordCards.forEach(card => {
+            if (filterValue === 'all' || card.getAttribute('data-type') === filterValue) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+      
+      // Filter by first letter
+      letterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const letterValue = this.getAttribute('data-letter');
+          
+          // Update active button
+          letterButtons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+          
+          // Filter words
+          wordCards.forEach(card => {
+            if (letterValue === 'all' || card.getAttribute('data-initial') === letterValue) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+      
+      // Search functionality
+      searchButton.addEventListener('click', performSearch);
+      searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          performSearch();
+        }
+      });
+      
+      function performSearch() {
+        const searchTerm = searchInput.value.toLowerCase();
+        
+        wordCards.forEach(card => {
+          const algonquianText = card.querySelector('.word-algonquian').textContent.toLowerCase();
+          const englishText = card.querySelector('.word-english').textContent.toLowerCase();
+          
+          if (algonquianText.includes(searchTerm) || englishText.includes(searchTerm)) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+[
+  {
+    "english": "fire",
+    "algonquian": "pohkhan",
+    "pronunciation": "poh-khan",
+    "source": "Strachey",
+    "notes": "Used ritually, possibly related to Proto-Algonquian *pehkw- 'ignite'",
+    "category": "basic"
+  },
+  {
+    "english": "water",
+    "algonquian": "sucquehanna",
+    "pronunciation": "suh-kweh-han-na",
+    "source": "Smith",
+    "notes": "The name of the Susquehanna River derives from this term",
+    "category": "basic"
+  },
+  {
+    "english": "bread",
+    "algonquian": "appoans",
+    "pronunciation": "ah-po-ans",
+    "source": "Strachey",
+    "notes": "A staple food, similar to Lenape 'apan'",
+    "category": "basic"
+  },
+  {
+    "english": "deer",
+    "algonquian": "attecenna",
+    "pronunciation": "at-te-chen-na",
+    "source": "Smith",
+    "notes": "Important animal for food and materials",
+    "category": "animals"
+  },
+  {
+    "english": "bear",
+    "algonquian": "monacock",
+    "pronunciation": "mon-a-cock",
+    "source": "Strachey",
+    "notes": "Forest animal with cultural significance",
+    "category": "animals"
+  },
+  {
+    "english": "bird",
+    "algonquian": "chehip",
+    "pronunciation": "che-hip",
+    "source": "Strachey",
+    "notes": "General term for winged creatures",
+    "category": "animals"
+  },
+  {
+    "english": "sun",
+    "algonquian": "keshowaugh",
+    "pronunciation": "ke-sho-waw",
+    "source": "Strachey",
+    "notes": "Related to other Algonquian languages, cf. Lenape 'kischux'",
+    "category": "nature"
+  },
+  {
+    "english": "moon",
+    "algonquian": "nepausche",
+    "pronunciation": "ne-paw-she",
+    "source": "Strachey",
+    "notes": "Similar to Mohegan-Pequot 'nepauz'",
+    "category": "nature"
+  },
+  {
+    "english": "star",
+    "algonquian": "punnahe",
+    "pronunciation": "pun-nah-he",
+    "source": "Strachey",
+    "notes": "Different root from other Algonquian words for 'star'",
+    "category": "nature"
+  },
+  {
+    "english": "river",
+    "algonquian": "seip",
+    "pronunciation": "say-ip",
+    "source": "Strachey",
+    "notes": "Very consistent across Algonquian languages, cf. Lenape 'sipu'",
+    "category": "nature"
+  },
+  {
+    "english": "earth",
+    "algonquian": "ohke",
+    "pronunciation": "oh-ke",
+    "source": "Strachey",
+    "notes": "Clear cognate across all Algonquian languages",
+    "category": "nature"
+  },
+  {
+    "english": "hand",
+    "algonquian": "mêheock",
+    "pronunciation": "meh-he-ock",
+    "source": "Strachey",
+    "notes": "Shows possessive prefixing common in Algonquian languages",
+    "category": "body"
+  },
+  {
+    "english": "head",
+    "algonquian": "mêttock",
+    "pronunciation": "met-tock",
+    "source": "Strachey",
+    "notes": "Includes possessive prefix 'me-' (my)",
+    "category": "body"
+  },
+  {
+    "english": "eye",
+    "algonquian": "mesettink",
+    "pronunciation": "me-set-tink",
+    "source": "Strachey",
+    "notes": "Includes possessive prefix 'me-' (my)",
+    "category": "body"
+  },
+  {
+    "english": "eat",
+    "algonquian": "mecitchêh",
+    "pronunciation": "me-cit-cheh",
+    "source": "Strachey",
+    "notes": "Similar root across Algonquian languages",
+    "category": "actions"
+  },
+  {
+    "english": "speak",
+    "algonquian": "kettorauog",
+    "pronunciation": "ket-to-ra-wog",
+    "source": "Strachey",
+    "notes": "Related to communication and speech",
+    "category": "actions"
+  },
+  {
+    "english": "walk",
+    "algonquian": "pomiteyouqh",
+    "pronunciation": "po-mi-te-youk",
+    "source": "Strachey",
+    "notes": "Movement verb, commonly used",
+    "category": "actions"
+  },
+  {
+    "english": "sleep",
+    "algonquian": "asapan",
+    "pronunciation": "a-sa-pan",
+    "source": "Strachey",
+    "notes": "Shows sound shift patterns compared to other Algonquian languages",
+    "category": "actions"
+  },
+  {
+    "english": "good",
+    "algonquian": "winger",
+    "pronunciation": "win-ger",
+    "source": "Smith",
+    "notes": "Shows sound correspondence patterns with Lenape 'wulit'",
+    "category": "basic"
+  },
+  {
+    "english": "bad",
+    "algonquian": "matit",
+    "pronunciation": "ma-tit",
+    "source": "Strachey",
+    "notes": "Cognate with Lenape 'matit'",
+    "category": "basic"
+  },
+  {
+    "english": "friend",
+    "algonquian": "netap",
+    "pronunciation": "ne-tap",
+    "source": "Smith",
+    "notes": "Consistent across Algonquian languages",
+    "category": "basic"
+  },
+  {
+    "english": "family",
+    "algonquian": "nekemat",
+    "pronunciation": "ne-ke-mat",
+    "source": "Strachey",
+    "notes": "Related to 'relative' or 'kin'",
+    "category": "basic"
+  },
+  {
+    "english": "fish",
+    "algonquian": "nameeth",
+    "pronunciation": "na-meeth",
+    "source": "Strachey",
+    "notes": "Very consistent across Algonquian languages",
+    "category": "animals"
+  },
+  {
+    "english": "dog",
+    "algonquian": "attum",
+    "pronunciation": "at-tum",
+    "source": "Strachey",
+    "notes": "Consistent pattern across Algonquian languages",
+    "category": "animals"
+  },
+  {
+    "english": "tree",
+    "algonquian": "mahtask",
+    "pronunciation": "mah-task",
+    "source": "Strachey",
+    "notes": "Woody plant, basis for many wooden items",
+    "category": "nature"
+  },
+  {
+    "english": "sky",
+    "algonquian": "arrokoth",
+    "pronunciation": "ar-ro-koth",
+    "source": "Strachey",
+    "notes": "Name used for a trans-Neptunian object visited by NASA",
+    "category": "nature"
+  },
+  {
+    "english": "rain",
+    "algonquian": "kemowan",
+    "pronunciation": "ke-mo-wan",
+    "source": "Strachey",
+    "notes": "Similar to Abenaki 'kimiwαn'",
+    "category": "nature"
+  },
+  {
+    "english": "snow",
+    "algonquian": "macatêwh",
+    "pronunciation": "ma-ca-tewh",
+    "source": "Strachey",
+    "notes": "Related roots in several Algonquian languages",
+    "category": "nature"
+  },
+  {
+    "english": "heart",
+    "algonquian": "ottehocannough",
+    "pronunciation": "ot-te-ho-can-no",
+    "source": "Strachey",
+    "notes": "Contains consistent -t- element found across Algonquian languages",
+    "category": "body"
+  },
+  {
+    "english": "foot",
+    "algonquian": "mysetts",
+    "pronunciation": "my-sets",
+    "source": "Strachey",
+    "notes": "Body part for walking",
+    "category": "body"
+  },
+  {
+    "english": "hair",
+    "algonquian": "mehtaantequas",
+    "pronunciation": "meh-taan-te-quas",
+    "source": "Strachey",
+    "notes": "Body covering, includes possessive prefix",
+    "category": "body"
+  },
+  {
+    "english": "run",
+    "algonquian": "pettecoagh",
+    "pronunciation": "pet-te-co-agh",
+    "source": "Strachey",
+    "notes": "Fast movement verb",
+    "category": "actions"
+  },
+  {
+    "english": "see",
+    "algonquian": "nummêching",
+    "pronunciation": "num-meh-ching",
+    "source": "Strachey",
+    "notes": "Visual perception verb",
+    "category": "actions"
+  },
+  {
+    "english": "hunt",
+    "algonquian": "nattewowan",
+    "pronunciation": "nat-te-wo-wan",
+    "source": "Strachey",
+    "notes": "Important subsistence activity",
+    "category": "actions"
+  },
+  {
+    "english": "canoe",
+    "algonquian": "aquintan",
+    "pronunciation": "a-quin-tan",
+    "source": "Smith",
+    "notes": "Small watercraft, related to Delaware 'akwena'",
+    "category": "basic"
+  },
+  {
+    "english": "tobacco",
+    "algonquian": "uppowoc",
+    "pronunciation": "up-po-woc",
+    "source": "Smith",
+    "notes": "Important ceremonial plant",
+    "category": "nature"
+  }
+]

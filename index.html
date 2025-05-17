@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virginia Algonquian Language Learner</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Prevent CORS issues with favicon -->
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <header>
+    <h1>VIRGINIA ALGONQUIAN LANGUAGE LEARNER</h1>
+    <p class="intro">Explore and learn Virginia Algonquian (Powhatan), the indigenous language of Tsenacommacah - modern-day eastern Virginia. Use the flashcards below to practice vocabulary.</p>
+    
+    <div class="header-nav">
+  <a href="index.html" class="header-link">Learning Interface</a>
+  <a href="about.html" class="header-link">About Project</a>
+  <a href="phonetic-grammar-rules.html" class="header-link">Phonetic & Grammar Rules</a>
+  <a href="grammar.html" class="header-link">Grammar Guide</a>
+  <a href="modern-vocab.html" class="header-link">Modern Vocabulary</a>
+  <a href="vocab-list.html" class="header-link">Complete Vocab List</a>
+  <a href="comparative-lexicon.html" class="header-link">Comparative Lexicon</a>
+</div>
+  </header>
+  
+  <div class="container">
+    <div class="category-selector">
+      <button class="category-btn active" data-category="all">All Words</button>
+      <button class="category-btn" data-category="basic">Basic Terms</button>
+      <button class="category-btn" data-category="nature">Nature</button>
+      <button class="category-btn" data-category="animals">Animals</button>
+      <button class="category-btn" data-category="body">Body Parts</button>
+      <button class="category-btn" data-category="actions">Actions</button>
+    </div>
+    
+    <div class="stats-container">
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-value" id="learned-count">0</div>
+          <div class="stat-label">Learned</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="total-count">0</div>
+          <div class="stat-label">Total Words</div>
+        </div>
+      </div>
+      
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+    </div>
+    
+    <!-- This is the flashcard component -->
+    <div class="card-container">
+      <div class="card" id="flashcard">
+        <div class="card-front">
+          <div class="symbol symbol-1"></div>
+          <div class="word" id="english-word">Loading...</div>
+          <div class="definition">Click to reveal the Virginia Algonquian translation</div>
+          <div class="symbol symbol-2"></div>
+        </div>
+        <div class="card-back">
+          <div class="symbol symbol-1"></div>
+          <div class="word" id="algonquian-word"></div>
+          <div class="pronunciation" id="pronunciation"></div>
+          <div class="source" id="source"></div>
+          <div class="notes" id="notes"></div>
+          <div class="symbol symbol-2"></div>
+          <div class="audio-control">
+  <button id="play-audio-btn" class="audio-button">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="5 3 19 12 5 21 5 3"></polygon>
+    </svg>
+    Play
+  </button>
+</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="controls">
+      <button id="flip-btn" class="control-button">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 2v6h-6"></path>
+          <path d="M3 12a9 9 0 0 1 15-6.7l3-3"></path>
+          <path d="M3 22v-6h6"></path>
+          <path d="M21 12a9 9 0 0 1-15 6.7l-3 3"></path>
+        </svg>
+        Flip Card
+      </button>
+      <button id="next-btn" class="control-button">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+        Next Word
+      </button>
+      <button id="mark-learned-btn" class="control-button">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        Mark as Learned
+      </button>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2025 Virginia Algonquian Language Revitalization</p>
+  </footer>
+
+  <!-- Script at the end for faster page load -->
+  <script src="script.js"></script>
+</body>
+</html>
