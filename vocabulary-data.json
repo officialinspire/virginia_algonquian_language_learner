@@ -4,32 +4,36 @@
     "algonquian": "pohkhan",
     "pronunciation": "poh-khan",
     "source": "Strachey",
-    "notes": "Used ritually, possibly related to Proto-Algonquian *pehkw- 'ignite'",
-    "category": "basic"
+    "notes": "Element, used ritually",
+    "category": "basic",
+    "audio": "audio/pohkhan.mp3"
   },
   {
     "english": "water",
     "algonquian": "sucquehanna",
     "pronunciation": "suh-kweh-han-na",
     "source": "Smith",
-    "notes": "The name of the Susquehanna River derives from this term",
-    "category": "basic"
+    "notes": "Liquid for drinking",
+    "category": "basic",
+    "audio": "audio/sucquehanna.mp3"
   },
   {
     "english": "bread",
     "algonquian": "appoans",
     "pronunciation": "ah-po-ans",
     "source": "Strachey",
-    "notes": "A staple food, similar to Lenape 'apan'",
-    "category": "basic"
+    "notes": "Food staple, cf. Lenape \"apan\"",
+    "category": "basic",
+    "audio": "audio/appoans.mp3"
   },
   {
     "english": "deer",
     "algonquian": "attecenna",
     "pronunciation": "at-te-chen-na",
     "source": "Smith",
-    "notes": "Important animal for food and materials",
-    "category": "animals"
+    "notes": "Forest animal, important for food",
+    "category": "animals",
+    "audio": "audio/attecenna.mp3"
   },
   {
     "english": "bear",
@@ -37,7 +41,8 @@
     "pronunciation": "mon-a-cock",
     "source": "Strachey",
     "notes": "Forest animal with cultural significance",
-    "category": "animals"
+    "category": "animals",
+    "audio": "audio/monacock.mp3"
   },
   {
     "english": "bird",
@@ -45,127 +50,143 @@
     "pronunciation": "che-hip",
     "source": "Strachey",
     "notes": "General term for winged creatures",
-    "category": "animals"
+    "category": "animals",
+    "audio": "audio/chehip.mp3"
   },
   {
     "english": "sun",
     "algonquian": "keshowaugh",
     "pronunciation": "ke-sho-waw",
     "source": "Strachey",
-    "notes": "Related to other Algonquian languages, cf. Lenape 'kischux'",
-    "category": "nature"
+    "notes": "Day celestial body",
+    "category": "nature",
+    "audio": "audio/keshowaugh.mp3"
   },
   {
     "english": "moon",
     "algonquian": "nepausche",
     "pronunciation": "ne-paw-she",
     "source": "Strachey",
-    "notes": "Similar to Mohegan-Pequot 'nepauz'",
-    "category": "nature"
+    "notes": "Night celestial body",
+    "category": "nature",
+    "audio": "audio/nepausche.mp3"
   },
   {
     "english": "star",
     "algonquian": "punnahe",
     "pronunciation": "pun-nah-he",
     "source": "Strachey",
-    "notes": "Different root from other Algonquian words for 'star'",
-    "category": "nature"
+    "notes": "Night sky object",
+    "category": "nature",
+    "audio": "audio/punnahe.mp3"
   },
   {
     "english": "river",
     "algonquian": "seip",
     "pronunciation": "say-ip",
     "source": "Strachey",
-    "notes": "Very consistent across Algonquian languages, cf. Lenape 'sipu'",
-    "category": "nature"
+    "notes": "Flowing water body",
+    "category": "nature",
+    "audio": "audio/seip.mp3"
   },
   {
     "english": "earth",
     "algonquian": "ohke",
     "pronunciation": "oh-ke",
     "source": "Strachey",
-    "notes": "Clear cognate across all Algonquian languages",
-    "category": "nature"
+    "notes": "Ground, soil, world",
+    "category": "nature",
+    "audio": "audio/ohke.mp3"
   },
   {
     "english": "hand",
-    "algonquian": "m\u00eaheock",
+    "algonquian": "mêheock",
     "pronunciation": "meh-he-ock",
     "source": "Strachey",
-    "notes": "Shows possessive prefixing common in Algonquian languages",
-    "category": "body"
+    "notes": "Body part",
+    "category": "body",
+    "audio": "audio/m_heock.mp3"
   },
   {
     "english": "head",
-    "algonquian": "m\u00eattock",
+    "algonquian": "mêttock",
     "pronunciation": "met-tock",
     "source": "Strachey",
-    "notes": "Includes possessive prefix 'me-' (my)",
-    "category": "body"
+    "notes": "Upper body part",
+    "category": "body",
+    "audio": "audio/m_ttock.mp3"
   },
   {
     "english": "eye",
     "algonquian": "mesettink",
     "pronunciation": "me-set-tink",
     "source": "Strachey",
-    "notes": "Includes possessive prefix 'me-' (my)",
-    "category": "body"
+    "notes": "Visual organ",
+    "category": "body",
+    "audio": "audio/mesettink.mp3"
   },
   {
     "english": "eat",
-    "algonquian": "mecitch\u00eah",
+    "algonquian": "mecitchêh",
     "pronunciation": "me-cit-cheh",
     "source": "Strachey",
-    "notes": "Similar root across Algonquian languages",
-    "category": "actions"
+    "notes": "Consume food",
+    "category": "actions",
+    "audio": "audio/mecitch_h.mp3"
   },
   {
     "english": "speak",
     "algonquian": "kettorauog",
     "pronunciation": "ket-to-ra-wog",
     "source": "Strachey",
-    "notes": "Related to communication and speech",
-    "category": "actions"
+    "notes": "Verbal communication",
+    "category": "actions",
+    "audio": "audio/kettorauog.mp3"
   },
   {
     "english": "walk",
     "algonquian": "pomiteyouqh",
     "pronunciation": "po-mi-te-youk",
     "source": "Strachey",
-    "notes": "Movement verb, commonly used",
-    "category": "actions"
+    "notes": "Movement on foot",
+    "category": "actions",
+    "audio": "audio/pomiteyouqh.mp3"
   },
   {
     "english": "sleep",
     "algonquian": "asapan",
     "pronunciation": "a-sa-pan",
     "source": "Strachey",
-    "notes": "Shows sound shift patterns compared to other Algonquian languages",
-    "category": "actions"
+    "notes": "Rest state",
+    "category": "actions",
+    "audio": "audio/asapan.mp3"
   },
   {
     "english": "good",
     "algonquian": "winger",
     "pronunciation": "win-ger",
     "source": "Smith",
-    "notes": "Shows sound correspondence patterns with Lenape 'wulit'",
-    "category": "basic"
+    "notes": "Positive evaluation",
+    "category": "basic",
+    "audio": "audio/winger.mp3"
   },
   {
     "english": "bad",
     "algonquian": "matit",
     "pronunciation": "ma-tit",
     "source": "Strachey",
-    "notes": "Cognate with Lenape 'matit'",
-    "category": "basic"
+    "notes": "Evaluative term, cf. Lenape \"matit\"",
+    "category": "basic",
+    "audio": "audio/matit.mp3"
   },
   {
     "english": "friend",
     "algonquian": "netap",
     "pronunciation": "ne-tap",
     "source": "Smith",
-    "notes": "Consistent across Algonquian languages",
-    "category": "basic"
+    "notes": "Friendly person",
+    "category": "basic",
+    "audio": "audio/netap.mp3"
   },
   {
     "english": "family",
@@ -173,63 +194,71 @@
     "pronunciation": "ne-ke-mat",
     "source": "Strachey",
     "notes": "Related to 'relative' or 'kin'",
-    "category": "basic"
+    "category": "basic",
+    "audio": ""
   },
   {
     "english": "fish",
     "algonquian": "nameeth",
     "pronunciation": "na-meeth",
     "source": "Strachey",
-    "notes": "Very consistent across Algonquian languages",
-    "category": "animals"
+    "notes": "Aquatic animal",
+    "category": "animals",
+    "audio": "audio/nameeth.mp3"
   },
   {
     "english": "dog",
     "algonquian": "attum",
     "pronunciation": "at-tum",
     "source": "Strachey",
-    "notes": "Consistent pattern across Algonquian languages",
-    "category": "animals"
+    "notes": "Domesticated animal",
+    "category": "animals",
+    "audio": "audio/attum.mp3"
   },
   {
     "english": "tree",
     "algonquian": "mahtask",
     "pronunciation": "mah-task",
     "source": "Strachey",
-    "notes": "Woody plant, basis for many wooden items",
-    "category": "nature"
+    "notes": "Woody plant",
+    "category": "nature",
+    "audio": "audio/mahtask.mp3"
   },
   {
     "english": "sky",
     "algonquian": "arrokoth",
     "pronunciation": "ar-ro-koth",
     "source": "Strachey",
-    "notes": "Name used for a trans-Neptunian object visited by NASA",
-    "category": "nature"
+    "notes": "Upper atmosphere",
+    "category": "nature",
+    "audio": "audio/arrokoth.mp3"
   },
   {
     "english": "rain",
     "algonquian": "kemowan",
     "pronunciation": "ke-mo-wan",
     "source": "Strachey",
-    "notes": "Similar to Abenaki 'kimiw\u03b1n'",
-    "category": "nature"
+    "notes": "Weather condition",
+    "category": "nature",
+    "audio": "audio/kemowan.mp3"
   },
   {
     "english": "snow",
-    "algonquian": "macat\u00eawh",
+    "algonquian": "macatêwh",
     "pronunciation": "ma-ca-tewh",
     "source": "Strachey",
-    "notes": "Related roots in several Algonquian languages",
-    "category": "nature"
+    "notes": "Weather condition",
+    "category": "nature",
+    "audio": "audio/macat_wh.mp3"
   },
   {
     "english": "heart",
     "algonquian": "ottehocannough",
     "pronunciation": "ot-te-ho-can-no",
     "source": "Strachey",
-    "notes": "Contains consistent -t- element found across Algonquian languages",
-    "category": "body"
+    "notes": "Internal organ",
+    "category": "body",
+    "audio": "audio/ottehocannough.mp3"
   },
   {
     "english": "foot",
@@ -237,47 +266,53 @@
     "pronunciation": "my-sets",
     "source": "Strachey",
     "notes": "Body part for walking",
-    "category": "body"
+    "category": "body",
+    "audio": "audio/mysetts.mp3"
   },
   {
     "english": "hair",
     "algonquian": "mehtaantequas",
     "pronunciation": "meh-taan-te-quas",
     "source": "Strachey",
-    "notes": "Body covering, includes possessive prefix",
-    "category": "body"
+    "notes": "Body covering",
+    "category": "body",
+    "audio": "audio/mehtaantequas.mp3"
   },
   {
     "english": "run",
     "algonquian": "pettecoagh",
     "pronunciation": "pet-te-co-agh",
     "source": "Strachey",
-    "notes": "Fast movement verb",
-    "category": "actions"
+    "notes": "Fast movement",
+    "category": "actions",
+    "audio": "audio/pettecoagh.mp3"
   },
   {
     "english": "see",
-    "algonquian": "numm\u00eaching",
+    "algonquian": "nummêching",
     "pronunciation": "num-meh-ching",
     "source": "Strachey",
-    "notes": "Visual perception verb",
-    "category": "actions"
+    "notes": "Visual perception",
+    "category": "actions",
+    "audio": "audio/numm_ching.mp3"
   },
   {
     "english": "hunt",
     "algonquian": "nattewowan",
     "pronunciation": "nat-te-wo-wan",
     "source": "Strachey",
-    "notes": "Important subsistence activity",
-    "category": "actions"
+    "notes": "Food gathering activity",
+    "category": "actions",
+    "audio": "audio/nattewowan.mp3"
   },
   {
     "english": "canoe",
     "algonquian": "aquintan",
     "pronunciation": "a-quin-tan",
     "source": "Smith",
-    "notes": "Small watercraft, related to Delaware 'akwena'",
-    "category": "basic"
+    "notes": "Small watercraft, related to Delaware \"akwena\"",
+    "category": "basic",
+    "audio": "audio/aquintan.mp3"
   },
   {
     "english": "tobacco",
@@ -285,7 +320,8 @@
     "pronunciation": "up-po-woc",
     "source": "Smith",
     "notes": "Important ceremonial plant",
-    "category": "nature"
+    "category": "nature",
+    "audio": ""
   },
   {
     "english": "this document represents a compilation of known virginia algonquian (powhatan) vocabulary from historical sources, primarily william strachey's vocabulary (1610-1611) and captain john smith's word list (1607-1609). the format follows the structure: english",
@@ -293,39 +329,44 @@
     "pronunciation": "",
     "source": "Source",
     "notes": "Notes.",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": ""
   },
   {
     "english": "acorn",
-    "algonquian": "ahc\u00f4towvun",
-    "pronunciation": "",
+    "algonquian": "ahcôtowvun",
+    "pronunciation": "ah-coh-tow-vun",
     "source": "Strachey",
     "notes": "Related to Proto-Algonquian *axatehimin",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/ahc_towvun.mp3"
   },
   {
     "english": "alder tree",
     "algonquian": "oumaniens",
-    "pronunciation": "",
+    "pronunciation": "oo-ma-nee-ens",
     "source": "Strachey",
     "notes": "Tree species",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/oumaniens.mp3"
   },
   {
     "english": "alive",
     "algonquian": "apeing",
-    "pronunciation": "",
+    "pronunciation": "a-pe-ing",
     "source": "Strachey",
     "notes": "State of being",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/apeing.mp3"
   },
   {
     "english": "arrow",
     "algonquian": "attonce, ashaham",
-    "pronunciation": "",
+    "pronunciation": "at-ton-ce, a-sha-ham",
     "source": "Strachey, Smith",
     "notes": "Weaponry item",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/attonce.mp3"
   },
   {
     "english": "autumn",
@@ -333,1151 +374,1467 @@
     "pronunciation": "",
     "source": "Strachey",
     "notes": "Season",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/taquitock.mp3"
   },
   {
     "english": "baby",
     "algonquian": "neckamaish",
-    "pronunciation": "",
+    "pronunciation": "neck-a-maish",
     "source": "Strachey",
     "notes": "Young child",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/neckamaish.mp3"
   },
   {
     "english": "back (body part)",
     "algonquian": "petawah",
-    "pronunciation": "",
+    "pronunciation": "pe-ta-wah",
     "source": "Strachey",
     "notes": "Anatomical term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/petawah.mp3"
   },
   {
     "english": "basket",
     "algonquian": "manote",
-    "pronunciation": "",
+    "pronunciation": "ma-no-te",
     "source": "Smith",
     "notes": "Container for gathering",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/manote.mp3"
   },
   {
     "english": "bear (animal)",
     "algonquian": "monacock",
-    "pronunciation": "",
+    "pronunciation": "mo-na-cock",
     "source": "Strachey",
     "notes": "Forest animal",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/monacock.mp3"
   },
   {
     "english": "beaver",
     "algonquian": "appoumes",
-    "pronunciation": "",
+    "pronunciation": "ap-pou-mes",
     "source": "Strachey",
     "notes": "Aquatic mammal",
-    "category": "Animals"
+    "category": "Animals",
+    "audio": "audio/appoumes.mp3"
   },
   {
     "english": "bed",
-    "algonquian": "tuss\u00e2c",
-    "pronunciation": "",
+    "algonquian": "tussâc",
+    "pronunciation": "tus-sac",
     "source": "Strachey",
     "notes": "Sleeping place",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/tuss_c.mp3"
   },
   {
     "english": "beech tree",
-    "algonquian": "pic\u00f4n",
-    "pronunciation": "",
+    "algonquian": "picôn",
+    "pronunciation": "pi-con",
     "source": "Strachey",
     "notes": "Tree species",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/pic_n.mp3"
   },
   {
     "english": "belch",
-    "algonquian": "necassunn\u00fbm",
-    "pronunciation": "",
+    "algonquian": "necassunnûm",
+    "pronunciation": "ne-cas-sun-num",
     "source": "Strachey",
     "notes": "Bodily function",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/necassunn_m.mp3"
   },
   {
     "english": "black",
     "algonquian": "matcherengo",
-    "pronunciation": "",
+    "pronunciation": "match-e-ren-go",
     "source": "Strachey",
     "notes": "Color term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/matcherengo.mp3"
   },
   {
     "english": "blanket",
-    "algonquian": "matchc\u00f4at",
-    "pronunciation": "",
+    "algonquian": "matchcôat",
+    "pronunciation": "match-coat",
     "source": "Strachey",
     "notes": "Covering",
-    "category": "Body Parts"
+    "category": "Body Parts",
+    "audio": "audio/matchc_at.mp3"
   },
   {
     "english": "blood",
     "algonquian": "netahcat",
-    "pronunciation": "",
+    "pronunciation": "ne-tah-cat",
     "source": "Strachey",
     "notes": "Bodily fluid",
-    "category": "Body Parts"
+    "category": "Body Parts",
+    "audio": "audio/netahcat.mp3"
   },
   {
     "english": "blow",
     "algonquian": "nipokatamen",
-    "pronunciation": "",
+    "pronunciation": "ni-po-ka-ta-men",
     "source": "Strachey",
     "notes": "Action with breath",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/nipokatamen.mp3"
   },
   {
     "english": "blue",
     "algonquian": "oskeyu",
-    "pronunciation": "",
+    "pronunciation": "os-key-u",
     "source": "Strachey",
     "notes": "Color term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/oskeyu.mp3"
   },
   {
     "english": "boat",
     "algonquian": "aquointayne",
-    "pronunciation": "",
+    "pronunciation": "a-quoin-tay-ne",
     "source": "Smith",
     "notes": "Water vessel",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/aquointayne.mp3"
   },
   {
     "english": "body",
     "algonquian": "mehkenanahum",
-    "pronunciation": "",
+    "pronunciation": "meh-ke-na-na-hum",
     "source": "Strachey",
     "notes": "Physical form",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/mehkenanahum.mp3"
   },
   {
     "english": "bow",
     "algonquian": "attaup",
-    "pronunciation": "",
+    "pronunciation": "at-taup",
     "source": "Smith",
     "notes": "Hunting weapon",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/attaup.mp3"
   },
   {
     "english": "break (something)",
     "algonquian": "toshemaiin",
-    "pronunciation": "",
+    "pronunciation": "to-she-mai-in",
     "source": "Strachey",
     "notes": "Action verb",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/toshemaiin.mp3"
   },
   {
     "english": "breath",
     "algonquian": "nytake",
-    "pronunciation": "",
+    "pronunciation": "ny-ta-ke",
     "source": "Strachey",
     "notes": "Life sustaining air",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/nytake.mp3"
   },
   {
     "english": "brother",
     "algonquian": "neckauw",
-    "pronunciation": "",
+    "pronunciation": "neck-auw",
     "source": "Strachey",
     "notes": "Male sibling",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/neckauw.mp3"
   },
   {
     "english": "burn",
     "algonquian": "pockatawer",
-    "pronunciation": "",
+    "pronunciation": "pock-a-ta-wer",
     "source": "Strachey",
     "notes": "Fire related verb, cf. \"pohkhan\" (fire)",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/pockatawer.mp3"
   },
   {
     "english": "cheek",
     "algonquian": "mamtunnaaw",
-    "pronunciation": "",
+    "pronunciation": "mam-tun-naaw",
     "source": "Strachey",
     "notes": "Facial feature",
-    "category": "Body Parts"
+    "category": "Body Parts",
+    "audio": "audio/mamtunnaaw.mp3"
   },
   {
     "english": "child",
     "algonquian": "nekaupot",
-    "pronunciation": "",
+    "pronunciation": "ne-kau-pot",
     "source": "Strachey",
     "notes": "Young person",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/nekaupot.mp3"
   },
   {
     "english": "cold",
-    "algonquian": "n\u00e2tak\u00f4am",
-    "pronunciation": "",
+    "algonquian": "nâtakôam",
+    "pronunciation": "na-ta-ko-am",
     "source": "Strachey",
     "notes": "Temperature description",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/n_tak_am.mp3"
   },
   {
     "english": "come here",
-    "algonquian": "coiscutter\u00eaweh",
-    "pronunciation": "",
+    "algonquian": "coiscutterêweh",
+    "pronunciation": "cois-cut-ter-e-weh",
     "source": "Smith",
     "notes": "Directional command",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/coiscutter_weh.mp3"
   },
   {
     "english": "copper",
     "algonquian": "matassun",
-    "pronunciation": "",
+    "pronunciation": "ma-tas-sun",
     "source": "Strachey",
     "notes": "Valued metal",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/matassun.mp3"
   },
   {
     "english": "corn (maize)",
     "algonquian": "attan, attacoone",
-    "pronunciation": "",
+    "pronunciation": "at-tan, at-ta-coo-ne",
     "source": "Smith",
     "notes": "Agricultural staple",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/attan.mp3"
   },
   {
     "english": "cough",
     "algonquian": "ahquas",
-    "pronunciation": "",
+    "pronunciation": "ah-quas",
     "source": "Strachey",
     "notes": "Bodily action",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/ahquas.mp3"
   },
   {
     "english": "crow (bird)",
-    "algonquian": "ch\u00e2raw",
-    "pronunciation": "",
+    "algonquian": "châraw",
+    "pronunciation": "cha-raw",
     "source": "Strachey",
     "notes": "Black bird, onomatopoeic",
-    "category": "Animals"
+    "category": "Animals",
+    "audio": "audio/ch_raw.mp3"
   },
   {
     "english": "dance",
     "algonquian": "kantikantimiis",
-    "pronunciation": "",
+    "pronunciation": "kan-ti-kan-ti-miis",
     "source": "Strachey",
     "notes": "Ceremonial action",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/kantikantimiis.mp3"
   },
   {
     "english": "darkness",
     "algonquian": "petayouch",
-    "pronunciation": "",
+    "pronunciation": "pe-ta-youch",
     "source": "Strachey",
     "notes": "Absence of light",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/petayouch.mp3"
   },
   {
     "english": "daughter",
     "algonquian": "netough",
-    "pronunciation": "",
+    "pronunciation": "ne-tough",
     "source": "Strachey",
     "notes": "Female offspring",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/netough.mp3"
   },
   {
     "english": "day",
     "algonquian": "rawcosowgh",
-    "pronunciation": "",
+    "pronunciation": "raw-co-sowgh",
     "source": "Strachey",
     "notes": "Time period",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/rawcosowgh.mp3"
   },
   {
     "english": "death",
-    "algonquian": "nepaww\u00eatowh",
-    "pronunciation": "",
+    "algonquian": "nepawwêtowh",
+    "pronunciation": "ne-paw-we-towh",
     "source": "Strachey",
     "notes": "End of life",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/nepaww_towh.mp3"
   },
+{
+    "english": "deer",
+    "algonquian": "attecenna",
+    "pronunciation": "at-te-cen-na",
+    "source": "Smith",
+    "notes": "Forest animal, important for food",
+    "category": "animals"
+    "audio": "audio/attecenna.mp3"
+  },
+
   {
     "english": "devil",
     "algonquian": "riokosick",
-    "pronunciation": "",
+    "pronunciation": "rio-ko-sick",
     "source": "Strachey",
     "notes": "Evil spirit",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/riokosick.mp3"
+  },
+{
+    "english": "dog",
+    "algonquian": "attum",
+    "pronunciation": "at-tum",
+    "source": "Strachey",
+    "notes": "Domesticated animal",
+    "category": "animals"
+    "audio": "audio/attum.mp3"
   },
   {
     "english": "door",
     "algonquian": "cuppaton",
-    "pronunciation": "",
+    "pronunciation": "cup-pa-ton",
     "source": "Strachey",
     "notes": "Entrance to dwelling",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/cuppaton.mp3"
   },
   {
     "english": "drink",
     "algonquian": "netab",
-    "pronunciation": "",
+    "pronunciation": "ne-tab",
     "source": "Strachey",
     "notes": "Consume liquid",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/netab.mp3"
   },
   {
     "english": "dry",
     "algonquian": "yataxen",
-    "pronunciation": "",
+    "pronunciation": "ya-tax-en",
     "source": "Strachey",
     "notes": "Absence of moisture",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/yataxen.mp3"
   },
   {
     "english": "duck",
     "algonquian": "piscoend",
-    "pronunciation": "",
+    "pronunciation": "pis-co-end",
     "source": "Strachey",
     "notes": "Waterfowl",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/piscoend.mp3"
   },
   {
     "english": "ear",
     "algonquian": "metawincs",
-    "pronunciation": "",
+    "pronunciation": "me-ta-wincs",
     "source": "Strachey",
     "notes": "Body part for hearing",
-    "category": "Body Parts"
+    "category": "Body Parts",
+    "audio": "audio/metawincs.mp3"
+  },
+{
+    "english": "earth",
+    "algonquian": "ohke",
+    "pronunciation": "oh-ke",
+    "source": "Strachey",
+    "notes": "Ground, soil, world",
+    "category": "nature"
+    "audio": "audio/ohke.mp3"
+  },
+{
+    "english": "eat",
+    "algonquian": "mecitchêh",
+    "pronunciation": "me-cit-cheh",
+    "source": "Strachey",
+    "notes": "Consume food",
+    "category": "actions"
+    "audio": "audio/mecitch_h.mp3"
   },
   {
     "english": "egg",
-    "algonquian": "wahw\u00fbnnenehpiss",
-    "pronunciation": "",
+    "algonquian": "wahwûnnenehpiss",
+    "pronunciation": "wah-wun-ne-neh-piss",
     "source": "Strachey",
     "notes": "Bird/reptile reproductive item",
-    "category": "Animals"
+    "category": "Animals",
+    "audio": "audio/wahw_nnenehpiss.mp3"
   },
   {
     "english": "eight",
     "algonquian": "nusswash",
-    "pronunciation": "",
+    "pronunciation": "nuss-wash",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/nusswash.mp3"
   },
   {
     "english": "elk",
-    "algonquian": "m\u00fbsswack",
-    "pronunciation": "",
+    "algonquian": "mûsswack",
+    "pronunciation": "muss-wack",
     "source": "Strachey",
     "notes": "Large forest animal",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/m_sswack.mp3"
   },
   {
     "english": "enemy",
     "algonquian": "marapo",
-    "pronunciation": "",
+    "pronunciation": "ma-ra-po",
     "source": "Smith",
     "notes": "Hostile person",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/marapo.mp3"
   },
   {
     "english": "evening",
     "algonquian": "anacome",
-    "pronunciation": "",
+    "pronunciation": "a-na-co-me",
     "source": "Strachey",
     "notes": "Time of day",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/anacome.mp3"
+  },
+ {
+    "english": "eye",
+    "algonquian": "mesettink",
+    "pronunciation": "me-set-tink",
+    "source": "Strachey",
+    "notes": "Visual organ",
+    "category": "body"
+    "audio": "audio/mesettink.mp3"
   },
   {
     "english": "face",
-    "algonquian": "usckeint\u00e2p",
-    "pronunciation": "",
+    "algonquian": "usckeintâp",
+    "pronunciation": "us-cke-in-tap",
     "source": "Strachey",
     "notes": "Front of head",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/usckeint_p.mp3"
   },
   {
     "english": "fall down",
     "algonquian": "cattacaunssiminis",
-    "pronunciation": "",
+    "pronunciation": "cat-ta-caun-ssi-mi-nis",
     "source": "Strachey",
     "notes": "Physical action",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/cattacaunssiminis.mp3"
   },
   {
     "english": "father",
     "algonquian": "noughs",
-    "pronunciation": "",
+    "pronunciation": "noughs",
     "source": "Smith",
     "notes": "Male parent",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/noughs.mp3"
   },
   {
     "english": "feather",
     "algonquian": "mehtonaca",
-    "pronunciation": "",
+    "pronunciation": "meh-to-na-ca",
     "source": "Strachey",
     "notes": "Bird part",
-    "category": "Animals"
+    "category": "Animals",
+    "audio": "audio/mehtonaca.mp3"
   },
   {
     "english": "fight",
-    "algonquian": "neteca\u00e2n",
-    "pronunciation": "",
+    "algonquian": "netecaân",
+    "pronunciation": "ne-te-ca-an",
     "source": "Strachey",
     "notes": "Conflict action",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/neteca_n.mp3"
+  },
+{
+    "english": "fire",
+    "algonquian": "pohkhan",
+    "pronunciation": "poh-khan",
+    "source": "Strachey",
+    "notes": "Element, used ritually",
+    "category": "basic"
+    "audio": "audio/pohkhan.mp3"
+  },
+  {
+    "english": "fish",
+    "algonquian": "nameeth",
+    "pronunciation": "na-meeth",
+    "source": "Strachey",
+    "notes": "Aquatic animal",
+    "category": "animals"
+    "audio": "audio/nameeth.mp3"
   },
   {
     "english": "five",
     "algonquian": "paranske",
-    "pronunciation": "",
+    "pronunciation": "pa-ran-ske",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/paranske.mp3"
   },
   {
     "english": "flesh",
     "algonquian": "weyaus",
-    "pronunciation": "",
+    "pronunciation": "we-yaus",
     "source": "Strachey",
     "notes": "Body tissue, meat",
-    "category": "Body Parts"
+    "category": "Body Parts",
+    "audio": "audio/weyaus.mp3"
   },
   {
     "english": "flint",
     "algonquian": "massapo",
-    "pronunciation": "",
+    "pronunciation": "mas-sa-po",
     "source": "Strachey",
     "notes": "Stone for tools",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/massapo.mp3"
   },
   {
     "english": "flour",
-    "algonquian": "attatt\u00f4pwooc",
-    "pronunciation": "",
+    "algonquian": "attattôpwooc",
+    "pronunciation": "at-tat-top-wooc",
     "source": "Strachey",
     "notes": "Ground meal",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/attatt_wooc.mp3"
   },
   {
     "english": "food",
     "algonquian": "mecawsun",
-    "pronunciation": "",
+    "pronunciation": "me-caw-sun",
     "source": "Strachey",
     "notes": "General term for nourishment",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/mecawsun.mp3"
+  },
+{
+    "english": "foot",
+    "algonquian": "mysetts",
+    "pronunciation": "my-setts",
+    "source": "Strachey",
+    "notes": "Body part for walking",
+    "category": "body"
+    "audio": "audio/mysetts.mp3"
   },
   {
     "english": "forest",
-    "algonquian": "matac\u00f4k",
-    "pronunciation": "",
+    "algonquian": "matacôk",
+    "pronunciation": "ma-ta-cok",
     "source": "Strachey",
     "notes": "Wooded area",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/matac_k.mp3"
   },
   {
     "english": "four",
     "algonquian": "yowgh",
-    "pronunciation": "",
+    "pronunciation": "yowgh",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/yowgh.mp3"
   },
   {
     "english": "fox",
-    "algonquian": "ahsounnec\u00f4ck",
-    "pronunciation": "",
+    "algonquian": "ahsounnecôck",
+    "pronunciation": "ah-soun-ne-cock",
     "source": "Strachey",
     "notes": "Small forest predator",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/ahsounnec_ck.mp3"
+  },
+{
+    "english": "friend",
+    "algonquian": "netap",
+    "pronunciation": "ne-tap",
+    "source": "Smith",
+    "notes": "Friendly person",
+    "category": "social"
+    "audio": "audio/netap.mp3"
   },
   {
     "english": "frog",
     "algonquian": "ottucoys",
-    "pronunciation": "",
+    "pronunciation": "ot-tu-coys",
     "source": "Strachey",
     "notes": "Amphibian",
-    "category": "Animals"
+    "category": "Animals",
+    "audio": "audio/ottucoys.mp3"
   },
   {
     "english": "girl",
     "algonquian": "usqua",
-    "pronunciation": "",
+    "pronunciation": "us-qua",
     "source": "Strachey",
     "notes": "Young female",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/usqua.mp3"
   },
   {
     "english": "give",
     "algonquian": "mache",
-    "pronunciation": "",
+    "pronunciation": "ma-che",
     "source": "Smith",
     "notes": "Action of offering",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/mache.mp3"
   },
   {
     "english": "go",
     "algonquian": "moyatt",
-    "pronunciation": "",
+    "pronunciation": "mo-yatt",
     "source": "Strachey",
     "notes": "Movement action",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/moyatt.mp3"
   },
   {
     "english": "god",
     "algonquian": "ahone, kiwassa",
-    "pronunciation": "",
+    "pronunciation": "a-ho-ne, ki-was-sa",
     "source": "Strachey",
     "notes": "Supreme deity",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/ahone.mp3"
+  },
+{
+    "english": "good",
+    "algonquian": "winger",
+    "pronunciation": "win-ger",
+    "source": "Smith",
+    "notes": "Positive evaluation",
+    "category": "basic"
+    "audio": "audio/winger.mp3"
   },
   {
     "english": "goose",
     "algonquian": "cohunks",
-    "pronunciation": "",
+    "pronunciation": "co-hunks",
     "source": "Strachey",
     "notes": "Large waterfowl",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/cohunks.mp3"
   },
   {
     "english": "grass",
     "algonquian": "attaskuss",
-    "pronunciation": "",
+    "pronunciation": "at-tas-kuss",
     "source": "Strachey",
     "notes": "Ground covering plant",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/attaskuss.mp3"
   },
   {
     "english": "great",
-    "algonquian": "w\u00earoan",
-    "pronunciation": "",
+    "algonquian": "wêroan",
+    "pronunciation": "we-ro-an",
     "source": "Smith",
     "notes": "Large, important",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/w_roan.mp3"
   },
   {
     "english": "green",
     "algonquian": "asqwarevh",
-    "pronunciation": "",
+    "pronunciation": "as-qwa-revh",
     "source": "Strachey",
     "notes": "Color term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/asqwarevh.mp3"
   },
   {
     "english": "gun",
     "algonquian": "pawcussac",
-    "pronunciation": "",
+    "pronunciation": "paw-cus-sac",
     "source": "Smith",
     "notes": "European weapon, adapted word",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/pawcussac.mp3"
   },
   {
     "english": "hear",
     "algonquian": "nummawmaum",
-    "pronunciation": "",
+    "pronunciation": "num-maw-maum",
     "source": "Strachey",
     "notes": "Sense verb",
-    "category": "Body Parts"
+    "category": "Body Parts",
+    "audio": "audio/nummawmaum.mp3"
+  },
+  {
+    "english": "heart",
+    "algonquian": "ottehocannough",
+    "pronunciation": "ot-te-ho-can-nough",
+    "source": "Strachey",
+    "notes": "Internal organ",
+    "category": "body"
+    "audio": "audio/ottehocannough.mp3"
   },
   {
     "english": "heaven",
     "algonquian": "okenies",
-    "pronunciation": "",
+    "pronunciation": "o-ke-nies",
     "source": "Strachey",
     "notes": "Spiritual realm",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/okenies.mp3"
   },
   {
     "english": "heavy",
     "algonquian": "kequatan",
-    "pronunciation": "",
+    "pronunciation": "ke-qua-tan",
     "source": "Strachey",
     "notes": "Weight description",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/kequatan.mp3"
   },
   {
     "english": "hickory",
     "algonquian": "pocohiccora",
-    "pronunciation": "",
+    "pronunciation": "po-co-hic-co-ra",
     "source": "Strachey",
     "notes": "Tree species, source of \"hickory\" in English",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/pocohiccora.mp3"
   },
   {
     "english": "hill",
     "algonquian": "pomotawk",
-    "pronunciation": "",
+    "pronunciation": "po-mo-tawk",
     "source": "Strachey",
     "notes": "Raised landform",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/pomotawk.mp3"
   },
   {
     "english": "home",
     "algonquian": "neke",
-    "pronunciation": "",
+    "pronunciation": "ne-ke",
     "source": "Strachey",
     "notes": "Dwelling place",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/neke.mp3"
   },
   {
     "english": "hot",
     "algonquian": "sucquateyough",
-    "pronunciation": "",
+    "pronunciation": "suc-qua-te-yough",
     "source": "Strachey",
     "notes": "Temperature term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/sucquateyough.mp3"
   },
   {
     "english": "house",
     "algonquian": "yehawkan",
-    "pronunciation": "",
+    "pronunciation": "ye-haw-kan",
     "source": "Strachey",
     "notes": "Dwelling structure",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/yehawkan.mp3"
   },
   {
     "english": "hundred",
     "algonquian": "nekateywsapooeksku",
-    "pronunciation": "",
+    "pronunciation": "ne-ka-tey-wsa-poo-ek-sku",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/nekateywsapooeksku.mp3"
   },
   {
     "english": "hungry",
-    "algonquian": "n\u00e1tougwessum",
-    "pronunciation": "",
+    "algonquian": "nátougwessum",
+    "pronunciation": "na-toug-wes-sum",
     "source": "Strachey",
     "notes": "State of needing food",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/n_tougwessum.mp3"
+  },
+{
+    "english": "hunt",
+    "algonquian": "nattewowan",
+    "pronunciation": "nat-te-wo-wan",
+    "source": "Strachey",
+    "notes": "Food gathering activity",
+    "category": "actions"
+    "audio": "audio/nattewowan.mp3"
   },
   {
     "english": "husband",
-    "algonquian": "newssoanw\u00e2h",
-    "pronunciation": "",
+    "algonquian": "newssoanwâh",
+    "pronunciation": "news-so-an-wah",
     "source": "Strachey",
     "notes": "Male spouse",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/newssoanw_h.mp3"
   },
   {
     "english": "ice",
     "algonquian": "kepatewassuntank",
-    "pronunciation": "",
+    "pronunciation": "ke-pa-te-was-sun-tank",
     "source": "Strachey",
     "notes": "Frozen water",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/kepatewassuntank.mp3"
   },
   {
     "english": "iron",
     "algonquian": "tomahack",
-    "pronunciation": "",
+    "pronunciation": "to-ma-hack",
     "source": "Strachey",
     "notes": "Metal material, source of \"tomahawk\" in English",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/tomahack.mp3"
   },
   {
     "english": "island",
-    "algonquian": "men\u00e2taun",
-    "pronunciation": "",
+    "algonquian": "menâtaun",
+    "pronunciation": "me-na-taun",
     "source": "Strachey",
     "notes": "Land surrounded by water",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/men_taun.mp3"
   },
   {
     "english": "kill",
-    "algonquian": "nepaham\u00f4n",
-    "pronunciation": "",
+    "algonquian": "nepahamôn",
+    "pronunciation": "ne-pa-ha-mon",
     "source": "Strachey",
     "notes": "Cause death",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/nepaham_n.mp3"
   },
   {
     "english": "king",
     "algonquian": "werowance",
-    "pronunciation": "",
+    "pronunciation": "we-ro-wan-ce",
     "source": "Smith",
-    "notes": "Ruler, chief",
-    "category": "Basic Terms"
+    "notes": "Ruler, chief LITERAL TRANSLATION: COMMANDER",
+    "category": "Basic Terms",
+    "audio": "audio/werowance.mp3"
   },
   {
     "english": "knife",
-    "algonquian": "pam\u00eahsacan",
-    "pronunciation": "",
+    "algonquian": "pamêhsacan",
+    "pronunciation": "pa-meh-sa-can",
     "source": "Strachey",
     "notes": "Cutting tool",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/pam_hsacan.mp3"
   },
   {
     "english": "knot",
     "algonquian": "mowtchick",
-    "pronunciation": "",
+    "pronunciation": "mow-tchick",
     "source": "Strachey",
     "notes": "Tied binding",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/mowtchick.mp3"
   },
   {
     "english": "lake",
-    "algonquian": "wey\u00f4k",
-    "pronunciation": "",
+    "algonquian": "weyôk",
+    "pronunciation": "we-yok",
     "source": "Strachey",
     "notes": "Body of water",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/wey_k.mp3"
   },
   {
     "english": "laugh",
     "algonquian": "onsekanakan",
-    "pronunciation": "",
+    "pronunciation": "on-se-ka-na-kan",
     "source": "Strachey",
     "notes": "Expression of joy",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/onsekanakan.mp3"
   },
   {
     "english": "leaf",
     "algonquian": "nepinsh",
-    "pronunciation": "",
+    "pronunciation": "ne-pinsh",
     "source": "Strachey",
     "notes": "Tree part",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/nepinsh.mp3"
   },
   {
     "english": "leg",
     "algonquian": "mehcat",
-    "pronunciation": "",
+    "pronunciation": "meh-cat",
     "source": "Strachey",
     "notes": "Body limb",
-    "category": "Body Parts"
+    "category": "Body Parts",
+    "audio": "audio/mehcat.mp3"
   },
   {
     "english": "light",
-    "algonquian": "awepewh\u00f4tonwh",
-    "pronunciation": "",
+    "algonquian": "awepewhôtonwh",
+    "pronunciation": "a-we-pew-ho-tonwh",
     "source": "Strachey",
     "notes": "Illumination",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/awepewh_tonwh.mp3"
   },
   {
     "english": "lightning",
-    "algonquian": "keihqu\u00e2scussun",
-    "pronunciation": "",
+    "algonquian": "keihquâscussun",
+    "pronunciation": "keih-quas-cus-sun",
     "source": "Strachey",
     "notes": "Weather phenomenon",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/keihq_scussun.mp3"
   },
   {
     "english": "live",
     "algonquian": "keispeweyack",
-    "pronunciation": "",
+    "pronunciation": "keis-pe-we-yack",
     "source": "Strachey",
     "notes": "State of being alive",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/keispeweyack.mp3"
   },
   {
     "english": "love",
     "algonquian": "nounghe",
-    "pronunciation": "",
+    "pronunciation": "noung-he",
     "source": "Strachey",
     "notes": "Emotion of affection",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/nounghe.mp3"
   },
   {
     "english": "lynx",
-    "algonquian": "puss\u00f4cunn\u00fbah",
-    "pronunciation": "",
+    "algonquian": "pussôcunnûah",
+    "pronunciation": "pus-so-cun-nu-ah",
     "source": "Strachey",
     "notes": "Wild feline",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/puss_cunn_ah.mp3"
   },
   {
     "english": "man",
     "algonquian": "nemarough",
-    "pronunciation": "",
+    "pronunciation": "ne-ma-rough",
     "source": "Smith",
     "notes": "Adult male",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/nemarough.mp3"
   },
   {
     "english": "maple tree",
     "algonquian": "masescum",
-    "pronunciation": "",
+    "pronunciation": "ma-ses-cum",
     "source": "Strachey",
     "notes": "Tree species",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/masescum.mp3"
   },
   {
     "english": "meat",
     "algonquian": "weyaus",
-    "pronunciation": "",
+    "pronunciation": "we-yaus",
     "source": "Strachey",
     "notes": "Animal flesh for food",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/weyaus.mp3"
   },
   {
     "english": "medicine",
     "algonquian": "wisoccan",
-    "pronunciation": "",
+    "pronunciation": "wi-soc-can",
     "source": "Smith",
     "notes": "Healing substance",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/wisoccan.mp3"
+  },
+{
+    "english": "moon",
+    "algonquian": "nepausche",
+    "pronunciation": "ne-pau-sche",
+    "source": "Strachey",
+    "notes": "Night celestial body",
+    "category": "nature"
+    "audio": "audio/nepausche.mp3"
   },
   {
     "english": "morning",
     "algonquian": "papasowh",
-    "pronunciation": "",
+    "pronunciation": "pa-pa-sowh",
     "source": "Strachey",
     "notes": "Early day",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/papasowh.mp3"
   },
   {
     "english": "mother",
     "algonquian": "anna",
-    "pronunciation": "",
+    "pronunciation": "an-na",
     "source": "Smith",
     "notes": "Female parent",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/anna.mp3"
   },
   {
     "english": "mountain",
     "algonquian": "pomottawk",
-    "pronunciation": "",
+    "pronunciation": "po-mot-tawk",
     "source": "Strachey",
     "notes": "Large landform",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/pomottawk.mp3"
   },
   {
     "english": "mouth",
     "algonquian": "mettoone",
-    "pronunciation": "",
+    "pronunciation": "met-too-ne",
     "source": "Strachey",
     "notes": "Body opening for eating",
-    "category": "Body Parts"
+    "category": "Body Parts",
+    "audio": "audio/mettoone.mp3"
   },
   {
     "english": "name",
-    "algonquian": "y\u00eahaukan",
-    "pronunciation": "",
+    "algonquian": "yêhaukan",
+    "pronunciation": "ye-hau-kan",
     "source": "Strachey",
     "notes": "Personal identifier",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/y_haukan.mp3"
   },
   {
     "english": "neck",
     "algonquian": "memenchum",
-    "pronunciation": "",
+    "pronunciation": "me-men-chum",
     "source": "Strachey",
     "notes": "Body part",
-    "category": "Body Parts"
+    "category": "Body Parts",
+    "audio": "audio/memenchum.mp3"
   },
   {
     "english": "net",
-    "algonquian": "ahs\u00e2p",
-    "pronunciation": "",
+    "algonquian": "ahsâp",
+    "pronunciation": "ah-sap",
     "source": "Strachey",
     "notes": "Fishing tool",
-    "category": "Animals"
+    "category": "Animals",
+    "audio": "audio/ahs_p.mp3"
   },
   {
     "english": "night",
     "algonquian": "tapacoh",
-    "pronunciation": "",
+    "pronunciation": "ta-pa-coh",
     "source": "Strachey",
     "notes": "Dark time",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/tapacoh.mp3"
   },
   {
     "english": "nine",
     "algonquian": "kyketawe",
-    "pronunciation": "",
+    "pronunciation": "ky-ke-ta-we",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/kyketawe.mp3"
   },
   {
     "english": "nose",
-    "algonquian": "meschwip\u00eacat",
-    "pronunciation": "",
+    "algonquian": "meschwipêcat",
+    "pronunciation": "mesch-wi-pe-cat",
     "source": "Strachey",
     "notes": "Facial feature",
-    "category": "Body Parts"
+    "category": "Body Parts",
+    "audio": "audio/meschwip_cat.mp3"
   },
   {
     "english": "nut",
     "algonquian": "assinimmeis",
-    "pronunciation": "",
+    "pronunciation": "as-si-nim-meis",
     "source": "Strachey",
     "notes": "Tree seed",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/assinimmeis.mp3"
   },
   {
     "english": "oak tree",
     "algonquian": "mohomindge",
-    "pronunciation": "",
+    "pronunciation": "mo-ho-mind-ge",
     "source": "Strachey",
     "notes": "Tree species",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/mohomindge.mp3"
   },
   {
     "english": "opossum",
     "algonquian": "aposoum",
-    "pronunciation": "",
+    "pronunciation": "a-po-soum",
     "source": "Strachey",
     "notes": "Marsupial, source of \"opossum\" in English",
-    "category": "Animals"
+    "category": "Animals",
+    "audio": "audio/aposoum.mp3"
   },
   {
     "english": "otter",
-    "algonquian": "c\u00fbttaquinchem\u00e9ns",
-    "pronunciation": "",
+    "algonquian": "cûttaquincheméns",
+    "pronunciation": "cut-ta-quin-che-mens",
     "source": "Strachey",
     "notes": "Aquatic mammal",
-    "category": "Animals"
+    "category": "Animals",
+    "audio": "audio/c_ttaquinchem_ns.mp3"
   },
   {
     "english": "pain",
-    "algonquian": "amat\u00eawh",
-    "pronunciation": "",
+    "algonquian": "amatêwh",
+    "pronunciation": "a-ma-tewh",
     "source": "Strachey",
     "notes": "Physical discomfort",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/amat_wh.mp3"
   },
   {
     "english": "paint",
-    "algonquian": "uhcat\u00e9wh",
-    "pronunciation": "",
+    "algonquian": "uhcatéwh",
+    "pronunciation": "uh-ca-tewh",
     "source": "Strachey",
     "notes": "Coloring substance",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/uhcat_wh.mp3"
   },
   {
     "english": "path",
     "algonquian": "mehct",
-    "pronunciation": "",
+    "pronunciation": "mehct",
     "source": "Strachey",
     "notes": "Walking trail",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/mehct.mp3"
   },
   {
     "english": "peas",
     "algonquian": "assemmowghsemina",
-    "pronunciation": "",
+    "pronunciation": "as-sem-mowgh-se-mi-na",
     "source": "Strachey",
     "notes": "Small food item",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/assemmowghsemina.mp3"
   },
   {
     "english": "persimmon",
     "algonquian": "pessemmins",
-    "pronunciation": "",
+    "pronunciation": "pes-sem-mins",
     "source": "Strachey",
     "notes": "Fruit, source of \"persimmon\" in English",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/pessemmins.mp3"
   },
   {
     "english": "pine tree",
     "algonquian": "wnssapih",
-    "pronunciation": "",
+    "pronunciation": "wns-sa-pih",
     "source": "Strachey",
     "notes": "Evergreen tree",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/wnssapih.mp3"
   },
   {
     "english": "pipe",
     "algonquian": "apooke",
-    "pronunciation": "",
+    "pronunciation": "a-poo-ke",
     "source": "Strachey",
     "notes": "Smoking device",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/apooke.mp3"
   },
   {
     "english": "plant",
     "algonquian": "attass",
-    "pronunciation": "",
+    "pronunciation": "at-tass",
     "source": "Strachey",
     "notes": "Growing living thing",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/attass.mp3"
   },
   {
     "english": "play",
     "algonquian": "mamantobpassewh",
-    "pronunciation": "",
+    "pronunciation": "ma-man-tob-pas-sewh",
     "source": "Strachey",
     "notes": "Recreational activity",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/mamantobpassewh.mp3"
   },
   {
     "english": "pumpkin",
     "algonquian": "macocks",
-    "pronunciation": "",
+    "pronunciation": "ma-cocks",
     "source": "Strachey",
     "notes": "Large gourd",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/macocks.mp3"
   },
   {
     "english": "quail",
     "algonquian": "ohauhnoc",
-    "pronunciation": "",
+    "pronunciation": "o-hauh-noc",
     "source": "Strachey",
     "notes": "Small bird",
-    "category": "Animals"
+    "category": "Animals",
+    "audio": "audio/ohauhnoc.mp3"
   },
   {
     "english": "quick",
     "algonquian": "utcheiscummens",
-    "pronunciation": "",
+    "pronunciation": "ut-cheis-cum-mens",
     "source": "Strachey",
     "notes": "Fast movement",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/utcheiscummens.mp3"
   },
   {
     "english": "rabbit",
-    "algonquian": "w\u00eahsacat",
-    "pronunciation": "",
+    "algonquian": "wêhsacat",
+    "pronunciation": "weh-sa-cat",
     "source": "Strachey",
     "notes": "Small mammal",
-    "category": "Animals"
+    "category": "Animals",
+    "audio": "audio/w_hsacat.mp3"
   },
   {
     "english": "raccoon",
     "algonquian": "aroughcun",
-    "pronunciation": "",
+    "pronunciation": "a-rough-cun",
     "source": "Strachey",
     "notes": "Forest animal, source of \"raccoon\" in English",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/aroughcun.mp3"
   },
   {
     "english": "red",
     "algonquian": "nehessayew",
-    "pronunciation": "",
+    "pronunciation": "ne-hes-sa-yew",
     "source": "Strachey",
     "notes": "Color term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/nehessayew.mp3"
+  },
+{
+    "english": "rain",
+    "algonquian": "kemowan",
+    "pronunciation": "ke-mo-wan",
+    "source": "Strachey",
+    "notes": "Weather condition",
+    "category": "weather"
+    "audio": "audio/kemowan.mp3"
+  },
+{
+    "english": "river",
+    "algonquian": "seip",
+    "pronunciation": "seip",
+    "source": "Strachey",
+    "notes": "Flowing water body",
+    "category": "nature"
+    "audio": "audio/seip.mp3"
   },
   {
     "english": "rock",
     "algonquian": "othassik",
-    "pronunciation": "",
+    "pronunciation": "o-thas-sik",
     "source": "Strachey",
     "notes": "Stone",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/othassik.mp3"
   },
   {
     "english": "rope",
     "algonquian": "pemuntah",
-    "pronunciation": "",
+    "pronunciation": "pe-mun-tah",
     "source": "Strachey",
     "notes": "Binding material",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/pemuntah.mp3"
+  },
+{
+    "english": "run",
+    "algonquian": "pettecoagh",
+    "pronunciation": "pet-te-co-agh",
+    "source": "Strachey",
+    "notes": "Fast movement",
+    "category": "actions"
+    "audio": "audio/pettecoagh.mp3"
   },
   {
     "english": "salt",
     "algonquian": "sawwone",
-    "pronunciation": "",
+    "pronunciation": "saw-wo-ne",
     "source": "Strachey",
     "notes": "Seasoning mineral",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/sawwone.mp3"
   },
   {
     "english": "sand",
-    "algonquian": "aggonshet\u00f4ck",
-    "pronunciation": "",
+    "algonquian": "aggonshetôck",
+    "pronunciation": "ag-gon-she-tock",
     "source": "Strachey",
     "notes": "Fine earth material",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/aggonshet_ck.mp3"
   },
   {
     "english": "say",
     "algonquian": "iynough",
-    "pronunciation": "",
+    "pronunciation": "iy-nough",
     "source": "Smith",
     "notes": "Speak words",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/iynough.mp3"
   },
   {
     "english": "sea",
     "algonquian": "uttamamashaw",
-    "pronunciation": "",
+    "pronunciation": "ut-ta-ma-ma-shaw",
     "source": "Strachey",
     "notes": "Large body of water",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/uttamamashaw.mp3"
+  },
+{
+    "english": "see",
+    "algonquian": "nummêching",
+    "pronunciation": "num-me-ching",
+    "source": "Strachey",
+    "notes": "Visual perception",
+    "category": "actions"
+    "audio": "audio/numm_ching.mp3"
   },
   {
     "english": "seven",
     "algonquian": "toppawoss",
-    "pronunciation": "",
+    "pronunciation": "top-pa-woss",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/toppawoss.mp3"
   },
   {
     "english": "shirt",
     "algonquian": "aquewan",
-    "pronunciation": "",
+    "pronunciation": "a-que-wan",
     "source": "Strachey",
     "notes": "Upper body clothing",
-    "category": "Body Parts"
+    "category": "Body Parts",
+    "audio": "audio/aquewan.mp3"
   },
   {
     "english": "shoe",
     "algonquian": "mockasin",
-    "pronunciation": "",
+    "pronunciation": "mock-a-sin",
     "source": "Smith",
     "notes": "Foot covering, source of \"moccasin\" in English",
-    "category": "Body Parts"
+    "category": "Body Parts",
+    "audio": "audio/mockasin.mp3"
   },
   {
     "english": "sing",
-    "algonquian": "ottuw\u00e2igh",
-    "pronunciation": "",
+    "algonquian": "ottuwâigh",
+    "pronunciation": "ot-tu-waigh",
     "source": "Strachey",
     "notes": "Musical vocalization",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/ottuw_igh.mp3"
   },
   {
     "english": "sister",
     "algonquian": "nummisseshew",
-    "pronunciation": "",
+    "pronunciation": "num-mis-se-shew",
     "source": "Strachey",
     "notes": "Female sibling",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/nummisseshew.mp3"
   },
   {
     "english": "sit",
-    "algonquian": "mattutt\u00e2ish",
-    "pronunciation": "",
+    "algonquian": "mattuttâish",
+    "pronunciation": "mat-tut-taish",
     "source": "Strachey",
     "notes": "Resting position",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/mattutt_ish.mp3"
   },
   {
     "english": "six",
     "algonquian": "comotinch",
-    "pronunciation": "",
+    "pronunciation": "co-mo-tinch",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/comotinch.mp3"
   },
   {
     "english": "skin",
     "algonquian": "nahawnonack",
-    "pronunciation": "",
+    "pronunciation": "na-haw-no-nack",
     "source": "Strachey",
     "notes": "Body covering",
-    "category": "Body Parts"
+    "category": "Body Parts",
+    "audio": "audio/nahawnonack.mp3"
+  },
+{
+    "english": "sky",
+    "algonquian": "arrokoth",
+    "pronunciation": "ar-ro-koth",
+    "source": "Strachey",
+    "notes": "Upper atmosphere",
+    "category": "nature"
+    "audio": "audio/arrokoth.mp3"
+  },
+  {
+    "english": "sleep",
+    "algonquian": "asapan",
+    "pronunciation": "a-sa-pan",
+    "source": "Strachey",
+    "notes": "Rest state",
+    "category": "actions"
+    "audio": "audio/asapan.mp3" 
   },
   {
     "english": "small",
     "algonquian": "matasseyowh",
-    "pronunciation": "",
+    "pronunciation": "ma-tas-sey-owh",
     "source": "Strachey",
     "notes": "Size descriptor",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/matasseyowh.mp3"
   },
   {
     "english": "snake",
     "algonquian": "ascook",
-    "pronunciation": "",
+    "pronunciation": "as-cook",
     "source": "Strachey",
     "notes": "Reptile",
-    "category": "Animals"
+    "category": "Animals",
+    "audio": "audio/ascook.mp3"
   },
   {
     "english": "son",
@@ -1485,414 +1842,529 @@
     "pronunciation": "",
     "source": "Strachey",
     "notes": "Male offspring",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/neputtishow.mp3"
+  },
+{
+    "english": "snow",
+    "algonquian": "macatêwh",
+    "pronunciation": "ma-ca-tewh",
+    "source": "Strachey",
+    "notes": "Weather condition",
+    "category": "weather"
+    "audio": "audio/macat_wh.mp3"
+  },
+{
+    "english": "speak",
+    "algonquian": "kettorauog",
+    "pronunciation": "ket-to-rau-og",
+    "source": "Strachey",
+    "notes": "Verbal communication",
+    "category": "actions"
+    "audio": "audio/kettorauog.mp3" 
   },
   {
     "english": "squirrel",
     "algonquian": "mussanicka",
-    "pronunciation": "",
+    "pronunciation": "mus-sa-nic-ka",
     "source": "Strachey",
     "notes": "Small tree animal",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/mussanicka.mp3"
   },
   {
     "english": "stick",
     "algonquian": "mehtugkquash",
-    "pronunciation": "",
+    "pronunciation": "meh-tugk-quash",
     "source": "Strachey",
     "notes": "Wooden piece",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/mehtugkquash.mp3"
+  },
+{
+    "english": "star",
+    "algonquian": "punnahe",
+    "pronunciation": "pun-na-he",
+    "source": "Strachey",
+    "notes": "Night sky object",
+    "category": "nature"
+    "audio": "audio/punnahe.mp3"
   },
   {
     "english": "stone",
     "algonquian": "assoone",
-    "pronunciation": "",
+    "pronunciation": "as-soo-ne",
     "source": "Strachey",
     "notes": "Hard earth material",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/assoone.mp3"
   },
   {
     "english": "strawberry",
     "algonquian": "wichasakon",
-    "pronunciation": "",
+    "pronunciation": "wi-cha-sa-kon",
     "source": "Strachey",
     "notes": "Red berry",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/wichasakon.mp3"
   },
   {
     "english": "strong",
-    "algonquian": "weesecann\u00f4t",
-    "pronunciation": "",
+    "algonquian": "weesecannôt",
+    "pronunciation": "wee-se-can-not",
     "source": "Strachey",
     "notes": "Physical power",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/weesecann_t.mp3"
   },
   {
     "english": "summer",
     "algonquian": "cawqwaih",
-    "pronunciation": "",
+    "pronunciation": "caw-qwaih",
     "source": "Strachey",
     "notes": "Warm season",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/cawqwaih.mp3"
+  },
+{
+    "english": "sun",
+    "algonquian": "keshowaugh",
+    "pronunciation": "ke-sho-waugh",
+    "source": "Strachey",
+    "notes": "Day celestial body",
+    "category": "nature"
+    "audio": "audio/keshowaugh.mp3"
   },
   {
     "english": "sweet",
-    "algonquian": "w\u00eengan",
-    "pronunciation": "",
+    "algonquian": "wîngan",
+    "pronunciation": "win-gan",
     "source": "Strachey",
     "notes": "Pleasant taste",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/w_ngan.mp3"
   },
   {
     "english": "swim",
     "algonquian": "tusshakehawh",
-    "pronunciation": "",
+    "pronunciation": "tus-sha-ke-hawh",
     "source": "Strachey",
     "notes": "Water movement",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/tusshakehawh.mp3"
   },
   {
     "english": "take",
     "algonquian": "necassunnamen",
-    "pronunciation": "",
+    "pronunciation": "ne-cas-sun-na-men",
     "source": "Strachey",
     "notes": "Acquire action",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/necassunnamen.mp3"
   },
   {
     "english": "talk",
-    "algonquian": "yek\u00fbth",
-    "pronunciation": "",
+    "algonquian": "yekûth",
+    "pronunciation": "ye-kuth",
     "source": "Strachey",
     "notes": "Communication",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/yek_th.mp3"
   },
   {
     "english": "teeth",
-    "algonquian": "neputtet\u00e2ssuacans",
-    "pronunciation": "",
+    "algonquian": "neputtetâssuacans",
+    "pronunciation": "ne-put-te-tas-sua-cans",
     "source": "Strachey",
     "notes": "Mouth parts",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/neputtet_ssuacans.mp3"
   },
   {
     "english": "ten",
-    "algonquian": "cassacom\u00eah",
-    "pronunciation": "",
+    "algonquian": "cassacomêh",
+    "pronunciation": "cas-sa-co-meh",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/cassacom_h.mp3"
   },
   {
     "english": "thank you",
     "algonquian": "wingapo",
-    "pronunciation": "",
+    "pronunciation": "win-ga-po",
     "source": "Smith",
     "notes": "Expression of gratitude",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/wingapo.mp3"
   },
   {
     "english": "that",
     "algonquian": "nawwot",
-    "pronunciation": "",
+    "pronunciation": "naw-wot",
     "source": "Strachey",
     "notes": "Demonstrative",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/nawwot.mp3"
   },
   {
     "english": "there",
     "algonquian": "neuttah",
-    "pronunciation": "",
+    "pronunciation": "neut-tah",
     "source": "Strachey",
     "notes": "Location indicator",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/neuttah.mp3"
   },
   {
     "english": "they",
-    "algonquian": "y\u00eawogh",
-    "pronunciation": "",
+    "algonquian": "yêwogh",
+    "pronunciation": "ye-wogh",
     "source": "Strachey",
     "notes": "Third person plural",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/y_wogh.mp3"
   },
   {
     "english": "thigh",
     "algonquian": "mehcowewen",
-    "pronunciation": "",
+    "pronunciation": "meh-co-we-wen",
     "source": "Strachey",
     "notes": "Upper leg",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/mehcowewen.mp3"
   },
   {
     "english": "think",
-    "algonquian": "neteb\u00f4wh",
-    "pronunciation": "",
+    "algonquian": "netebôwh",
+    "pronunciation": "ne-te-bowh",
     "source": "Strachey",
     "notes": "Mental activity",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/neteb_wh.mp3"
   },
   {
     "english": "thirsty",
     "algonquian": "unquanshowaih",
-    "pronunciation": "",
+    "pronunciation": "un-quan-sho-waih",
     "source": "Strachey",
     "notes": "Need for water",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/unquanshowaih.mp3"
   },
   {
     "english": "three",
     "algonquian": "nuss",
-    "pronunciation": "",
+    "pronunciation": "nuss",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/nuss.mp3"
   },
   {
     "english": "throw",
-    "algonquian": "uppoc\u00fatamun",
-    "pronunciation": "",
+    "algonquian": "uppocútamun",
+    "pronunciation": "up-po-cu-ta-mun",
     "source": "Strachey",
     "notes": "Projecting action",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/uppoc_tamun.mp3"
   },
   {
     "english": "thunder",
-    "algonquian": "kawm\u00eatowh",
-    "pronunciation": "",
+    "algonquian": "kawmêtowh",
+    "pronunciation": "kaw-me-towh",
     "source": "Strachey",
     "notes": "Storm sound",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/kawm_towh.mp3"
   },
   {
     "english": "today",
     "algonquian": "yuhatquitschumumossum",
-    "pronunciation": "",
+    "pronunciation": "yu-hat-quit-schu-mu-mos-sum",
     "source": "Strachey",
     "notes": "Present time",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/yuhatquitschumumossum.mp3"
   },
   {
     "english": "tomorrow",
-    "algonquian": "yraph\u00ea",
-    "pronunciation": "",
+    "algonquian": "yraphê",
+    "pronunciation": "y-ra-phe",
     "source": "Strachey",
     "notes": "Future time",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/yraph_.mp3"
   },
   {
     "english": "tongue",
     "algonquian": "metetsheew",
-    "pronunciation": "",
+    "pronunciation": "me-tet-sheew",
     "source": "Strachey",
     "notes": "Mouth organ",
-    "category": "Body Parts"
+    "category": "Body Parts",
+    "audio": "audio/metetsheew.mp3"
   },
   {
     "english": "tooth",
-    "algonquian": "nepet\u00e2ssuac",
-    "pronunciation": "",
+    "algonquian": "nepetâssuac",
+    "pronunciation": "ne-pe-tas-suac",
     "source": "Strachey",
     "notes": "Mouth part",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/nepet_ssuac.mp3"
+  },
+{
+    "english": "tree",
+    "algonquian": "mahtask",
+    "pronunciation": "mah-task",
+    "source": "Strachey",
+    "notes": "Woody plant",
+    "category": "plants"
+    "audio": "mahtask.mp3"
   },
   {
     "english": "turkey",
     "algonquian": "monanaw",
-    "pronunciation": "",
+    "pronunciation": "mo-na-naw",
     "source": "Strachey",
     "notes": "Large bird",
-    "category": "Animals"
+    "category": "Animals",
+    "audio": "audio/monanaw.mp3"
   },
   {
     "english": "turtle",
-    "algonquian": "com\u00f4toah",
-    "pronunciation": "",
+    "algonquian": "comôtoah",
+    "pronunciation": "co-mo-to-ah",
     "source": "Strachey",
     "notes": "Shelled reptile",
-    "category": "Animals"
+    "category": "Animals",
+    "audio": "audio/com_toah.mp3"
   },
   {
     "english": "twenty",
-    "algonquian": "ningecuttaughwunshquenek\u00e2ttough",
-    "pronunciation": "",
+    "algonquian": "ningecuttaughwunshquenekâttough",
+    "pronunciation": "nin-ge-cut-taugh-wunsh-que-ne-kat-tough",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/ningecuttaughwunshquenek_ttough.mp3"
   },
   {
     "english": "two",
     "algonquian": "ningh",
-    "pronunciation": "",
+    "pronunciation": "ningh",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/ningh.mp3"
   },
   {
     "english": "ugly",
-    "algonquian": "mumsay\u00eawh",
-    "pronunciation": "",
+    "algonquian": "mumsayêwh",
+    "pronunciation": "mum-say-ewh",
     "source": "Strachey",
     "notes": "Unattractive",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/mumsay_wh.mp3"
   },
   {
     "english": "village",
-    "algonquian": "mang\u00f4it",
-    "pronunciation": "",
+    "algonquian": "mangôit",
+    "pronunciation": "man-goit",
     "source": "Strachey",
     "notes": "Settlement",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/mang_it.mp3"
+  },
+{
+    "english": "walk",
+    "algonquian": "pomiteyouqh",
+    "pronunciation": "po-mi-te-youqh",
+    "source": "Strachey",
+    "notes": "Movement on foot",
+    "category": "actions"
+    "audio": "audio/pomiteyough.mp3"
   },
   {
     "english": "war",
     "algonquian": "mowhchick",
-    "pronunciation": "",
+    "pronunciation": "mowh-chick",
     "source": "Strachey",
     "notes": "Armed conflict",
-    "category": "Actions"
+    "category": "Actions",
+    "audio": "audio/mowhchick.mp3"
   },
   {
     "english": "warm",
-    "algonquian": "ap\u00f4tekeyqwoh",
-    "pronunciation": "",
+    "algonquian": "apôtekeyqwoh",
+    "pronunciation": "a-po-te-key-qwoh",
     "source": "Strachey",
     "notes": "Comfortable temperature",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/ap_tekeyqwoh.mp3"
   },
   {
     "english": "warrior",
     "algonquian": "nemarough",
-    "pronunciation": "",
+    "pronunciation": "ne-ma-rough",
     "source": "Strachey",
     "notes": "Fighting man",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/nemarough.mp3"
+  },
+{
+    "english": "water",
+    "algonquian": "sucquehanna",
+    "pronunciation": "suc-que-han-na",
+    "source": "Smith",
+    "notes": "Liquid for drinking",
+    "category": "basic"
+    "audio": "audio/sucquehanna.mp3"
   },
   {
     "english": "weak",
     "algonquian": "kequassinum",
-    "pronunciation": "",
+    "pronunciation": "ke-quas-si-num",
     "source": "Strachey",
     "notes": "Lacking strength",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/kequassinum.mp3"
   },
   {
     "english": "weep",
     "algonquian": "namountamen",
-    "pronunciation": "",
+    "pronunciation": "na-moun-ta-men",
     "source": "Strachey",
     "notes": "Crying",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/namountamen.mp3"
   },
   {
     "english": "west",
     "algonquian": "uttesheskayough",
-    "pronunciation": "",
+    "pronunciation": "ut-te-shes-ka-yough",
     "source": "Strachey",
     "notes": "Directional",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/uttesheskayough.mp3"
   },
   {
     "english": "whale",
     "algonquian": "potewallonsheeah",
-    "pronunciation": "",
+    "pronunciation": "po-te-wal-lon-shee-ah",
     "source": "Strachey",
     "notes": "Large sea mammal",
-    "category": "Animals"
+    "category": "Animals",
+    "audio": "audio/potewallonsheeah.mp3"
   },
   {
     "english": "what",
     "algonquian": "kekoy",
-    "pronunciation": "",
+    "pronunciation": "ke-koy",
     "source": "Smith",
     "notes": "Question word",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/kekoy.mp3"
   },
   {
     "english": "white",
     "algonquian": "wompsipim",
-    "pronunciation": "",
+    "pronunciation": "womp-si-pim",
     "source": "Strachey",
     "notes": "Color term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/wompsipim.mp3"
   },
   {
     "english": "wife",
     "algonquian": "niourough",
-    "pronunciation": "",
+    "pronunciation": "niou-rough",
     "source": "Smith",
     "notes": "Female spouse",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/niourough.mp3"
   },
   {
     "english": "wind",
     "algonquian": "pahquiwh",
-    "pronunciation": "",
+    "pronunciation": "pah-quiwh",
     "source": "Strachey",
     "notes": "Moving air",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/pahquiwh.mp3"
   },
   {
     "english": "winter",
     "algonquian": "popanow",
-    "pronunciation": "",
+    "pronunciation": "po-pa-now",
     "source": "Strachey",
     "notes": "Cold season",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/popanow.mp3"
   },
   {
     "english": "wolf",
     "algonquian": "naantam",
-    "pronunciation": "",
+    "pronunciation": "naan-tam",
     "source": "Strachey",
     "notes": "Predator animal",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/naantam.mp3"
   },
   {
     "english": "woman",
     "algonquian": "cusses",
-    "pronunciation": "",
+    "pronunciation": "cus-ses",
     "source": "Smith",
     "notes": "Adult female",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/cusses.mp3"
   },
   {
     "english": "wood",
     "algonquian": "apook",
-    "pronunciation": "",
+    "pronunciation": "a-pook",
     "source": "Strachey",
     "notes": "Material from trees",
-    "category": "Nature"
+    "category": "Nature",
+    "audio": "audio/apook.mp3"
   },
   {
     "english": "year",
-    "algonquian": "pop\u00e2pow",
-    "pronunciation": "",
+    "algonquian": "popâpow",
+    "pronunciation": "po-pa-pow",
     "source": "Strachey",
     "notes": "Time measure",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/pop_pow.mp3"
   },
   {
     "english": "yellow",
     "algonquian": "wussawhu",
-    "pronunciation": "",
+    "pronunciation": "wus-saw-hu",
     "source": "Strachey",
     "notes": "Color term",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/wussawhu.mp3"
   },
   {
     "english": "yesterday",
-    "algonquian": "ousk\u00eao",
-    "pronunciation": "",
+    "algonquian": "ouskêo",
+    "pronunciation": "ous-ke-o",
     "source": "Strachey",
     "notes": "Past time",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/ousk_o.mp3"
   },
   {
     "english": "you",
-    "algonquian": "k\u00eamatah",
-    "pronunciation": "",
+    "algonquian": "kêmatah",
+    "pronunciation": "ke-ma-tah",
     "source": "Strachey",
     "notes": "Second person",
-    "category": "Basic Terms"
+    "category": "Basic Terms",
+    "audio": "audio/k_matah.mp3"
   }
 ]
