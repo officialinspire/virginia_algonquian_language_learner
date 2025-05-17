@@ -7,6 +7,72 @@
   <link rel="stylesheet" href="styles.css">
   <!-- Prevent CORS issues with favicon -->
   <link rel="icon" href="data:,">
+  <style>
+    /* Emoji hint styles */
+    .emoji-hint {
+      font-size: 2.2rem;
+      margin: 10px 0;
+      text-align: center;
+      min-height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Adjust card spacing to accommodate emoji hints */
+    .card-front .word {
+      margin-bottom: 5px;
+    }
+
+    .card-front .definition {
+      margin-top: 5px;
+    }
+
+    .card-back .word,
+    .card-back .pronunciation {
+      margin-bottom: 5px;
+    }
+
+    .card-back .source,
+    .card-back .notes {
+      margin-top: 5px;
+    }
+
+    /* Mobile optimizations */
+    @media (max-width: 768px) {
+      .emoji-hint {
+        font-size: 1.8rem;
+        margin: 5px 0;
+        min-height: 30px;
+      }
+
+      .card-front .word, 
+      .card-back .word {
+        font-size: 1.4rem;
+      }
+
+      .card-front .definition {
+        font-size: 0.9rem;
+      }
+
+      .card-back .pronunciation {
+        font-size: 1.1rem;
+      }
+
+      .audio-control {
+        margin-top: 5px;
+      }
+
+      .controls {
+        flex-wrap: wrap;
+      }
+
+      .control-button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,14 +80,14 @@
     <p class="intro">Explore and learn Virginia Algonquian (Powhatan), the indigenous language of Tsenacommacah - modern-day eastern Virginia. Use the flashcards below to practice vocabulary.</p>
     
     <div class="header-nav">
-  <a href="index.html" class="header-link">Learning Interface</a>
-  <a href="about.html" class="header-link">About Project</a>
-  <a href="phonetic-grammar-rules.html" class="header-link">Phonetic & Grammar Rules</a>
-  <a href="grammar.html" class="header-link">Grammar Guide</a>
-  <a href="modern-vocab.html" class="header-link">Modern Vocabulary</a>
-  <a href="vocab-list.html" class="header-link">Complete Vocab List</a>
-  <a href="comparative-lexicon.html" class="header-link">Comparative Lexicon</a>
-</div>
+      <a href="index.html" class="header-link">Learning Interface</a>
+      <a href="about.html" class="header-link">About Project</a>
+      <a href="phonetic-grammar-rules.html" class="header-link">Phonetic & Grammar Rules</a>
+      <a href="grammar.html" class="header-link">Grammar Guide</a>
+      <a href="modern-vocab.html" class="header-link">Modern Vocabulary</a>
+      <a href="vocab-list.html" class="header-link">Complete Vocab List</a>
+      <a href="comparative-lexicon.html" class="header-link">Comparative Lexicon</a>
+    </div>
   </header>
   
   <div class="container">
@@ -57,6 +123,8 @@
         <div class="card-front">
           <div class="symbol symbol-1"></div>
           <div class="word" id="english-word">Loading...</div>
+          <!-- Added emoji hint to front card -->
+          <div class="emoji-hint" id="emoji-hint-front"></div>
           <div class="definition">Click to reveal the Virginia Algonquian translation</div>
           <div class="symbol symbol-2"></div>
         </div>
@@ -64,17 +132,19 @@
           <div class="symbol symbol-1"></div>
           <div class="word" id="algonquian-word"></div>
           <div class="pronunciation" id="pronunciation"></div>
+          <!-- Added emoji hint to back card -->
+          <div class="emoji-hint" id="emoji-hint-back"></div>
           <div class="source" id="source"></div>
           <div class="notes" id="notes"></div>
           <div class="symbol symbol-2"></div>
           <div class="audio-control">
-  <button id="play-audio-btn" class="audio-button">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <polygon points="5 3 19 12 5 21 5 3"></polygon>
-    </svg>
-    Play
-  </button>
-</div>
+            <button id="play-audio-btn" class="audio-button">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Play
+            </button>
+          </div>
         </div>
       </div>
     </div>
