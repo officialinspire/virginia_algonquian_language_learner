@@ -6,7 +6,108 @@
     "source": "Strachey",
     "notes": "Element, used ritually",
     "category": "basic",
-    "audio": "audio/pohkhan.mp3"
+    "audio": "audio/pohkhan.mp3",
+    "emojiHint": "🔥"
+  },
+  {
+    "english": "wife",
+    "algonquian": "niourough",
+    "pronunciation": "niou-rough",
+    "source": "Smith",
+    "notes": "Female spouse",
+    "category": "family",
+    "audio": "audio/niourough.mp3",
+    "emojiHint": "👰‍♀️"
+  },
+  {
+    "english": "wind",
+    "algonquian": "pahquiwh",
+    "pronunciation": "pah-quiwh",
+    "source": "Strachey",
+    "notes": "Moving air",
+    "category": "weather",
+    "audio": "audio/pahquiwh.mp3",
+    "emojiHint": "💨"
+  },
+  {
+    "english": "winter",
+    "algonquian": "popanow",
+    "pronunciation": "po-pa-now",
+    "source": "Strachey",
+    "notes": "Cold season",
+    "category": "time",
+    "audio": "audio/popanow.mp3",
+    "emojiHint": "❄️"
+  },
+  {
+    "english": "wolf",
+    "algonquian": "naantam",
+    "pronunciation": "naan-tam",
+    "source": "Strachey",
+    "notes": "Predator animal",
+    "category": "animals",
+    "audio": "audio/naantam.mp3",
+    "emojiHint": "🐺"
+  },
+  {
+    "english": "woman",
+    "algonquian": "cusses",
+    "pronunciation": "cus-ses",
+    "source": "Smith",
+    "notes": "Adult female",
+    "category": "basic",
+    "audio": "audio/cusses.mp3",
+    "emojiHint": "👩"
+  },
+  {
+    "english": "wood",
+    "algonquian": "apook",
+    "pronunciation": "a-pook",
+    "source": "Strachey",
+    "notes": "Material from trees",
+    "category": "nature",
+    "audio": "audio/apook.mp3",
+    "emojiHint": "🪵"
+  },
+  {
+    "english": "year",
+    "algonquian": "popâpow",
+    "pronunciation": "po-pa-pow",
+    "source": "Strachey",
+    "notes": "Time measure",
+    "category": "time",
+    "audio": "audio/pop_pow.mp3",
+    "emojiHint": "📅"
+  },
+  {
+    "english": "yellow",
+    "algonquian": "wussawhu",
+    "pronunciation": "wus-saw-hu",
+    "source": "Strachey",
+    "notes": "Color term",
+    "category": "colors",
+    "audio": "audio/wussawhu.mp3",
+    "emojiHint": "🟡"
+  },
+  {
+    "english": "yesterday",
+    "algonquian": "ouskêo",
+    "pronunciation": "ous-ke-o",
+    "source": "Strachey",
+    "notes": "Past time",
+    "category": "time",
+    "audio": "audio/ousk_o.mp3",
+    "emojiHint": "⏪"
+  },
+  {
+    "english": "you",
+    "algonquian": "kêmatah",
+    "pronunciation": "ke-ma-tah",
+    "source": "Strachey",
+    "notes": "Second person",
+    "category": "basic",
+    "audio": "audio/k_matah.mp3",
+    "emojiHint": "👉"
   },
   {
     "english": "water",
@@ -15,7 +116,8 @@
     "source": "Smith",
     "notes": "Liquid for drinking",
     "category": "basic",
-    "audio": "audio/sucquehanna.mp3"
+    "audio": "audio/sucquehanna.mp3",
+    "emojiHint": "💧"
   },
   {
     "english": "bread",
@@ -24,7 +126,8 @@
     "source": "Strachey",
     "notes": "Food staple, cf. Lenape \"apan\"",
     "category": "basic",
-    "audio": "audio/appoans.mp3"
+    "audio": "audio/appoans.mp3",
+    "emojiHint": "🍞"
   },
   {
     "english": "deer",
@@ -33,7 +136,8 @@
     "source": "Smith",
     "notes": "Forest animal, important for food",
     "category": "animals",
-    "audio": "audio/attecenna.mp3"
+    "audio": "audio/attecenna.mp3",
+    "emojiHint": "🦌"
   },
   {
     "english": "bear",
@@ -42,7 +146,8 @@
     "source": "Strachey",
     "notes": "Forest animal with cultural significance",
     "category": "animals",
-    "audio": "audio/monacock.mp3"
+    "audio": "audio/monacock.mp3",
+    "emojiHint": "🐻"
   },
   {
     "english": "bird",
@@ -51,7 +156,8 @@
     "source": "Strachey",
     "notes": "General term for winged creatures",
     "category": "animals",
-    "audio": "audio/chehip.mp3"
+    "audio": "audio/chehip.mp3",
+    "emojiHint": "🐦"
   },
   {
     "english": "sun",
@@ -60,7 +166,8 @@
     "source": "Strachey",
     "notes": "Day celestial body",
     "category": "nature",
-    "audio": "audio/keshowaugh.mp3"
+    "audio": "audio/keshowaugh.mp3",
+    "emojiHint": "☀️"
   },
   {
     "english": "moon",
@@ -69,7 +176,8 @@
     "source": "Strachey",
     "notes": "Night celestial body",
     "category": "nature",
-    "audio": "audio/nepausche.mp3"
+    "audio": "audio/nepausche.mp3",
+    "emojiHint": "🌙"
   },
   {
     "english": "star",
@@ -78,7 +186,8 @@
     "source": "Strachey",
     "notes": "Night sky object",
     "category": "nature",
-    "audio": "audio/punnahe.mp3"
+    "audio": "audio/punnahe.mp3",
+    "emojiHint": "⭐"
   },
   {
     "english": "river",
@@ -87,7 +196,8 @@
     "source": "Strachey",
     "notes": "Flowing water body",
     "category": "nature",
-    "audio": "audio/seip.mp3"
+    "audio": "audio/seip.mp3",
+    "emojiHint": "🏞️"
   },
   {
     "english": "earth",
@@ -96,7 +206,8 @@
     "source": "Strachey",
     "notes": "Ground, soil, world",
     "category": "nature",
-    "audio": "audio/ohke.mp3"
+    "audio": "audio/ohke.mp3",
+    "emojiHint": "🌎"
   },
   {
     "english": "hand",
@@ -105,7 +216,8 @@
     "source": "Strachey",
     "notes": "Body part",
     "category": "body",
-    "audio": "audio/m_heock.mp3"
+    "audio": "audio/m_heock.mp3",
+    "emojiHint": "👋"
   },
   {
     "english": "head",
@@ -114,7 +226,8 @@
     "source": "Strachey",
     "notes": "Upper body part",
     "category": "body",
-    "audio": "audio/m_ttock.mp3"
+    "audio": "audio/m_ttock.mp3",
+    "emojiHint": "👤"
   },
   {
     "english": "eye",
@@ -123,7 +236,8 @@
     "source": "Strachey",
     "notes": "Visual organ",
     "category": "body",
-    "audio": "audio/mesettink.mp3"
+    "audio": "audio/mesettink.mp3",
+    "emojiHint": "👁️"
   },
   {
     "english": "eat",
@@ -132,7 +246,8 @@
     "source": "Strachey",
     "notes": "Consume food",
     "category": "actions",
-    "audio": "audio/mecitch_h.mp3"
+    "audio": "audio/mecitch_h.mp3",
+    "emojiHint": "🍽️"
   },
   {
     "english": "speak",
@@ -141,7 +256,8 @@
     "source": "Strachey",
     "notes": "Verbal communication",
     "category": "actions",
-    "audio": "audio/kettorauog.mp3"
+    "audio": "audio/kettorauog.mp3",
+    "emojiHint": "💬"
   },
   {
     "english": "walk",
@@ -150,7 +266,8 @@
     "source": "Strachey",
     "notes": "Movement on foot",
     "category": "actions",
-    "audio": "audio/pomiteyouqh.mp3"
+    "audio": "audio/pomiteyouqh.mp3",
+    "emojiHint": "🚶"
   },
   {
     "english": "sleep",
@@ -159,7 +276,8 @@
     "source": "Strachey",
     "notes": "Rest state",
     "category": "actions",
-    "audio": "audio/asapan.mp3"
+    "audio": "audio/asapan.mp3",
+    "emojiHint": "😴"
   },
   {
     "english": "good",
@@ -168,7 +286,8 @@
     "source": "Smith",
     "notes": "Positive evaluation",
     "category": "basic",
-    "audio": "audio/winger.mp3"
+    "audio": "audio/winger.mp3",
+    "emojiHint": "👍"
   },
   {
     "english": "bad",
@@ -177,7 +296,8 @@
     "source": "Strachey",
     "notes": "Evaluative term, cf. Lenape \"matit\"",
     "category": "basic",
-    "audio": "audio/matit.mp3"
+    "audio": "audio/matit.mp3",
+    "emojiHint": "👎"
   },
   {
     "english": "friend",
@@ -185,8 +305,9 @@
     "pronunciation": "ne-tap",
     "source": "Smith",
     "notes": "Friendly person",
-    "category": "basic",
-    "audio": "audio/netap.mp3"
+    "category": "social",
+    "audio": "audio/netap.mp3",
+    "emojiHint": "🤝"
   },
   {
     "english": "family",
@@ -195,7 +316,8 @@
     "source": "Strachey",
     "notes": "Related to 'relative' or 'kin'",
     "category": "basic",
-    "audio": ""
+    "audio": "",
+    "emojiHint": "👨‍👩‍👧‍👦"
   },
   {
     "english": "fish",
@@ -204,7 +326,8 @@
     "source": "Strachey",
     "notes": "Aquatic animal",
     "category": "animals",
-    "audio": "audio/nameeth.mp3"
+    "audio": "audio/nameeth.mp3",
+    "emojiHint": "🐟"
   },
   {
     "english": "dog",
@@ -213,7 +336,8 @@
     "source": "Strachey",
     "notes": "Domesticated animal",
     "category": "animals",
-    "audio": "audio/attum.mp3"
+    "audio": "audio/attum.mp3",
+    "emojiHint": "🐕"
   },
   {
     "english": "tree",
@@ -222,7 +346,8 @@
     "source": "Strachey",
     "notes": "Woody plant",
     "category": "nature",
-    "audio": "audio/mahtask.mp3"
+    "audio": "audio/mahtask.mp3",
+    "emojiHint": "🌳"
   },
   {
     "english": "sky",
@@ -231,7 +356,8 @@
     "source": "Strachey",
     "notes": "Upper atmosphere",
     "category": "nature",
-    "audio": "audio/arrokoth.mp3"
+    "audio": "audio/arrokoth.mp3",
+    "emojiHint": "🌤️"
   },
   {
     "english": "rain",
@@ -239,8 +365,9 @@
     "pronunciation": "ke-mo-wan",
     "source": "Strachey",
     "notes": "Weather condition",
-    "category": "nature",
-    "audio": "audio/kemowan.mp3"
+    "category": "weather",
+    "audio": "audio/kemowan.mp3",
+    "emojiHint": "🌧️"
   },
   {
     "english": "snow",
@@ -248,8 +375,9 @@
     "pronunciation": "ma-ca-tewh",
     "source": "Strachey",
     "notes": "Weather condition",
-    "category": "nature",
-    "audio": "audio/macat_wh.mp3"
+    "category": "weather",
+    "audio": "audio/macat_wh.mp3",
+    "emojiHint": "❄️"
   },
   {
     "english": "heart",
@@ -258,7 +386,8 @@
     "source": "Strachey",
     "notes": "Internal organ",
     "category": "body",
-    "audio": "audio/ottehocannough.mp3"
+    "audio": "audio/ottehocannough.mp3",
+    "emojiHint": "❤️"
   },
   {
     "english": "foot",
@@ -267,7 +396,8 @@
     "source": "Strachey",
     "notes": "Body part for walking",
     "category": "body",
-    "audio": "audio/mysetts.mp3"
+    "audio": "audio/mysetts.mp3",
+    "emojiHint": "👣"
   },
   {
     "english": "hair",
@@ -276,7 +406,8 @@
     "source": "Strachey",
     "notes": "Body covering",
     "category": "body",
-    "audio": "audio/mehtaantequas.mp3"
+    "audio": "audio/mehtaantequas.mp3",
+    "emojiHint": "💇‍♀️"
   },
   {
     "english": "run",
@@ -285,7 +416,8 @@
     "source": "Strachey",
     "notes": "Fast movement",
     "category": "actions",
-    "audio": "audio/pettecoagh.mp3"
+    "audio": "audio/pettecoagh.mp3",
+    "emojiHint": "🏃"
   },
   {
     "english": "see",
@@ -294,7 +426,8 @@
     "source": "Strachey",
     "notes": "Visual perception",
     "category": "actions",
-    "audio": "audio/numm_ching.mp3"
+    "audio": "audio/numm_ching.mp3",
+    "emojiHint": "👀"
   },
   {
     "english": "hunt",
@@ -303,7 +436,8 @@
     "source": "Strachey",
     "notes": "Food gathering activity",
     "category": "actions",
-    "audio": "audio/nattewowan.mp3"
+    "audio": "audio/nattewowan.mp3",
+    "emojiHint": "🏹 + 🦌"
   },
   {
     "english": "canoe",
@@ -311,8 +445,9 @@
     "pronunciation": "a-quin-tan",
     "source": "Smith",
     "notes": "Small watercraft, related to Delaware \"akwena\"",
-    "category": "basic",
-    "audio": "audio/aquintan.mp3"
+    "category": "objects",
+    "audio": "audio/aquintan.mp3",
+    "emojiHint": "🛶"
   },
   {
     "english": "tobacco",
@@ -321,16 +456,8 @@
     "source": "Smith",
     "notes": "Important ceremonial plant",
     "category": "nature",
-    "audio": ""
-  },
-  {
-    "english": "this document represents a compilation of known virginia algonquian (powhatan) vocabulary from historical sources, primarily william strachey's vocabulary (1610-1611) and captain john smith's word list (1607-1609). the format follows the structure: english",
-    "algonquian": "Powhatan",
-    "pronunciation": "",
-    "source": "Source",
-    "notes": "Notes.",
-    "category": "Basic Terms",
-    "audio": ""
+    "audio": "",
+    "emojiHint": "🌱 + 💨"
   },
   {
     "english": "acorn",
@@ -338,8 +465,9 @@
     "pronunciation": "ah-coh-tow-vun",
     "source": "Strachey",
     "notes": "Related to Proto-Algonquian *axatehimin",
-    "category": "Basic Terms",
-    "audio": "audio/ahc_towvun.mp3"
+    "category": "plants",
+    "audio": "audio/ahc_towvun.mp3",
+    "emojiHint": "🌰"
   },
   {
     "english": "alder tree",
@@ -347,8 +475,9 @@
     "pronunciation": "oo-ma-nee-ens",
     "source": "Strachey",
     "notes": "Tree species",
-    "category": "Nature",
-    "audio": "audio/oumaniens.mp3"
+    "category": "plants",
+    "audio": "audio/oumaniens.mp3",
+    "emojiHint": "🌲"
   },
   {
     "english": "alive",
@@ -356,8 +485,9 @@
     "pronunciation": "a-pe-ing",
     "source": "Strachey",
     "notes": "State of being",
-    "category": "Basic Terms",
-    "audio": "audio/apeing.mp3"
+    "category": "basic",
+    "audio": "audio/apeing.mp3",
+    "emojiHint": "✨"
   },
   {
     "english": "arrow",
@@ -365,8 +495,9 @@
     "pronunciation": "at-ton-ce, a-sha-ham",
     "source": "Strachey, Smith",
     "notes": "Weaponry item",
-    "category": "Basic Terms",
-    "audio": "audio/attonce.mp3"
+    "category": "objects",
+    "audio": "audio/attonce.mp3",
+    "emojiHint": "🏹"
   },
   {
     "english": "autumn",
@@ -374,8 +505,9 @@
     "pronunciation": "",
     "source": "Strachey",
     "notes": "Season",
-    "category": "Nature",
-    "audio": "audio/taquitock.mp3"
+    "category": "nature",
+    "audio": "audio/taquitock.mp3",
+    "emojiHint": "🍂"
   },
   {
     "english": "baby",
@@ -383,8 +515,9 @@
     "pronunciation": "neck-a-maish",
     "source": "Strachey",
     "notes": "Young child",
-    "category": "Basic Terms",
-    "audio": "audio/neckamaish.mp3"
+    "category": "basic",
+    "audio": "audio/neckamaish.mp3",
+    "emojiHint": "👶"
   },
   {
     "english": "back (body part)",
@@ -392,8 +525,9 @@
     "pronunciation": "pe-ta-wah",
     "source": "Strachey",
     "notes": "Anatomical term",
-    "category": "Basic Terms",
-    "audio": "audio/petawah.mp3"
+    "category": "body",
+    "audio": "audio/petawah.mp3",
+    "emojiHint": "🔙"
   },
   {
     "english": "basket",
@@ -401,17 +535,9 @@
     "pronunciation": "ma-no-te",
     "source": "Smith",
     "notes": "Container for gathering",
-    "category": "Actions",
-    "audio": "audio/manote.mp3"
-  },
-  {
-    "english": "bear (animal)",
-    "algonquian": "monacock",
-    "pronunciation": "mo-na-cock",
-    "source": "Strachey",
-    "notes": "Forest animal",
-    "category": "Nature",
-    "audio": "audio/monacock.mp3"
+    "category": "objects",
+    "audio": "audio/manote.mp3",
+    "emojiHint": "🧺"
   },
   {
     "english": "beaver",
@@ -419,8 +545,9 @@
     "pronunciation": "ap-pou-mes",
     "source": "Strachey",
     "notes": "Aquatic mammal",
-    "category": "Animals",
-    "audio": "audio/appoumes.mp3"
+    "category": "animals",
+    "audio": "audio/appoumes.mp3",
+    "emojiHint": "🦫"
   },
   {
     "english": "bed",
@@ -428,8 +555,9 @@
     "pronunciation": "tus-sac",
     "source": "Strachey",
     "notes": "Sleeping place",
-    "category": "Basic Terms",
-    "audio": "audio/tuss_c.mp3"
+    "category": "objects",
+    "audio": "audio/tuss_c.mp3",
+    "emojiHint": "🛏️"
   },
   {
     "english": "beech tree",
@@ -437,8 +565,9 @@
     "pronunciation": "pi-con",
     "source": "Strachey",
     "notes": "Tree species",
-    "category": "Nature",
-    "audio": "audio/pic_n.mp3"
+    "category": "plants",
+    "audio": "audio/pic_n.mp3",
+    "emojiHint": "🌳"
   },
   {
     "english": "belch",
@@ -446,8 +575,9 @@
     "pronunciation": "ne-cas-sun-num",
     "source": "Strachey",
     "notes": "Bodily function",
-    "category": "Basic Terms",
-    "audio": "audio/necassunn_m.mp3"
+    "category": "actions",
+    "audio": "audio/necassunn_m.mp3",
+    "emojiHint": "😤"
   },
   {
     "english": "black",
@@ -455,8 +585,9 @@
     "pronunciation": "match-e-ren-go",
     "source": "Strachey",
     "notes": "Color term",
-    "category": "Basic Terms",
-    "audio": "audio/matcherengo.mp3"
+    "category": "colors",
+    "audio": "audio/matcherengo.mp3",
+    "emojiHint": "⚫"
   },
   {
     "english": "blanket",
@@ -464,8 +595,9 @@
     "pronunciation": "match-coat",
     "source": "Strachey",
     "notes": "Covering",
-    "category": "Body Parts",
-    "audio": "audio/matchc_at.mp3"
+    "category": "objects",
+    "audio": "audio/matchc_at.mp3",
+    "emojiHint": "🧣"
   },
   {
     "english": "blood",
@@ -473,8 +605,9 @@
     "pronunciation": "ne-tah-cat",
     "source": "Strachey",
     "notes": "Bodily fluid",
-    "category": "Body Parts",
-    "audio": "audio/netahcat.mp3"
+    "category": "body",
+    "audio": "audio/netahcat.mp3",
+    "emojiHint": "🩸"
   },
   {
     "english": "blow",
@@ -482,8 +615,9 @@
     "pronunciation": "ni-po-ka-ta-men",
     "source": "Strachey",
     "notes": "Action with breath",
-    "category": "Actions",
-    "audio": "audio/nipokatamen.mp3"
+    "category": "actions",
+    "audio": "audio/nipokatamen.mp3",
+    "emojiHint": "💨"
   },
   {
     "english": "blue",
@@ -491,8 +625,9 @@
     "pronunciation": "os-key-u",
     "source": "Strachey",
     "notes": "Color term",
-    "category": "Basic Terms",
-    "audio": "audio/oskeyu.mp3"
+    "category": "colors",
+    "audio": "audio/oskeyu.mp3",
+    "emojiHint": "🔵"
   },
   {
     "english": "boat",
@@ -500,8 +635,9 @@
     "pronunciation": "a-quoin-tay-ne",
     "source": "Smith",
     "notes": "Water vessel",
-    "category": "Nature",
-    "audio": "audio/aquointayne.mp3"
+    "category": "objects",
+    "audio": "audio/aquointayne.mp3",
+    "emojiHint": "⛵"
   },
   {
     "english": "body",
@@ -509,8 +645,9 @@
     "pronunciation": "meh-ke-na-na-hum",
     "source": "Strachey",
     "notes": "Physical form",
-    "category": "Basic Terms",
-    "audio": "audio/mehkenanahum.mp3"
+    "category": "body",
+    "audio": "audio/mehkenanahum.mp3",
+    "emojiHint": "🧍"
   },
   {
     "english": "bow",
@@ -518,8 +655,9 @@
     "pronunciation": "at-taup",
     "source": "Smith",
     "notes": "Hunting weapon",
-    "category": "Basic Terms",
-    "audio": "audio/attaup.mp3"
+    "category": "objects",
+    "audio": "audio/attaup.mp3",
+    "emojiHint": "🏹"
   },
   {
     "english": "break (something)",
@@ -527,8 +665,9 @@
     "pronunciation": "to-she-mai-in",
     "source": "Strachey",
     "notes": "Action verb",
-    "category": "Actions",
-    "audio": "audio/toshemaiin.mp3"
+    "category": "actions",
+    "audio": "audio/toshemaiin.mp3",
+    "emojiHint": "💔"
   },
   {
     "english": "breath",
@@ -536,8 +675,9 @@
     "pronunciation": "ny-ta-ke",
     "source": "Strachey",
     "notes": "Life sustaining air",
-    "category": "Basic Terms",
-    "audio": "audio/nytake.mp3"
+    "category": "body",
+    "audio": "audio/nytake.mp3",
+    "emojiHint": "🌬️"
   },
   {
     "english": "brother",
@@ -545,8 +685,9 @@
     "pronunciation": "neck-auw",
     "source": "Strachey",
     "notes": "Male sibling",
-    "category": "Basic Terms",
-    "audio": "audio/neckauw.mp3"
+    "category": "family",
+    "audio": "audio/neckauw.mp3",
+    "emojiHint": "👨‍👨"
   },
   {
     "english": "burn",
@@ -554,8 +695,9 @@
     "pronunciation": "pock-a-ta-wer",
     "source": "Strachey",
     "notes": "Fire related verb, cf. \"pohkhan\" (fire)",
-    "category": "Actions",
-    "audio": "audio/pockatawer.mp3"
+    "category": "actions",
+    "audio": "audio/pockatawer.mp3",
+    "emojiHint": "🔥"
   },
   {
     "english": "cheek",
@@ -563,8 +705,9 @@
     "pronunciation": "mam-tun-naaw",
     "source": "Strachey",
     "notes": "Facial feature",
-    "category": "Body Parts",
-    "audio": "audio/mamtunnaaw.mp3"
+    "category": "body",
+    "audio": "audio/mamtunnaaw.mp3",
+    "emojiHint": "😊"
   },
   {
     "english": "child",
@@ -572,8 +715,9 @@
     "pronunciation": "ne-kau-pot",
     "source": "Strachey",
     "notes": "Young person",
-    "category": "Basic Terms",
-    "audio": "audio/nekaupot.mp3"
+    "category": "family",
+    "audio": "audio/nekaupot.mp3",
+    "emojiHint": "👧"
   },
   {
     "english": "cold",
@@ -581,8 +725,9 @@
     "pronunciation": "na-ta-ko-am",
     "source": "Strachey",
     "notes": "Temperature description",
-    "category": "Basic Terms",
-    "audio": "audio/n_tak_am.mp3"
+    "category": "weather",
+    "audio": "audio/n_tak_am.mp3",
+    "emojiHint": "🥶"
   },
   {
     "english": "come here",
@@ -590,8 +735,9 @@
     "pronunciation": "cois-cut-ter-e-weh",
     "source": "Smith",
     "notes": "Directional command",
-    "category": "Actions",
-    "audio": "audio/coiscutter_weh.mp3"
+    "category": "actions",
+    "audio": "audio/coiscutter_weh.mp3",
+    "emojiHint": "🫵"
   },
   {
     "english": "copper",
@@ -599,8 +745,9 @@
     "pronunciation": "ma-tas-sun",
     "source": "Strachey",
     "notes": "Valued metal",
-    "category": "Basic Terms",
-    "audio": "audio/matassun.mp3"
+    "category": "objects",
+    "audio": "audio/matassun.mp3",
+    "emojiHint": "🟤"
   },
   {
     "english": "corn (maize)",
@@ -608,8 +755,9 @@
     "pronunciation": "at-tan, at-ta-coo-ne",
     "source": "Smith",
     "notes": "Agricultural staple",
-    "category": "Basic Terms",
-    "audio": "audio/attan.mp3"
+    "category": "plants",
+    "audio": "audio/attan.mp3",
+    "emojiHint": "🌽"
   },
   {
     "english": "cough",
@@ -617,8 +765,9 @@
     "pronunciation": "ah-quas",
     "source": "Strachey",
     "notes": "Bodily action",
-    "category": "Actions",
-    "audio": "audio/ahquas.mp3"
+    "category": "actions",
+    "audio": "audio/ahquas.mp3",
+    "emojiHint": "😷"
   },
   {
     "english": "crow (bird)",
@@ -626,8 +775,9 @@
     "pronunciation": "cha-raw",
     "source": "Strachey",
     "notes": "Black bird, onomatopoeic",
-    "category": "Animals",
-    "audio": "audio/ch_raw.mp3"
+    "category": "animals",
+    "audio": "audio/ch_raw.mp3",
+    "emojiHint": "🐦‍⬛"
   },
   {
     "english": "dance",
@@ -635,8 +785,9 @@
     "pronunciation": "kan-ti-kan-ti-miis",
     "source": "Strachey",
     "notes": "Ceremonial action",
-    "category": "Actions",
-    "audio": "audio/kantikantimiis.mp3"
+    "category": "actions",
+    "audio": "audio/kantikantimiis.mp3",
+    "emojiHint": "💃"
   },
   {
     "english": "darkness",
@@ -644,8 +795,9 @@
     "pronunciation": "pe-ta-youch",
     "source": "Strachey",
     "notes": "Absence of light",
-    "category": "Basic Terms",
-    "audio": "audio/petayouch.mp3"
+    "category": "nature",
+    "audio": "audio/petayouch.mp3",
+    "emojiHint": "🌑"
   },
   {
     "english": "daughter",
@@ -653,8 +805,9 @@
     "pronunciation": "ne-tough",
     "source": "Strachey",
     "notes": "Female offspring",
-    "category": "Basic Terms",
-    "audio": "audio/netough.mp3"
+    "category": "family",
+    "audio": "audio/netough.mp3",
+    "emojiHint": "👧"
   },
   {
     "english": "day",
@@ -662,8 +815,9 @@
     "pronunciation": "raw-co-sowgh",
     "source": "Strachey",
     "notes": "Time period",
-    "category": "Basic Terms",
-    "audio": "audio/rawcosowgh.mp3"
+    "category": "time",
+    "audio": "audio/rawcosowgh.mp3",
+    "emojiHint": "☀️"
   },
   {
     "english": "death",
@@ -671,36 +825,19 @@
     "pronunciation": "ne-paw-we-towh",
     "source": "Strachey",
     "notes": "End of life",
-    "category": "Basic Terms",
-    "audio": "audio/nepaww_towh.mp3"
+    "category": "basic",
+    "audio": "audio/nepaww_towh.mp3",
+    "emojiHint": "⚰️"
   },
-{
-    "english": "deer",
-    "algonquian": "attecenna",
-    "pronunciation": "at-te-cen-na",
-    "source": "Smith",
-    "notes": "Forest animal, important for food",
-    "category": "animals"
-    "audio": "audio/attecenna.mp3"
-  },
-
   {
     "english": "devil",
     "algonquian": "riokosick",
     "pronunciation": "rio-ko-sick",
     "source": "Strachey",
     "notes": "Evil spirit",
-    "category": "Basic Terms",
-    "audio": "audio/riokosick.mp3"
-  },
-{
-    "english": "dog",
-    "algonquian": "attum",
-    "pronunciation": "at-tum",
-    "source": "Strachey",
-    "notes": "Domesticated animal",
-    "category": "animals"
-    "audio": "audio/attum.mp3"
+    "category": "spiritual",
+    "audio": "audio/riokosick.mp3",
+    "emojiHint": "👿"
   },
   {
     "english": "door",
@@ -708,8 +845,9 @@
     "pronunciation": "cup-pa-ton",
     "source": "Strachey",
     "notes": "Entrance to dwelling",
-    "category": "Basic Terms",
-    "audio": "audio/cuppaton.mp3"
+    "category": "objects",
+    "audio": "audio/cuppaton.mp3",
+    "emojiHint": "🚪"
   },
   {
     "english": "drink",
@@ -717,8 +855,9 @@
     "pronunciation": "ne-tab",
     "source": "Strachey",
     "notes": "Consume liquid",
-    "category": "Actions",
-    "audio": "audio/netab.mp3"
+    "category": "actions",
+    "audio": "audio/netab.mp3",
+    "emojiHint": "🥤"
   },
   {
     "english": "dry",
@@ -726,8 +865,9 @@
     "pronunciation": "ya-tax-en",
     "source": "Strachey",
     "notes": "Absence of moisture",
-    "category": "Basic Terms",
-    "audio": "audio/yataxen.mp3"
+    "category": "basic",
+    "audio": "audio/yataxen.mp3",
+    "emojiHint": "🏜️"
   },
   {
     "english": "duck",
@@ -735,8 +875,9 @@
     "pronunciation": "pis-co-end",
     "source": "Strachey",
     "notes": "Waterfowl",
-    "category": "Nature",
-    "audio": "audio/piscoend.mp3"
+    "category": "animals",
+    "audio": "audio/piscoend.mp3",
+    "emojiHint": "🦆"
   },
   {
     "english": "ear",
@@ -744,26 +885,9 @@
     "pronunciation": "me-ta-wincs",
     "source": "Strachey",
     "notes": "Body part for hearing",
-    "category": "Body Parts",
-    "audio": "audio/metawincs.mp3"
-  },
-{
-    "english": "earth",
-    "algonquian": "ohke",
-    "pronunciation": "oh-ke",
-    "source": "Strachey",
-    "notes": "Ground, soil, world",
-    "category": "nature"
-    "audio": "audio/ohke.mp3"
-  },
-{
-    "english": "eat",
-    "algonquian": "mecitchêh",
-    "pronunciation": "me-cit-cheh",
-    "source": "Strachey",
-    "notes": "Consume food",
-    "category": "actions"
-    "audio": "audio/mecitch_h.mp3"
+    "category": "body",
+    "audio": "audio/metawincs.mp3",
+    "emojiHint": "👂"
   },
   {
     "english": "egg",
@@ -771,8 +895,9 @@
     "pronunciation": "wah-wun-ne-neh-piss",
     "source": "Strachey",
     "notes": "Bird/reptile reproductive item",
-    "category": "Animals",
-    "audio": "audio/wahw_nnenehpiss.mp3"
+    "category": "animals",
+    "audio": "audio/wahw_nnenehpiss.mp3",
+    "emojiHint": "🥚"
   },
   {
     "english": "eight",
@@ -780,8 +905,9 @@
     "pronunciation": "nuss-wash",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms",
-    "audio": "audio/nusswash.mp3"
+    "category": "numbers",
+    "audio": "audio/nusswash.mp3",
+    "emojiHint": "8️⃣"
   },
   {
     "english": "elk",
@@ -789,8 +915,9 @@
     "pronunciation": "muss-wack",
     "source": "Strachey",
     "notes": "Large forest animal",
-    "category": "Nature",
-    "audio": "audio/m_sswack.mp3"
+    "category": "animals",
+    "audio": "audio/m_sswack.mp3",
+    "emojiHint": "🦌"
   },
   {
     "english": "enemy",
@@ -798,8 +925,9 @@
     "pronunciation": "ma-ra-po",
     "source": "Smith",
     "notes": "Hostile person",
-    "category": "Basic Terms",
-    "audio": "audio/marapo.mp3"
+    "category": "social",
+    "audio": "audio/marapo.mp3",
+    "emojiHint": "😠"
   },
   {
     "english": "evening",
@@ -807,17 +935,9 @@
     "pronunciation": "a-na-co-me",
     "source": "Strachey",
     "notes": "Time of day",
-    "category": "Basic Terms",
-    "audio": "audio/anacome.mp3"
-  },
- {
-    "english": "eye",
-    "algonquian": "mesettink",
-    "pronunciation": "me-set-tink",
-    "source": "Strachey",
-    "notes": "Visual organ",
-    "category": "body"
-    "audio": "audio/mesettink.mp3"
+    "category": "time",
+    "audio": "audio/anacome.mp3",
+    "emojiHint": "🌆"
   },
   {
     "english": "face",
@@ -825,8 +945,9 @@
     "pronunciation": "us-cke-in-tap",
     "source": "Strachey",
     "notes": "Front of head",
-    "category": "Basic Terms",
-    "audio": "audio/usckeint_p.mp3"
+    "category": "body",
+    "audio": "audio/usckeint_p.mp3",
+    "emojiHint": "😀"
   },
   {
     "english": "fall down",
@@ -834,8 +955,9 @@
     "pronunciation": "cat-ta-caun-ssi-mi-nis",
     "source": "Strachey",
     "notes": "Physical action",
-    "category": "Actions",
-    "audio": "audio/cattacaunssiminis.mp3"
+    "category": "actions",
+    "audio": "audio/cattacaunssiminis.mp3",
+    "emojiHint": "💫"
   },
   {
     "english": "father",
@@ -843,8 +965,9 @@
     "pronunciation": "noughs",
     "source": "Smith",
     "notes": "Male parent",
-    "category": "Basic Terms",
-    "audio": "audio/noughs.mp3"
+    "category": "family",
+    "audio": "audio/noughs.mp3",
+    "emojiHint": "👨‍👧"
   },
   {
     "english": "feather",
@@ -852,8 +975,9 @@
     "pronunciation": "meh-to-na-ca",
     "source": "Strachey",
     "notes": "Bird part",
-    "category": "Animals",
-    "audio": "audio/mehtonaca.mp3"
+    "category": "animals",
+    "audio": "audio/mehtonaca.mp3",
+    "emojiHint": "🪶"
   },
   {
     "english": "fight",
@@ -861,26 +985,9 @@
     "pronunciation": "ne-te-ca-an",
     "source": "Strachey",
     "notes": "Conflict action",
-    "category": "Actions",
-    "audio": "audio/neteca_n.mp3"
-  },
-{
-    "english": "fire",
-    "algonquian": "pohkhan",
-    "pronunciation": "poh-khan",
-    "source": "Strachey",
-    "notes": "Element, used ritually",
-    "category": "basic"
-    "audio": "audio/pohkhan.mp3"
-  },
-  {
-    "english": "fish",
-    "algonquian": "nameeth",
-    "pronunciation": "na-meeth",
-    "source": "Strachey",
-    "notes": "Aquatic animal",
-    "category": "animals"
-    "audio": "audio/nameeth.mp3"
+    "category": "actions",
+    "audio": "audio/neteca_n.mp3",
+    "emojiHint": "🥊"
   },
   {
     "english": "five",
@@ -888,8 +995,9 @@
     "pronunciation": "pa-ran-ske",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms",
-    "audio": "audio/paranske.mp3"
+    "category": "numbers",
+    "audio": "audio/paranske.mp3",
+    "emojiHint": "5️⃣"
   },
   {
     "english": "flesh",
@@ -897,8 +1005,9 @@
     "pronunciation": "we-yaus",
     "source": "Strachey",
     "notes": "Body tissue, meat",
-    "category": "Body Parts",
-    "audio": "audio/weyaus.mp3"
+    "category": "body",
+    "audio": "audio/weyaus.mp3",
+    "emojiHint": "🥩"
   },
   {
     "english": "flint",
@@ -906,8 +1015,9 @@
     "pronunciation": "mas-sa-po",
     "source": "Strachey",
     "notes": "Stone for tools",
-    "category": "Nature",
-    "audio": "audio/massapo.mp3"
+    "category": "objects",
+    "audio": "audio/massapo.mp3",
+    "emojiHint": "🪨"
   },
   {
     "english": "flour",
@@ -915,8 +1025,9 @@
     "pronunciation": "at-tat-top-wooc",
     "source": "Strachey",
     "notes": "Ground meal",
-    "category": "Basic Terms",
-    "audio": "audio/attatt_wooc.mp3"
+    "category": "food",
+    "audio": "audio/attatt_wooc.mp3",
+    "emojiHint": "🌾"
   },
   {
     "english": "food",
@@ -924,17 +1035,9 @@
     "pronunciation": "me-caw-sun",
     "source": "Strachey",
     "notes": "General term for nourishment",
-    "category": "Basic Terms",
-    "audio": "audio/mecawsun.mp3"
-  },
-{
-    "english": "foot",
-    "algonquian": "mysetts",
-    "pronunciation": "my-setts",
-    "source": "Strachey",
-    "notes": "Body part for walking",
-    "category": "body"
-    "audio": "audio/mysetts.mp3"
+    "category": "food",
+    "audio": "audio/mecawsun.mp3",
+    "emojiHint": "🍲"
   },
   {
     "english": "forest",
@@ -942,8 +1045,9 @@
     "pronunciation": "ma-ta-cok",
     "source": "Strachey",
     "notes": "Wooded area",
-    "category": "Nature",
-    "audio": "audio/matac_k.mp3"
+    "category": "nature",
+    "audio": "audio/matac_k.mp3",
+    "emojiHint": "🌲 + 🌳"
   },
   {
     "english": "four",
@@ -951,8 +1055,9 @@
     "pronunciation": "yowgh",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms",
-    "audio": "audio/yowgh.mp3"
+    "category": "numbers",
+    "audio": "audio/yowgh.mp3",
+    "emojiHint": "4️⃣"
   },
   {
     "english": "fox",
@@ -960,17 +1065,9 @@
     "pronunciation": "ah-soun-ne-cock",
     "source": "Strachey",
     "notes": "Small forest predator",
-    "category": "Basic Terms",
-    "audio": "audio/ahsounnec_ck.mp3"
-  },
-{
-    "english": "friend",
-    "algonquian": "netap",
-    "pronunciation": "ne-tap",
-    "source": "Smith",
-    "notes": "Friendly person",
-    "category": "social"
-    "audio": "audio/netap.mp3"
+    "category": "animals",
+    "audio": "audio/ahsounnec_ck.mp3",
+    "emojiHint": "🦊"
   },
   {
     "english": "frog",
@@ -978,8 +1075,9 @@
     "pronunciation": "ot-tu-coys",
     "source": "Strachey",
     "notes": "Amphibian",
-    "category": "Animals",
-    "audio": "audio/ottucoys.mp3"
+    "category": "animals",
+    "audio": "audio/ottucoys.mp3",
+    "emojiHint": "🐸"
   },
   {
     "english": "girl",
@@ -987,8 +1085,9 @@
     "pronunciation": "us-qua",
     "source": "Strachey",
     "notes": "Young female",
-    "category": "Basic Terms",
-    "audio": "audio/usqua.mp3"
+    "category": "family",
+    "audio": "audio/usqua.mp3",
+    "emojiHint": "👧"
   },
   {
     "english": "give",
@@ -996,8 +1095,9 @@
     "pronunciation": "ma-che",
     "source": "Smith",
     "notes": "Action of offering",
-    "category": "Actions",
-    "audio": "audio/mache.mp3"
+    "category": "actions",
+    "audio": "audio/mache.mp3",
+    "emojiHint": "🎁"
   },
   {
     "english": "go",
@@ -1005,8 +1105,9 @@
     "pronunciation": "mo-yatt",
     "source": "Strachey",
     "notes": "Movement action",
-    "category": "Actions",
-    "audio": "audio/moyatt.mp3"
+    "category": "actions",
+    "audio": "audio/moyatt.mp3",
+    "emojiHint": "🚶"
   },
   {
     "english": "god",
@@ -1014,17 +1115,9 @@
     "pronunciation": "a-ho-ne, ki-was-sa",
     "source": "Strachey",
     "notes": "Supreme deity",
-    "category": "Basic Terms",
-    "audio": "audio/ahone.mp3"
-  },
-{
-    "english": "good",
-    "algonquian": "winger",
-    "pronunciation": "win-ger",
-    "source": "Smith",
-    "notes": "Positive evaluation",
-    "category": "basic"
-    "audio": "audio/winger.mp3"
+    "category": "spiritual",
+    "audio": "audio/ahone.mp3",
+    "emojiHint": "✨"
   },
   {
     "english": "goose",
@@ -1032,8 +1125,9 @@
     "pronunciation": "co-hunks",
     "source": "Strachey",
     "notes": "Large waterfowl",
-    "category": "Nature",
-    "audio": "audio/cohunks.mp3"
+    "category": "animals",
+    "audio": "audio/cohunks.mp3",
+    "emojiHint": "🦢"
   },
   {
     "english": "grass",
@@ -1041,8 +1135,9 @@
     "pronunciation": "at-tas-kuss",
     "source": "Strachey",
     "notes": "Ground covering plant",
-    "category": "Nature",
-    "audio": "audio/attaskuss.mp3"
+    "category": "plants",
+    "audio": "audio/attaskuss.mp3",
+    "emojiHint": "🌱"
   },
   {
     "english": "great",
@@ -1050,8 +1145,9 @@
     "pronunciation": "we-ro-an",
     "source": "Smith",
     "notes": "Large, important",
-    "category": "Basic Terms",
-    "audio": "audio/w_roan.mp3"
+    "category": "basic",
+    "audio": "audio/w_roan.mp3",
+    "emojiHint": "👑"
   },
   {
     "english": "green",
@@ -1059,8 +1155,9 @@
     "pronunciation": "as-qwa-revh",
     "source": "Strachey",
     "notes": "Color term",
-    "category": "Basic Terms",
-    "audio": "audio/asqwarevh.mp3"
+    "category": "colors",
+    "audio": "audio/asqwarevh.mp3",
+    "emojiHint": "🟢"
   },
   {
     "english": "gun",
@@ -1068,8 +1165,9 @@
     "pronunciation": "paw-cus-sac",
     "source": "Smith",
     "notes": "European weapon, adapted word",
-    "category": "Basic Terms",
-    "audio": "audio/pawcussac.mp3"
+    "category": "objects",
+    "audio": "audio/pawcussac.mp3",
+    "emojiHint": "🔫"
   },
   {
     "english": "hear",
@@ -1077,17 +1175,9 @@
     "pronunciation": "num-maw-maum",
     "source": "Strachey",
     "notes": "Sense verb",
-    "category": "Body Parts",
-    "audio": "audio/nummawmaum.mp3"
-  },
-  {
-    "english": "heart",
-    "algonquian": "ottehocannough",
-    "pronunciation": "ot-te-ho-can-nough",
-    "source": "Strachey",
-    "notes": "Internal organ",
-    "category": "body"
-    "audio": "audio/ottehocannough.mp3"
+    "category": "actions",
+    "audio": "audio/nummawmaum.mp3",
+    "emojiHint": "👂"
   },
   {
     "english": "heaven",
@@ -1095,8 +1185,9 @@
     "pronunciation": "o-ke-nies",
     "source": "Strachey",
     "notes": "Spiritual realm",
-    "category": "Basic Terms",
-    "audio": "audio/okenies.mp3"
+    "category": "spiritual",
+    "audio": "audio/okenies.mp3",
+    "emojiHint": "☁️"
   },
   {
     "english": "heavy",
@@ -1104,8 +1195,9 @@
     "pronunciation": "ke-qua-tan",
     "source": "Strachey",
     "notes": "Weight description",
-    "category": "Basic Terms",
-    "audio": "audio/kequatan.mp3"
+    "category": "basic",
+    "audio": "audio/kequatan.mp3",
+    "emojiHint": "🏋️"
   },
   {
     "english": "hickory",
@@ -1113,8 +1205,9 @@
     "pronunciation": "po-co-hic-co-ra",
     "source": "Strachey",
     "notes": "Tree species, source of \"hickory\" in English",
-    "category": "Nature",
-    "audio": "audio/pocohiccora.mp3"
+    "category": "plants",
+    "audio": "audio/pocohiccora.mp3",
+    "emojiHint": "🌳"
   },
   {
     "english": "hill",
@@ -1122,8 +1215,9 @@
     "pronunciation": "po-mo-tawk",
     "source": "Strachey",
     "notes": "Raised landform",
-    "category": "Nature",
-    "audio": "audio/pomotawk.mp3"
+    "category": "nature",
+    "audio": "audio/pomotawk.mp3",
+    "emojiHint": "⛰️"
   },
   {
     "english": "home",
@@ -1131,8 +1225,9 @@
     "pronunciation": "ne-ke",
     "source": "Strachey",
     "notes": "Dwelling place",
-    "category": "Basic Terms",
-    "audio": "audio/neke.mp3"
+    "category": "basic",
+    "audio": "audio/neke.mp3",
+    "emojiHint": "🏠"
   },
   {
     "english": "hot",
@@ -1140,8 +1235,9 @@
     "pronunciation": "suc-qua-te-yough",
     "source": "Strachey",
     "notes": "Temperature term",
-    "category": "Basic Terms",
-    "audio": "audio/sucquateyough.mp3"
+    "category": "weather",
+    "audio": "audio/sucquateyough.mp3",
+    "emojiHint": "🔥"
   },
   {
     "english": "house",
@@ -1149,8 +1245,9 @@
     "pronunciation": "ye-haw-kan",
     "source": "Strachey",
     "notes": "Dwelling structure",
-    "category": "Basic Terms",
-    "audio": "audio/yehawkan.mp3"
+    "category": "objects",
+    "audio": "audio/yehawkan.mp3",
+    "emojiHint": "🏡"
   },
   {
     "english": "hundred",
@@ -1158,8 +1255,9 @@
     "pronunciation": "ne-ka-tey-wsa-poo-ek-sku",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms",
-    "audio": "audio/nekateywsapooeksku.mp3"
+    "category": "numbers",
+    "audio": "audio/nekateywsapooeksku.mp3",
+    "emojiHint": "💯"
   },
   {
     "english": "hungry",
@@ -1167,17 +1265,9 @@
     "pronunciation": "na-toug-wes-sum",
     "source": "Strachey",
     "notes": "State of needing food",
-    "category": "Basic Terms",
-    "audio": "audio/n_tougwessum.mp3"
-  },
-{
-    "english": "hunt",
-    "algonquian": "nattewowan",
-    "pronunciation": "nat-te-wo-wan",
-    "source": "Strachey",
-    "notes": "Food gathering activity",
-    "category": "actions"
-    "audio": "audio/nattewowan.mp3"
+    "category": "basic",
+    "audio": "audio/n_tougwessum.mp3",
+    "emojiHint": "🍽️"
   },
   {
     "english": "husband",
@@ -1185,8 +1275,9 @@
     "pronunciation": "news-so-an-wah",
     "source": "Strachey",
     "notes": "Male spouse",
-    "category": "Basic Terms",
-    "audio": "audio/newssoanw_h.mp3"
+    "category": "family",
+    "audio": "audio/newssoanw_h.mp3",
+    "emojiHint": "👨‍👩‍👧"
   },
   {
     "english": "ice",
@@ -1194,8 +1285,9 @@
     "pronunciation": "ke-pa-te-was-sun-tank",
     "source": "Strachey",
     "notes": "Frozen water",
-    "category": "Nature",
-    "audio": "audio/kepatewassuntank.mp3"
+    "category": "weather",
+    "audio": "audio/kepatewassuntank.mp3",
+    "emojiHint": "🧊"
   },
   {
     "english": "iron",
@@ -1203,8 +1295,9 @@
     "pronunciation": "to-ma-hack",
     "source": "Strachey",
     "notes": "Metal material, source of \"tomahawk\" in English",
-    "category": "Basic Terms",
-    "audio": "audio/tomahack.mp3"
+    "category": "objects",
+    "audio": "audio/tomahack.mp3",
+    "emojiHint": "⚒️"
   },
   {
     "english": "island",
@@ -1212,8 +1305,9 @@
     "pronunciation": "me-na-taun",
     "source": "Strachey",
     "notes": "Land surrounded by water",
-    "category": "Nature",
-    "audio": "audio/men_taun.mp3"
+    "category": "nature",
+    "audio": "audio/men_taun.mp3",
+    "emojiHint": "🏝️"
   },
   {
     "english": "kill",
@@ -1221,8 +1315,9 @@
     "pronunciation": "ne-pa-ha-mon",
     "source": "Strachey",
     "notes": "Cause death",
-    "category": "Basic Terms",
-    "audio": "audio/nepaham_n.mp3"
+    "category": "actions",
+    "audio": "audio/nepaham_n.mp3",
+    "emojiHint": "💀"
   },
   {
     "english": "king",
@@ -1230,8 +1325,9 @@
     "pronunciation": "we-ro-wan-ce",
     "source": "Smith",
     "notes": "Ruler, chief LITERAL TRANSLATION: COMMANDER",
-    "category": "Basic Terms",
-    "audio": "audio/werowance.mp3"
+    "category": "social",
+    "audio": "audio/werowance.mp3",
+    "emojiHint": "👑"
   },
   {
     "english": "knife",
@@ -1239,8 +1335,9 @@
     "pronunciation": "pa-meh-sa-can",
     "source": "Strachey",
     "notes": "Cutting tool",
-    "category": "Basic Terms",
-    "audio": "audio/pam_hsacan.mp3"
+    "category": "objects",
+    "audio": "audio/pam_hsacan.mp3",
+    "emojiHint": "🔪"
   },
   {
     "english": "knot",
@@ -1248,8 +1345,9 @@
     "pronunciation": "mow-tchick",
     "source": "Strachey",
     "notes": "Tied binding",
-    "category": "Basic Terms",
-    "audio": "audio/mowtchick.mp3"
+    "category": "objects",
+    "audio": "audio/mowtchick.mp3",
+    "emojiHint": "🪢"
   },
   {
     "english": "lake",
@@ -1257,8 +1355,9 @@
     "pronunciation": "we-yok",
     "source": "Strachey",
     "notes": "Body of water",
-    "category": "Nature",
-    "audio": "audio/wey_k.mp3"
+    "category": "nature",
+    "audio": "audio/wey_k.mp3",
+    "emojiHint": "🏞️"
   },
   {
     "english": "laugh",
@@ -1266,8 +1365,9 @@
     "pronunciation": "on-se-ka-na-kan",
     "source": "Strachey",
     "notes": "Expression of joy",
-    "category": "Basic Terms",
-    "audio": "audio/onsekanakan.mp3"
+    "category": "actions",
+    "audio": "audio/onsekanakan.mp3",
+    "emojiHint": "😂"
   },
   {
     "english": "leaf",
@@ -1275,8 +1375,9 @@
     "pronunciation": "ne-pinsh",
     "source": "Strachey",
     "notes": "Tree part",
-    "category": "Nature",
-    "audio": "audio/nepinsh.mp3"
+    "category": "plants",
+    "audio": "audio/nepinsh.mp3",
+    "emojiHint": "🍃"
   },
   {
     "english": "leg",
@@ -1284,8 +1385,9 @@
     "pronunciation": "meh-cat",
     "source": "Strachey",
     "notes": "Body limb",
-    "category": "Body Parts",
-    "audio": "audio/mehcat.mp3"
+    "category": "body",
+    "audio": "audio/mehcat.mp3",
+    "emojiHint": "🦵"
   },
   {
     "english": "light",
@@ -1293,8 +1395,9 @@
     "pronunciation": "a-we-pew-ho-tonwh",
     "source": "Strachey",
     "notes": "Illumination",
-    "category": "Basic Terms",
-    "audio": "audio/awepewh_tonwh.mp3"
+    "category": "nature",
+    "audio": "audio/awepewh_tonwh.mp3",
+    "emojiHint": "💡"
   },
   {
     "english": "lightning",
@@ -1302,8 +1405,9 @@
     "pronunciation": "keih-quas-cus-sun",
     "source": "Strachey",
     "notes": "Weather phenomenon",
-    "category": "Nature",
-    "audio": "audio/keihq_scussun.mp3"
+    "category": "weather",
+    "audio": "audio/keihq_scussun.mp3",
+    "emojiHint": "⚡"
   },
   {
     "english": "live",
@@ -1311,8 +1415,9 @@
     "pronunciation": "keis-pe-we-yack",
     "source": "Strachey",
     "notes": "State of being alive",
-    "category": "Basic Terms",
-    "audio": "audio/keispeweyack.mp3"
+    "category": "basic",
+    "audio": "audio/keispeweyack.mp3",
+    "emojiHint": "💓"
   },
   {
     "english": "love",
@@ -1320,8 +1425,9 @@
     "pronunciation": "noung-he",
     "source": "Strachey",
     "notes": "Emotion of affection",
-    "category": "Basic Terms",
-    "audio": "audio/nounghe.mp3"
+    "category": "basic",
+    "audio": "audio/nounghe.mp3",
+    "emojiHint": "❤️"
   },
   {
     "english": "lynx",
@@ -1329,8 +1435,9 @@
     "pronunciation": "pus-so-cun-nu-ah",
     "source": "Strachey",
     "notes": "Wild feline",
-    "category": "Basic Terms",
-    "audio": "audio/puss_cunn_ah.mp3"
+    "category": "animals",
+    "audio": "audio/puss_cunn_ah.mp3",
+    "emojiHint": "🐈‍⬛"
   },
   {
     "english": "man",
@@ -1338,8 +1445,9 @@
     "pronunciation": "ne-ma-rough",
     "source": "Smith",
     "notes": "Adult male",
-    "category": "Basic Terms",
-    "audio": "audio/nemarough.mp3"
+    "category": "basic",
+    "audio": "audio/nemarough.mp3",
+    "emojiHint": "👨"
   },
   {
     "english": "maple tree",
@@ -1347,8 +1455,9 @@
     "pronunciation": "ma-ses-cum",
     "source": "Strachey",
     "notes": "Tree species",
-    "category": "Nature",
-    "audio": "audio/masescum.mp3"
+    "category": "plants",
+    "audio": "audio/masescum.mp3",
+    "emojiHint": "🍁"
   },
   {
     "english": "meat",
@@ -1356,8 +1465,9 @@
     "pronunciation": "we-yaus",
     "source": "Strachey",
     "notes": "Animal flesh for food",
-    "category": "Basic Terms",
-    "audio": "audio/weyaus.mp3"
+    "category": "food",
+    "audio": "audio/weyaus.mp3",
+    "emojiHint": "🥩"
   },
   {
     "english": "medicine",
@@ -1365,17 +1475,9 @@
     "pronunciation": "wi-soc-can",
     "source": "Smith",
     "notes": "Healing substance",
-    "category": "Basic Terms",
-    "audio": "audio/wisoccan.mp3"
-  },
-{
-    "english": "moon",
-    "algonquian": "nepausche",
-    "pronunciation": "ne-pau-sche",
-    "source": "Strachey",
-    "notes": "Night celestial body",
-    "category": "nature"
-    "audio": "audio/nepausche.mp3"
+    "category": "basic",
+    "audio": "audio/wisoccan.mp3",
+    "emojiHint": "💊"
   },
   {
     "english": "morning",
@@ -1383,8 +1485,9 @@
     "pronunciation": "pa-pa-sowh",
     "source": "Strachey",
     "notes": "Early day",
-    "category": "Basic Terms",
-    "audio": "audio/papasowh.mp3"
+    "category": "time",
+    "audio": "audio/papasowh.mp3",
+    "emojiHint": "🌅"
   },
   {
     "english": "mother",
@@ -1392,8 +1495,9 @@
     "pronunciation": "an-na",
     "source": "Smith",
     "notes": "Female parent",
-    "category": "Basic Terms",
-    "audio": "audio/anna.mp3"
+    "category": "family",
+    "audio": "audio/anna.mp3",
+    "emojiHint": "👩‍👧"
   },
   {
     "english": "mountain",
@@ -1401,8 +1505,9 @@
     "pronunciation": "po-mot-tawk",
     "source": "Strachey",
     "notes": "Large landform",
-    "category": "Nature",
-    "audio": "audio/pomottawk.mp3"
+    "category": "nature",
+    "audio": "audio/pomottawk.mp3",
+    "emojiHint": "🏔️"
   },
   {
     "english": "mouth",
@@ -1410,8 +1515,9 @@
     "pronunciation": "met-too-ne",
     "source": "Strachey",
     "notes": "Body opening for eating",
-    "category": "Body Parts",
-    "audio": "audio/mettoone.mp3"
+    "category": "body",
+    "audio": "audio/mettoone.mp3",
+    "emojiHint": "👄"
   },
   {
     "english": "name",
@@ -1419,8 +1525,9 @@
     "pronunciation": "ye-hau-kan",
     "source": "Strachey",
     "notes": "Personal identifier",
-    "category": "Basic Terms",
-    "audio": "audio/y_haukan.mp3"
+    "category": "basic",
+    "audio": "audio/y_haukan.mp3",
+    "emojiHint": "📛"
   },
   {
     "english": "neck",
@@ -1428,8 +1535,9 @@
     "pronunciation": "me-men-chum",
     "source": "Strachey",
     "notes": "Body part",
-    "category": "Body Parts",
-    "audio": "audio/memenchum.mp3"
+    "category": "body",
+    "audio": "audio/memenchum.mp3",
+    "emojiHint": "🧣"
   },
   {
     "english": "net",
@@ -1437,8 +1545,9 @@
     "pronunciation": "ah-sap",
     "source": "Strachey",
     "notes": "Fishing tool",
-    "category": "Animals",
-    "audio": "audio/ahs_p.mp3"
+    "category": "objects",
+    "audio": "audio/ahs_p.mp3",
+    "emojiHint": "🕸️"
   },
   {
     "english": "night",
@@ -1446,8 +1555,9 @@
     "pronunciation": "ta-pa-coh",
     "source": "Strachey",
     "notes": "Dark time",
-    "category": "Basic Terms",
-    "audio": "audio/tapacoh.mp3"
+    "category": "time",
+    "audio": "audio/tapacoh.mp3",
+    "emojiHint": "🌙"
   },
   {
     "english": "nine",
@@ -1455,8 +1565,9 @@
     "pronunciation": "ky-ke-ta-we",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms",
-    "audio": "audio/kyketawe.mp3"
+    "category": "numbers",
+    "audio": "audio/kyketawe.mp3",
+    "emojiHint": "9️⃣"
   },
   {
     "english": "nose",
@@ -1464,8 +1575,9 @@
     "pronunciation": "mesch-wi-pe-cat",
     "source": "Strachey",
     "notes": "Facial feature",
-    "category": "Body Parts",
-    "audio": "audio/meschwip_cat.mp3"
+    "category": "body",
+    "audio": "audio/meschwip_cat.mp3",
+    "emojiHint": "👃"
   },
   {
     "english": "nut",
@@ -1473,8 +1585,9 @@
     "pronunciation": "as-si-nim-meis",
     "source": "Strachey",
     "notes": "Tree seed",
-    "category": "Nature",
-    "audio": "audio/assinimmeis.mp3"
+    "category": "plants",
+    "audio": "audio/assinimmeis.mp3",
+    "emojiHint": "🥜"
   },
   {
     "english": "oak tree",
@@ -1482,8 +1595,9 @@
     "pronunciation": "mo-ho-mind-ge",
     "source": "Strachey",
     "notes": "Tree species",
-    "category": "Nature",
-    "audio": "audio/mohomindge.mp3"
+    "category": "plants",
+    "audio": "audio/mohomindge.mp3",
+    "emojiHint": "🌳"
   },
   {
     "english": "opossum",
@@ -1491,8 +1605,9 @@
     "pronunciation": "a-po-soum",
     "source": "Strachey",
     "notes": "Marsupial, source of \"opossum\" in English",
-    "category": "Animals",
-    "audio": "audio/aposoum.mp3"
+    "category": "animals",
+    "audio": "audio/aposoum.mp3",
+    "emojiHint": "🐀"
   },
   {
     "english": "otter",
@@ -1500,8 +1615,9 @@
     "pronunciation": "cut-ta-quin-che-mens",
     "source": "Strachey",
     "notes": "Aquatic mammal",
-    "category": "Animals",
-    "audio": "audio/c_ttaquinchem_ns.mp3"
+    "category": "animals",
+    "audio": "audio/c_ttaquinchem_ns.mp3",
+    "emojiHint": "🦦"
   },
   {
     "english": "pain",
@@ -1509,8 +1625,9 @@
     "pronunciation": "a-ma-tewh",
     "source": "Strachey",
     "notes": "Physical discomfort",
-    "category": "Basic Terms",
-    "audio": "audio/amat_wh.mp3"
+    "category": "body",
+    "audio": "audio/amat_wh.mp3",
+    "emojiHint": "😖"
   },
   {
     "english": "paint",
@@ -1518,8 +1635,9 @@
     "pronunciation": "uh-ca-tewh",
     "source": "Strachey",
     "notes": "Coloring substance",
-    "category": "Basic Terms",
-    "audio": "audio/uhcat_wh.mp3"
+    "category": "objects",
+    "audio": "audio/uhcat_wh.mp3",
+    "emojiHint": "🎨"
   },
   {
     "english": "path",
@@ -1527,8 +1645,9 @@
     "pronunciation": "mehct",
     "source": "Strachey",
     "notes": "Walking trail",
-    "category": "Basic Terms",
-    "audio": "audio/mehct.mp3"
+    "category": "nature",
+    "audio": "audio/mehct.mp3",
+    "emojiHint": "🛣️"
   },
   {
     "english": "peas",
@@ -1536,8 +1655,9 @@
     "pronunciation": "as-sem-mowgh-se-mi-na",
     "source": "Strachey",
     "notes": "Small food item",
-    "category": "Basic Terms",
-    "audio": "audio/assemmowghsemina.mp3"
+    "category": "food",
+    "audio": "audio/assemmowghsemina.mp3",
+    "emojiHint": "🫛"
   },
   {
     "english": "persimmon",
@@ -1545,8 +1665,9 @@
     "pronunciation": "pes-sem-mins",
     "source": "Strachey",
     "notes": "Fruit, source of \"persimmon\" in English",
-    "category": "Basic Terms",
-    "audio": "audio/pessemmins.mp3"
+    "category": "plants",
+    "audio": "audio/pessemmins.mp3",
+    "emojiHint": "🍊"
   },
   {
     "english": "pine tree",
@@ -1554,8 +1675,9 @@
     "pronunciation": "wns-sa-pih",
     "source": "Strachey",
     "notes": "Evergreen tree",
-    "category": "Nature",
-    "audio": "audio/wnssapih.mp3"
+    "category": "plants",
+    "audio": "audio/wnssapih.mp3",
+    "emojiHint": "🌲"
   },
   {
     "english": "pipe",
@@ -1563,8 +1685,9 @@
     "pronunciation": "a-poo-ke",
     "source": "Strachey",
     "notes": "Smoking device",
-    "category": "Basic Terms",
-    "audio": "audio/apooke.mp3"
+    "category": "objects",
+    "audio": "audio/apooke.mp3",
+    "emojiHint": "🚬"
   },
   {
     "english": "plant",
@@ -1572,8 +1695,9 @@
     "pronunciation": "at-tass",
     "source": "Strachey",
     "notes": "Growing living thing",
-    "category": "Basic Terms",
-    "audio": "audio/attass.mp3"
+    "category": "plants",
+    "audio": "audio/attass.mp3",
+    "emojiHint": "🌱"
   },
   {
     "english": "play",
@@ -1581,8 +1705,9 @@
     "pronunciation": "ma-man-tob-pas-sewh",
     "source": "Strachey",
     "notes": "Recreational activity",
-    "category": "Actions",
-    "audio": "audio/mamantobpassewh.mp3"
+    "category": "actions",
+    "audio": "audio/mamantobpassewh.mp3",
+    "emojiHint": "🎮"
   },
   {
     "english": "pumpkin",
@@ -1590,8 +1715,9 @@
     "pronunciation": "ma-cocks",
     "source": "Strachey",
     "notes": "Large gourd",
-    "category": "Basic Terms",
-    "audio": "audio/macocks.mp3"
+    "category": "plants",
+    "audio": "audio/macocks.mp3",
+    "emojiHint": "🎃"
   },
   {
     "english": "quail",
@@ -1599,8 +1725,9 @@
     "pronunciation": "o-hauh-noc",
     "source": "Strachey",
     "notes": "Small bird",
-    "category": "Animals",
-    "audio": "audio/ohauhnoc.mp3"
+    "category": "animals",
+    "audio": "audio/ohauhnoc.mp3",
+    "emojiHint": "🐦"
   },
   {
     "english": "quick",
@@ -1608,8 +1735,9 @@
     "pronunciation": "ut-cheis-cum-mens",
     "source": "Strachey",
     "notes": "Fast movement",
-    "category": "Actions",
-    "audio": "audio/utcheiscummens.mp3"
+    "category": "basic",
+    "audio": "audio/utcheiscummens.mp3",
+    "emojiHint": "⚡"
   },
   {
     "english": "rabbit",
@@ -1617,8 +1745,9 @@
     "pronunciation": "weh-sa-cat",
     "source": "Strachey",
     "notes": "Small mammal",
-    "category": "Animals",
-    "audio": "audio/w_hsacat.mp3"
+    "category": "animals",
+    "audio": "audio/w_hsacat.mp3",
+    "emojiHint": "🐇"
   },
   {
     "english": "raccoon",
@@ -1626,8 +1755,9 @@
     "pronunciation": "a-rough-cun",
     "source": "Strachey",
     "notes": "Forest animal, source of \"raccoon\" in English",
-    "category": "Nature",
-    "audio": "audio/aroughcun.mp3"
+    "category": "animals",
+    "audio": "audio/aroughcun.mp3",
+    "emojiHint": "🦝"
   },
   {
     "english": "red",
@@ -1635,26 +1765,9 @@
     "pronunciation": "ne-hes-sa-yew",
     "source": "Strachey",
     "notes": "Color term",
-    "category": "Basic Terms",
-    "audio": "audio/nehessayew.mp3"
-  },
-{
-    "english": "rain",
-    "algonquian": "kemowan",
-    "pronunciation": "ke-mo-wan",
-    "source": "Strachey",
-    "notes": "Weather condition",
-    "category": "weather"
-    "audio": "audio/kemowan.mp3"
-  },
-{
-    "english": "river",
-    "algonquian": "seip",
-    "pronunciation": "seip",
-    "source": "Strachey",
-    "notes": "Flowing water body",
-    "category": "nature"
-    "audio": "audio/seip.mp3"
+    "category": "colors",
+    "audio": "audio/nehessayew.mp3",
+    "emojiHint": "🔴"
   },
   {
     "english": "rock",
@@ -1662,8 +1775,9 @@
     "pronunciation": "o-thas-sik",
     "source": "Strachey",
     "notes": "Stone",
-    "category": "Nature",
-    "audio": "audio/othassik.mp3"
+    "category": "nature",
+    "audio": "audio/othassik.mp3",
+    "emojiHint": "🪨"
   },
   {
     "english": "rope",
@@ -1671,17 +1785,9 @@
     "pronunciation": "pe-mun-tah",
     "source": "Strachey",
     "notes": "Binding material",
-    "category": "Basic Terms",
-    "audio": "audio/pemuntah.mp3"
-  },
-{
-    "english": "run",
-    "algonquian": "pettecoagh",
-    "pronunciation": "pet-te-co-agh",
-    "source": "Strachey",
-    "notes": "Fast movement",
-    "category": "actions"
-    "audio": "audio/pettecoagh.mp3"
+    "category": "objects",
+    "audio": "audio/pemuntah.mp3",
+    "emojiHint": "🧵"
   },
   {
     "english": "salt",
@@ -1689,8 +1795,9 @@
     "pronunciation": "saw-wo-ne",
     "source": "Strachey",
     "notes": "Seasoning mineral",
-    "category": "Nature",
-    "audio": "audio/sawwone.mp3"
+    "category": "food",
+    "audio": "audio/sawwone.mp3",
+    "emojiHint": "🧂"
   },
   {
     "english": "sand",
@@ -1698,8 +1805,9 @@
     "pronunciation": "ag-gon-she-tock",
     "source": "Strachey",
     "notes": "Fine earth material",
-    "category": "Nature",
-    "audio": "audio/aggonshet_ck.mp3"
+    "category": "nature",
+    "audio": "audio/aggonshet_ck.mp3",
+    "emojiHint": "🏝️"
   },
   {
     "english": "say",
@@ -1707,8 +1815,9 @@
     "pronunciation": "iy-nough",
     "source": "Smith",
     "notes": "Speak words",
-    "category": "Basic Terms",
-    "audio": "audio/iynough.mp3"
+    "category": "actions",
+    "audio": "audio/iynough.mp3",
+    "emojiHint": "🗣️"
   },
   {
     "english": "sea",
@@ -1716,17 +1825,9 @@
     "pronunciation": "ut-ta-ma-ma-shaw",
     "source": "Strachey",
     "notes": "Large body of water",
-    "category": "Nature",
-    "audio": "audio/uttamamashaw.mp3"
-  },
-{
-    "english": "see",
-    "algonquian": "nummêching",
-    "pronunciation": "num-me-ching",
-    "source": "Strachey",
-    "notes": "Visual perception",
-    "category": "actions"
-    "audio": "audio/numm_ching.mp3"
+    "category": "nature",
+    "audio": "audio/uttamamashaw.mp3",
+    "emojiHint": "🌊"
   },
   {
     "english": "seven",
@@ -1734,8 +1835,9 @@
     "pronunciation": "top-pa-woss",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms",
-    "audio": "audio/toppawoss.mp3"
+    "category": "numbers",
+    "audio": "audio/toppawoss.mp3",
+    "emojiHint": "7️⃣"
   },
   {
     "english": "shirt",
@@ -1743,8 +1845,9 @@
     "pronunciation": "a-que-wan",
     "source": "Strachey",
     "notes": "Upper body clothing",
-    "category": "Body Parts",
-    "audio": "audio/aquewan.mp3"
+    "category": "objects",
+    "audio": "audio/aquewan.mp3",
+    "emojiHint": "👕"
   },
   {
     "english": "shoe",
@@ -1752,8 +1855,9 @@
     "pronunciation": "mock-a-sin",
     "source": "Smith",
     "notes": "Foot covering, source of \"moccasin\" in English",
-    "category": "Body Parts",
-    "audio": "audio/mockasin.mp3"
+    "category": "objects",
+    "audio": "audio/mockasin.mp3",
+    "emojiHint": "👞"
   },
   {
     "english": "sing",
@@ -1761,8 +1865,9 @@
     "pronunciation": "ot-tu-waigh",
     "source": "Strachey",
     "notes": "Musical vocalization",
-    "category": "Basic Terms",
-    "audio": "audio/ottuw_igh.mp3"
+    "category": "actions",
+    "audio": "audio/ottuw_igh.mp3",
+    "emojiHint": "🎵"
   },
   {
     "english": "sister",
@@ -1770,8 +1875,9 @@
     "pronunciation": "num-mis-se-shew",
     "source": "Strachey",
     "notes": "Female sibling",
-    "category": "Basic Terms",
-    "audio": "audio/nummisseshew.mp3"
+    "category": "family",
+    "audio": "audio/nummisseshew.mp3",
+    "emojiHint": "👭"
   },
   {
     "english": "sit",
@@ -1779,8 +1885,9 @@
     "pronunciation": "mat-tut-taish",
     "source": "Strachey",
     "notes": "Resting position",
-    "category": "Basic Terms",
-    "audio": "audio/mattutt_ish.mp3"
+    "category": "actions",
+    "audio": "audio/mattutt_ish.mp3",
+    "emojiHint": "🪑"
   },
   {
     "english": "six",
@@ -1788,8 +1895,9 @@
     "pronunciation": "co-mo-tinch",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms",
-    "audio": "audio/comotinch.mp3"
+    "category": "numbers",
+    "audio": "audio/comotinch.mp3",
+    "emojiHint": "6️⃣"
   },
   {
     "english": "skin",
@@ -1797,26 +1905,9 @@
     "pronunciation": "na-haw-no-nack",
     "source": "Strachey",
     "notes": "Body covering",
-    "category": "Body Parts",
-    "audio": "audio/nahawnonack.mp3"
-  },
-{
-    "english": "sky",
-    "algonquian": "arrokoth",
-    "pronunciation": "ar-ro-koth",
-    "source": "Strachey",
-    "notes": "Upper atmosphere",
-    "category": "nature"
-    "audio": "audio/arrokoth.mp3"
-  },
-  {
-    "english": "sleep",
-    "algonquian": "asapan",
-    "pronunciation": "a-sa-pan",
-    "source": "Strachey",
-    "notes": "Rest state",
-    "category": "actions"
-    "audio": "audio/asapan.mp3" 
+    "category": "body",
+    "audio": "audio/nahawnonack.mp3",
+    "emojiHint": "👨"
   },
   {
     "english": "small",
@@ -1824,8 +1915,9 @@
     "pronunciation": "ma-tas-sey-owh",
     "source": "Strachey",
     "notes": "Size descriptor",
-    "category": "Basic Terms",
-    "audio": "audio/matasseyowh.mp3"
+    "category": "basic",
+    "audio": "audio/matasseyowh.mp3",
+    "emojiHint": "🔍"
   },
   {
     "english": "snake",
@@ -1833,8 +1925,9 @@
     "pronunciation": "as-cook",
     "source": "Strachey",
     "notes": "Reptile",
-    "category": "Animals",
-    "audio": "audio/ascook.mp3"
+    "category": "animals",
+    "audio": "audio/ascook.mp3",
+    "emojiHint": "🐍"
   },
   {
     "english": "son",
@@ -1842,26 +1935,9 @@
     "pronunciation": "",
     "source": "Strachey",
     "notes": "Male offspring",
-    "category": "Basic Terms",
-    "audio": "audio/neputtishow.mp3"
-  },
-{
-    "english": "snow",
-    "algonquian": "macatêwh",
-    "pronunciation": "ma-ca-tewh",
-    "source": "Strachey",
-    "notes": "Weather condition",
-    "category": "weather"
-    "audio": "audio/macat_wh.mp3"
-  },
-{
-    "english": "speak",
-    "algonquian": "kettorauog",
-    "pronunciation": "ket-to-rau-og",
-    "source": "Strachey",
-    "notes": "Verbal communication",
-    "category": "actions"
-    "audio": "audio/kettorauog.mp3" 
+    "category": "family",
+    "audio": "audio/neputtishow.mp3",
+    "emojiHint": "👦"
   },
   {
     "english": "squirrel",
@@ -1869,8 +1945,9 @@
     "pronunciation": "mus-sa-nic-ka",
     "source": "Strachey",
     "notes": "Small tree animal",
-    "category": "Nature",
-    "audio": "audio/mussanicka.mp3"
+    "category": "animals",
+    "audio": "audio/mussanicka.mp3",
+    "emojiHint": "🐿️"
   },
   {
     "english": "stick",
@@ -1878,17 +1955,9 @@
     "pronunciation": "meh-tugk-quash",
     "source": "Strachey",
     "notes": "Wooden piece",
-    "category": "Nature",
-    "audio": "audio/mehtugkquash.mp3"
-  },
-{
-    "english": "star",
-    "algonquian": "punnahe",
-    "pronunciation": "pun-na-he",
-    "source": "Strachey",
-    "notes": "Night sky object",
-    "category": "nature"
-    "audio": "audio/punnahe.mp3"
+    "category": "objects",
+    "audio": "audio/mehtugkquash.mp3",
+    "emojiHint": "🥢"
   },
   {
     "english": "stone",
@@ -1896,8 +1965,9 @@
     "pronunciation": "as-soo-ne",
     "source": "Strachey",
     "notes": "Hard earth material",
-    "category": "Nature",
-    "audio": "audio/assoone.mp3"
+    "category": "nature",
+    "audio": "audio/assoone.mp3",
+    "emojiHint": "🪨"
   },
   {
     "english": "strawberry",
@@ -1905,8 +1975,9 @@
     "pronunciation": "wi-cha-sa-kon",
     "source": "Strachey",
     "notes": "Red berry",
-    "category": "Nature",
-    "audio": "audio/wichasakon.mp3"
+    "category": "plants",
+    "audio": "audio/wichasakon.mp3",
+    "emojiHint": "🍓"
   },
   {
     "english": "strong",
@@ -1914,8 +1985,9 @@
     "pronunciation": "wee-se-can-not",
     "source": "Strachey",
     "notes": "Physical power",
-    "category": "Basic Terms",
-    "audio": "audio/weesecann_t.mp3"
+    "category": "basic",
+    "audio": "audio/weesecann_t.mp3",
+    "emojiHint": "💪"
   },
   {
     "english": "summer",
@@ -1923,17 +1995,9 @@
     "pronunciation": "caw-qwaih",
     "source": "Strachey",
     "notes": "Warm season",
-    "category": "Nature",
-    "audio": "audio/cawqwaih.mp3"
-  },
-{
-    "english": "sun",
-    "algonquian": "keshowaugh",
-    "pronunciation": "ke-sho-waugh",
-    "source": "Strachey",
-    "notes": "Day celestial body",
-    "category": "nature"
-    "audio": "audio/keshowaugh.mp3"
+    "category": "time",
+    "audio": "audio/cawqwaih.mp3",
+    "emojiHint": "☀️"
   },
   {
     "english": "sweet",
@@ -1941,8 +2005,9 @@
     "pronunciation": "win-gan",
     "source": "Strachey",
     "notes": "Pleasant taste",
-    "category": "Basic Terms",
-    "audio": "audio/w_ngan.mp3"
+    "category": "basic",
+    "audio": "audio/w_ngan.mp3",
+    "emojiHint": "🍯"
   },
   {
     "english": "swim",
@@ -1950,8 +2015,9 @@
     "pronunciation": "tus-sha-ke-hawh",
     "source": "Strachey",
     "notes": "Water movement",
-    "category": "Nature",
-    "audio": "audio/tusshakehawh.mp3"
+    "category": "actions",
+    "audio": "audio/tusshakehawh.mp3",
+    "emojiHint": "🏊"
   },
   {
     "english": "take",
@@ -1959,8 +2025,9 @@
     "pronunciation": "ne-cas-sun-na-men",
     "source": "Strachey",
     "notes": "Acquire action",
-    "category": "Actions",
-    "audio": "audio/necassunnamen.mp3"
+    "category": "actions",
+    "audio": "audio/necassunnamen.mp3",
+    "emojiHint": "👐"
   },
   {
     "english": "talk",
@@ -1968,8 +2035,9 @@
     "pronunciation": "ye-kuth",
     "source": "Strachey",
     "notes": "Communication",
-    "category": "Actions",
-    "audio": "audio/yek_th.mp3"
+    "category": "actions",
+    "audio": "audio/yek_th.mp3",
+    "emojiHint": "🗣️"
   },
   {
     "english": "teeth",
@@ -1977,8 +2045,9 @@
     "pronunciation": "ne-put-te-tas-sua-cans",
     "source": "Strachey",
     "notes": "Mouth parts",
-    "category": "Basic Terms",
-    "audio": "audio/neputtet_ssuacans.mp3"
+    "category": "body",
+    "audio": "audio/neputtet_ssuacans.mp3",
+    "emojiHint": "🦷"
   },
   {
     "english": "ten",
@@ -1986,8 +2055,9 @@
     "pronunciation": "cas-sa-co-meh",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms",
-    "audio": "audio/cassacom_h.mp3"
+    "category": "numbers",
+    "audio": "audio/cassacom_h.mp3",
+    "emojiHint": "🔟"
   },
   {
     "english": "thank you",
@@ -1995,8 +2065,9 @@
     "pronunciation": "win-ga-po",
     "source": "Smith",
     "notes": "Expression of gratitude",
-    "category": "Basic Terms",
-    "audio": "audio/wingapo.mp3"
+    "category": "basic",
+    "audio": "audio/wingapo.mp3",
+    "emojiHint": "🙏"
   },
   {
     "english": "that",
@@ -2004,8 +2075,9 @@
     "pronunciation": "naw-wot",
     "source": "Strachey",
     "notes": "Demonstrative",
-    "category": "Basic Terms",
-    "audio": "audio/nawwot.mp3"
+    "category": "basic",
+    "audio": "audio/nawwot.mp3",
+    "emojiHint": "👉"
   },
   {
     "english": "there",
@@ -2013,8 +2085,9 @@
     "pronunciation": "neut-tah",
     "source": "Strachey",
     "notes": "Location indicator",
-    "category": "Basic Terms",
-    "audio": "audio/neuttah.mp3"
+    "category": "basic",
+    "audio": "audio/neuttah.mp3",
+    "emojiHint": "📍"
   },
   {
     "english": "they",
@@ -2022,8 +2095,9 @@
     "pronunciation": "ye-wogh",
     "source": "Strachey",
     "notes": "Third person plural",
-    "category": "Basic Terms",
-    "audio": "audio/y_wogh.mp3"
+    "category": "basic",
+    "audio": "audio/y_wogh.mp3",
+    "emojiHint": "👥"
   },
   {
     "english": "thigh",
@@ -2031,8 +2105,9 @@
     "pronunciation": "meh-co-we-wen",
     "source": "Strachey",
     "notes": "Upper leg",
-    "category": "Basic Terms",
-    "audio": "audio/mehcowewen.mp3"
+    "category": "body",
+    "audio": "audio/mehcowewen.mp3",
+    "emojiHint": "🦵"
   },
   {
     "english": "think",
@@ -2040,8 +2115,9 @@
     "pronunciation": "ne-te-bowh",
     "source": "Strachey",
     "notes": "Mental activity",
-    "category": "Actions",
-    "audio": "audio/neteb_wh.mp3"
+    "category": "actions",
+    "audio": "audio/neteb_wh.mp3",
+    "emojiHint": "🤔"
   },
   {
     "english": "thirsty",
@@ -2049,8 +2125,9 @@
     "pronunciation": "un-quan-sho-waih",
     "source": "Strachey",
     "notes": "Need for water",
-    "category": "Basic Terms",
-    "audio": "audio/unquanshowaih.mp3"
+    "category": "basic",
+    "audio": "audio/unquanshowaih.mp3",
+    "emojiHint": "🥤"
   },
   {
     "english": "three",
@@ -2058,8 +2135,9 @@
     "pronunciation": "nuss",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms",
-    "audio": "audio/nuss.mp3"
+    "category": "numbers",
+    "audio": "audio/nuss.mp3",
+    "emojiHint": "3️⃣"
   },
   {
     "english": "throw",
@@ -2067,8 +2145,9 @@
     "pronunciation": "up-po-cu-ta-mun",
     "source": "Strachey",
     "notes": "Projecting action",
-    "category": "Actions",
-    "audio": "audio/uppoc_tamun.mp3"
+    "category": "actions",
+    "audio": "audio/uppoc_tamun.mp3",
+    "emojiHint": "🏈"
   },
   {
     "english": "thunder",
@@ -2076,8 +2155,9 @@
     "pronunciation": "kaw-me-towh",
     "source": "Strachey",
     "notes": "Storm sound",
-    "category": "Basic Terms",
-    "audio": "audio/kawm_towh.mp3"
+    "category": "weather",
+    "audio": "audio/kawm_towh.mp3",
+    "emojiHint": "⛈️"
   },
   {
     "english": "today",
@@ -2085,8 +2165,9 @@
     "pronunciation": "yu-hat-quit-schu-mu-mos-sum",
     "source": "Strachey",
     "notes": "Present time",
-    "category": "Basic Terms",
-    "audio": "audio/yuhatquitschumumossum.mp3"
+    "category": "time",
+    "audio": "audio/yuhatquitschumumossum.mp3",
+    "emojiHint": "📅"
   },
   {
     "english": "tomorrow",
@@ -2094,8 +2175,9 @@
     "pronunciation": "y-ra-phe",
     "source": "Strachey",
     "notes": "Future time",
-    "category": "Basic Terms",
-    "audio": "audio/yraph_.mp3"
+    "category": "time",
+    "audio": "audio/yraph_.mp3",
+    "emojiHint": "🔜"
   },
   {
     "english": "tongue",
@@ -2103,8 +2185,9 @@
     "pronunciation": "me-tet-sheew",
     "source": "Strachey",
     "notes": "Mouth organ",
-    "category": "Body Parts",
-    "audio": "audio/metetsheew.mp3"
+    "category": "body",
+    "audio": "audio/metetsheew.mp3",
+    "emojiHint": "👅"
   },
   {
     "english": "tooth",
@@ -2112,17 +2195,9 @@
     "pronunciation": "ne-pe-tas-suac",
     "source": "Strachey",
     "notes": "Mouth part",
-    "category": "Basic Terms",
-    "audio": "audio/nepet_ssuac.mp3"
-  },
-{
-    "english": "tree",
-    "algonquian": "mahtask",
-    "pronunciation": "mah-task",
-    "source": "Strachey",
-    "notes": "Woody plant",
-    "category": "plants"
-    "audio": "mahtask.mp3"
+    "category": "body",
+    "audio": "audio/nepet_ssuac.mp3",
+    "emojiHint": "🦷"
   },
   {
     "english": "turkey",
@@ -2130,8 +2205,9 @@
     "pronunciation": "mo-na-naw",
     "source": "Strachey",
     "notes": "Large bird",
-    "category": "Animals",
-    "audio": "audio/monanaw.mp3"
+    "category": "animals",
+    "audio": "audio/monanaw.mp3",
+    "emojiHint": "🦃"
   },
   {
     "english": "turtle",
@@ -2139,8 +2215,9 @@
     "pronunciation": "co-mo-to-ah",
     "source": "Strachey",
     "notes": "Shelled reptile",
-    "category": "Animals",
-    "audio": "audio/com_toah.mp3"
+    "category": "animals",
+    "audio": "audio/com_toah.mp3",
+    "emojiHint": "🐢"
   },
   {
     "english": "twenty",
@@ -2148,8 +2225,9 @@
     "pronunciation": "nin-ge-cut-taugh-wunsh-que-ne-kat-tough",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms",
-    "audio": "audio/ningecuttaughwunshquenek_ttough.mp3"
+    "category": "numbers",
+    "audio": "audio/ningecuttaughwunshquenek_ttough.mp3",
+    "emojiHint": "2️⃣0️⃣"
   },
   {
     "english": "two",
@@ -2157,8 +2235,9 @@
     "pronunciation": "ningh",
     "source": "Strachey",
     "notes": "Numerical term",
-    "category": "Basic Terms",
-    "audio": "audio/ningh.mp3"
+    "category": "numbers",
+    "audio": "audio/ningh.mp3",
+    "emojiHint": "2️⃣"
   },
   {
     "english": "ugly",
@@ -2166,8 +2245,9 @@
     "pronunciation": "mum-say-ewh",
     "source": "Strachey",
     "notes": "Unattractive",
-    "category": "Basic Terms",
-    "audio": "audio/mumsay_wh.mp3"
+    "category": "basic",
+    "audio": "audio/mumsay_wh.mp3",
+    "emojiHint": "👹"
   },
   {
     "english": "village",
@@ -2175,17 +2255,9 @@
     "pronunciation": "man-goit",
     "source": "Strachey",
     "notes": "Settlement",
-    "category": "Basic Terms",
-    "audio": "audio/mang_it.mp3"
-  },
-{
-    "english": "walk",
-    "algonquian": "pomiteyouqh",
-    "pronunciation": "po-mi-te-youqh",
-    "source": "Strachey",
-    "notes": "Movement on foot",
-    "category": "actions"
-    "audio": "audio/pomiteyough.mp3"
+    "category": "social",
+    "audio": "audio/mang_it.mp3",
+    "emojiHint": "🏘️"
   },
   {
     "english": "war",
@@ -2193,8 +2265,9 @@
     "pronunciation": "mowh-chick",
     "source": "Strachey",
     "notes": "Armed conflict",
-    "category": "Actions",
-    "audio": "audio/mowhchick.mp3"
+    "category": "social",
+    "audio": "audio/mowhchick.mp3",
+    "emojiHint": "⚔️"
   },
   {
     "english": "warm",
@@ -2202,8 +2275,9 @@
     "pronunciation": "a-po-te-key-qwoh",
     "source": "Strachey",
     "notes": "Comfortable temperature",
-    "category": "Basic Terms",
-    "audio": "audio/ap_tekeyqwoh.mp3"
+    "category": "weather",
+    "audio": "audio/ap_tekeyqwoh.mp3",
+    "emojiHint": "♨️"
   },
   {
     "english": "warrior",
@@ -2211,17 +2285,9 @@
     "pronunciation": "ne-ma-rough",
     "source": "Strachey",
     "notes": "Fighting man",
-    "category": "Basic Terms",
-    "audio": "audio/nemarough.mp3"
-  },
-{
-    "english": "water",
-    "algonquian": "sucquehanna",
-    "pronunciation": "suc-que-han-na",
-    "source": "Smith",
-    "notes": "Liquid for drinking",
-    "category": "basic"
-    "audio": "audio/sucquehanna.mp3"
+    "category": "social",
+    "audio": "audio/nemarough.mp3",
+    "emojiHint": "🏹"
   },
   {
     "english": "weak",
@@ -2229,8 +2295,9 @@
     "pronunciation": "ke-quas-si-num",
     "source": "Strachey",
     "notes": "Lacking strength",
-    "category": "Basic Terms",
-    "audio": "audio/kequassinum.mp3"
+    "category": "basic",
+    "audio": "audio/kequassinum.mp3",
+    "emojiHint": "🥀"
   },
   {
     "english": "weep",
@@ -2238,8 +2305,9 @@
     "pronunciation": "na-moun-ta-men",
     "source": "Strachey",
     "notes": "Crying",
-    "category": "Basic Terms",
-    "audio": "audio/namountamen.mp3"
+    "category": "actions",
+    "audio": "audio/namountamen.mp3",
+    "emojiHint": "😢"
   },
   {
     "english": "west",
@@ -2247,8 +2315,9 @@
     "pronunciation": "ut-te-shes-ka-yough",
     "source": "Strachey",
     "notes": "Directional",
-    "category": "Basic Terms",
-    "audio": "audio/uttesheskayough.mp3"
+    "category": "nature",
+    "audio": "audio/uttesheskayough.mp3",
+    "emojiHint": "🌅"
   },
   {
     "english": "whale",
@@ -2256,8 +2325,9 @@
     "pronunciation": "po-te-wal-lon-shee-ah",
     "source": "Strachey",
     "notes": "Large sea mammal",
-    "category": "Animals",
-    "audio": "audio/potewallonsheeah.mp3"
+    "category": "animals",
+    "audio": "audio/potewallonsheeah.mp3",
+    "emojiHint": "🐋"
   },
   {
     "english": "what",
@@ -2265,8 +2335,9 @@
     "pronunciation": "ke-koy",
     "source": "Smith",
     "notes": "Question word",
-    "category": "Basic Terms",
-    "audio": "audio/kekoy.mp3"
+    "category": "basic",
+    "audio": "audio/kekoy.mp3",
+    "emojiHint": "❓"
   },
   {
     "english": "white",
@@ -2274,97 +2345,6 @@
     "pronunciation": "womp-si-pim",
     "source": "Strachey",
     "notes": "Color term",
-    "category": "Basic Terms",
-    "audio": "audio/wompsipim.mp3"
-  },
-  {
-    "english": "wife",
-    "algonquian": "niourough",
-    "pronunciation": "niou-rough",
-    "source": "Smith",
-    "notes": "Female spouse",
-    "category": "Basic Terms",
-    "audio": "audio/niourough.mp3"
-  },
-  {
-    "english": "wind",
-    "algonquian": "pahquiwh",
-    "pronunciation": "pah-quiwh",
-    "source": "Strachey",
-    "notes": "Moving air",
-    "category": "Basic Terms",
-    "audio": "audio/pahquiwh.mp3"
-  },
-  {
-    "english": "winter",
-    "algonquian": "popanow",
-    "pronunciation": "po-pa-now",
-    "source": "Strachey",
-    "notes": "Cold season",
-    "category": "Nature",
-    "audio": "audio/popanow.mp3"
-  },
-  {
-    "english": "wolf",
-    "algonquian": "naantam",
-    "pronunciation": "naan-tam",
-    "source": "Strachey",
-    "notes": "Predator animal",
-    "category": "Nature",
-    "audio": "audio/naantam.mp3"
-  },
-  {
-    "english": "woman",
-    "algonquian": "cusses",
-    "pronunciation": "cus-ses",
-    "source": "Smith",
-    "notes": "Adult female",
-    "category": "Basic Terms",
-    "audio": "audio/cusses.mp3"
-  },
-  {
-    "english": "wood",
-    "algonquian": "apook",
-    "pronunciation": "a-pook",
-    "source": "Strachey",
-    "notes": "Material from trees",
-    "category": "Nature",
-    "audio": "audio/apook.mp3"
-  },
-  {
-    "english": "year",
-    "algonquian": "popâpow",
-    "pronunciation": "po-pa-pow",
-    "source": "Strachey",
-    "notes": "Time measure",
-    "category": "Basic Terms",
-    "audio": "audio/pop_pow.mp3"
-  },
-  {
-    "english": "yellow",
-    "algonquian": "wussawhu",
-    "pronunciation": "wus-saw-hu",
-    "source": "Strachey",
-    "notes": "Color term",
-    "category": "Basic Terms",
-    "audio": "audio/wussawhu.mp3"
-  },
-  {
-    "english": "yesterday",
-    "algonquian": "ouskêo",
-    "pronunciation": "ous-ke-o",
-    "source": "Strachey",
-    "notes": "Past time",
-    "category": "Basic Terms",
-    "audio": "audio/ousk_o.mp3"
-  },
-  {
-    "english": "you",
-    "algonquian": "kêmatah",
-    "pronunciation": "ke-ma-tah",
-    "source": "Strachey",
-    "notes": "Second person",
-    "category": "Basic Terms",
-    "audio": "audio/k_matah.mp3"
-  }
-]
+    "category": "colors",
+    "audio": "audio/wompsipim.mp3",
+    "emojiHint": "⚪"
