@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Grammar - Virginia Algonquian Language Learner</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Prevent CORS issues with favicon -->
+  <link rel="icon" href="data:,">
+  <style>
+    /* Updated Navigation Styles */
+    .header-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      padding: 0 1rem;
+    }
+
+    .header-link {
+      background-color: var(--secondary);
+      color: white;
+      padding: 0.75rem 1.25rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      text-align: center;
+      min-width: 120px;
+      border: 2px solid var(--secondary);
+    }
+
+    .header-link:hover {
+      background-color: var(--primary);
+      border-color: var(--primary);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .header-link.active {
+      background-color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    /* Mobile Navigation */
+    @media (max-width: 768px) {
+      .header-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+      }
+      
+      .header-link {
+        font-size: 0.8rem;
+        padding: 0.6rem 0.8rem;
+        min-width: auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header-nav {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .grammar-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .grammar-section {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    
+    .grammar-section h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      font-family: 'Cinzel', serif;
+    }
+    
+    .grammar-section h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: var(--accent);
+      border-radius: 1.5px;
+    }
+    
+    .grammar-section h3 {
+      color: var(--secondary);
+      margin: 1.5rem 0 0.75rem;
+    }
+    
+    .grammar-section p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    
+    .example-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+    }
+    
+    .example-table th {
+      background-color: var(--primary);
+      color: white;
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+    
+    .example-table th:first-child {
+      border-top-left-radius: 8px;
+    }
+    
+    .example-table th:last-child {
+      border-top-right-radius: 8px;
+    }
+    
+    .example-table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--light);
+    }
+    
+    .example-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .example-table tr:nth-child(even) {
+      background-color: var(--light);
+    }
+    
+    .algonquian {
+      font-weight: bold;
+      color: var(--earth);
+    }
+    
+    .gloss {
+      font-style: italic;
+      color: var(--secondary);
+      font-size: 0.9rem;
+    }
+    
+    .translation {
+      color: var(--dark);
+    }
+    
+    .grammar-card {
+      background-color: var(--light);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 4px solid var(--earth);
+    }
+    
+    .grammar-card h4 {
+      margin-top: 0;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    
+    .grammar-card p {
+      margin-bottom: 0.5rem;
+    }
+    
+    .word-breakdown {
+      display: flex;
+      flex-direction: column;
+      margin: 1.5rem 0;
+      border: 1px solid var(--light);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .word-row {
+      display: flex;
+      border-bottom: 1px solid var(--light);
+    }
+    
+    .word-row:last-child {
+      border-bottom: none;
+    }
+    
+    .word-cell {
+      flex: 1;
+      padding: 0.75rem 1rem;
+      border-right: 1px solid var(--light);
+    }
+    
+    .word-cell:last-child {
+      border-right: none;
+    }
+    
+    .word-header {
+      background-color: var(--primary);
+      color: white;
+      font-weight: bold;
+    }
+    
+    .tabs {
+      display: flex;
+      border-bottom: 2px solid var(--light);
+      margin-bottom: 1.5rem;
+    }
+    
+    .tab {
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      transition: all 0.3s;
+    }
+    
+    .tab.active {
+      border-bottom-color: var(--primary);
+      color: var(--primary);
+      font-weight: bold;
+    }
+    
+    .tab-content {
+      display: none;
+    }
+    
+    .tab-content.active {
+      display: block;
+    }
+    
+    .sentence-builder {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background-color: var(--light);
+      border-radius: 8px;
+    }
+    
+    .builder-elements {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .element-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .element-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+    
+    .builder-element {
+      background-color: white;
+      border: 2px solid var(--secondary);
+      border-radius: 6px;
+      padding: 0.5rem;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    
+    .builder-element:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .builder-element.selected {
+      background-color: var(--secondary);
+      color: white;
+    }
+    
+    .sentence-area {
+      min-height: 100px;
+      background-color: white;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: flex-start;
+    }
+    
+    .sentence-word {
+      background-color: var(--light);
+      border-radius: 4px;
+      padding: 0.5rem;
+      position: relative;
+    }
+    
+    .sentence-word .remove {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      width: 18px;
+      height: 18px;
+      background-color: var(--primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    
+    .sentence-word:hover .remove {
+      opacity: 1;
+    }
+    
+    .result-area {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1rem;
+      border: 2px solid var(--accent);
+    }
+    
+    .result-algonquian {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--earth);
+      margin-bottom: 0.5rem;
+    }
+    
+    .result-english {
+      font-size: 1.2rem;
+      color: var(--secondary);
+    }
+    
+    .controls {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    @media (max-width: 768px) {
+      .builder-elements {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VIRGINIA ALGONQUIAN LANGUAGE LEARNER</h1>
+    <p class="intro">Advanced Virginia Algonquian (Powhatan) Grammar</p>
+    
+    <div class="header-nav">
+      <a href="index.html" class="header-link">Learning Interface</a>
+      <a href="about.html" class="header-link">About Project</a>
+      <a href="phonetic-grammar-rules.html" class="header-link">Phonetic Rules</a>
+      <a href="grammar.html" class="header-link">Grammar Guide</a>
+      <a href="grammar02.html" class="header-link active">Advanced Grammar</a>
+      <a href="modern-vocab.html" class="header-link">Modern Vocabulary</a>
+      <a href="vocab-list.html" class="header-link">Complete Vocabulary</a>
+      <a href="comparative-lexicon.html" class="header-link">Comparative Lexicon</a>
+      <a href="sentence-builder.html" class="header-link">Sentence Builder</a>
+    </div>
+  </header>
+  
+  <div class="grammar-container">
+    <div class="grammar-section">
+      <h2>Introduction to Virginia Algonquian Grammar</h2>
+      <p>Virginia Algonquian, like other Algonquian languages, is a polysynthetic language where complex words can express what would require entire sentences in English. While our knowledge of Virginia Algonquian grammar is limited due to the historical sources, we can reconstruct many features based on related Eastern Algonquian languages.</p>
+      
+      <p>This guide presents the basic grammatical structures of Virginia Algonquian as reconstructed from historical sources and comparative linguistics. The examples combine documented vocabulary with reconstructed grammatical patterns.</p>
+      
+      <div class="tabs">
+        <div class="tab active" data-tab="nouns">Nouns</div>
+        <div class="tab" data-tab="verbs">Verbs</div>
+        <div class="tab" data-tab="syntax">Syntax</div>
+        <div class="tab" data-tab="examples">Example Sentences</div>
+      </div>
+      
+      <div class="tab-content active" id="nouns-tab">
+        <h3>Nouns in Virginia Algonquian</h3>
+        <p>Nouns in Virginia Algonquian are categorized as either animate or inanimate, a distinction that affects verb conjugation, pluralization, and other grammatical features.</p>
+        
+        <div class="grammar-card">
+          <h4>Animacy</h4>
+          <p><strong>Animate nouns</strong> include people, animals, spirits, certain plants, and culturally significant objects.</p>
+          <p><strong>Inanimate nouns</strong> include most objects, abstract concepts, and natural phenomena.</p>
+        </div>
+        
+        <h3>Possession</h3>
+        <p>Possession is indicated by prefixes attached to the noun:</p>
+        
+        <table class="example-table">
+          <thead>
+            <tr>
+              <th>Possessive Form</th>
+              <th>Prefix</th>
+              <th>Example</th>
+              <th>Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1st person (my)</td>
+              <td><span class="algonquian">ne-/n-</span></td>
+              <td><span class="algonquian">ne-mêttock</span></td>
+              <td>my head</td>
+            </tr>
+            <tr>
+              <td>2nd person (your)</td>
+              <td><span class="algonquian">ke-/k-</span></td>
+              <td><span class="algonquian">ke-mêttock</span></td>
+              <td>your head</td>
+            </tr>
+            <tr>
+              <td>3rd person (his/her)</td>
+              <td><span class="algonquian">we-/w-</span></td>
+              <td><span class="algonquian">we-mêttock</span></td>
+              <td>his/her head</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <p>Many body parts and kinship terms always appear with a possessive prefix in the historical sources, suggesting that they are inalienably possessed.</p>
+        
+        <div class="word-breakdown">
+          <div class="word-row">
+            <div class="word-cell word-header">Word</div>
+            <div class="word-cell word-header">Analysis</div>
+            <div class="word-cell word-header">Meaning</div>
+          </div>
+          <div class="word-row">
+            <div class="word-cell"><span class="algonquian">ne-mêheock</span></div>
+            <div class="word-cell"><span class="gloss">ne-</span> (my) + <span class="gloss">mêheock</span> (hand)</div>
+            <div class="word-cell">my hand</div>
+          </div>
+          <div class="word-row">
+            <div class="word-cell"><span class="algonquian">noughs</span></div>
+            <div class="word-cell"><span class="gloss">n-</span> (my) + <span class="gloss">oughs</span> (father)</div>
+            <div class="word-cell">my father</div>
+          </div>
+          <div class="word-row">
+            <div class="word-cell"><span class="algonquian">ke-mesettink</span></div>
+            <div class="word-cell"><span class="gloss">ke-</span> (your) + <span class="gloss">mesettink</span> (eye)</div>
+            <div class="word-cell">your eye</div>
+          </div>
+        </div>
+        
+        <h3>Pluralization</h3>
+        <p>Nouns are marked for singular and plural, with different suffixes for animate and inanimate nouns:</p>
+        
+        <table class="example-table">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Singular</th>
+              <th>Plural</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Animate</td>
+              <td>Base form</td>
+              <td>-ak/-ik</td>
+              <td><span class="algonquian">attum</span> (dog) → <span class="algonquian">attumak</span> (dogs)</td>
+            </tr>
+            <tr>
+              <td>Inanimate</td>
+              <td>Base form</td>
+              <td>-ash/-ish</td>
+              <td><span class="algonquian">assoone</span> (stone) → <span class="algonquian">assooneash</span> (stones)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="tab-content" id="verbs-tab">
+        <h3>Verbs in Virginia Algonquian</h3>
+        <p>Verbs are the most complex part of Virginia Algonquian grammar. They carry information about who is doing what to whom, when, where, and how through a variety of prefixes, suffixes, and infixes.</p>
+        
+        <div class="grammar-card">
+          <h4>Types of Verbs</h4>
+          <p><strong>Intransitive Animate (AI)</strong>: Actions performed by animate subjects with no direct object.</p>
+          <p><strong>Intransitive Inanimate (II)</strong>: States or conditions of inanimate subjects.</p>
+          <p><strong>Transitive Animate (TA)</strong>: Actions performed by a subject on an animate object.</p>
+          <p><strong>Transitive Inanimate (TI)</strong>: Actions performed by a subject on an inanimate object.</p>
+        </div>
+        
+        <h3>Person Marking</h3>
+        <p>Verbs are marked for person and number through a combination of prefixes and suffixes:</p>
+        
+        <table class="example-table">
+          <thead>
+            <tr>
+              <th>Person</th>
+              <th>Prefix</th>
+              <th>Example</th>
+              <th>Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1st person (I)</td>
+              <td><span class="algonquian">ne-/n-</span></td>
+              <td><span class="algonquian">ne-pomiteyouqh</span></td>
+              <td>I walk</td>
+            </tr>
+            <tr>
+              <td>2nd person (you)</td>
+              <td><span class="algonquian">ke-/k-</span></td>
+              <td><span class="algonquian">ke-pomiteyouqh</span></td>
+              <td>you walk</td>
+            </tr>
+            <tr>
+              <td>3rd person (he/she)</td>
+              <td><span class="algonquian">Ø-</span> (no prefix)</td>
+              <td><span class="algonquian">pomiteyouqh</span></td>
+              <td>he/she walks</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <p>For transitive verbs with both a subject and an object, the marking becomes more complex:</p>
+        
+        <div class="word-breakdown">
+          <div class="word-row">
+            <div class="word-cell word-header">Word</div>
+            <div class="word-cell word-header">Analysis</div>
+            <div class="word-cell word-header">Meaning</div>
+          </div>
+          <div class="word-row">
+            <div class="word-cell"><span class="algonquian">ne-nummêching-āw</span></div>
+            <div class="word-cell"><span class="gloss">ne-</span> (I) + <span class="gloss">nummêching</span> (see) + <span class="gloss">-āw</span> (him/her)</div>
+            <div class="word-cell">I see him/her</div>
+          </div>
+          <div class="word-row">
+            <div class="word-cell"><span class="algonquian">ke-nummêching-i</span></div>
+            <div class="word-cell"><span class="gloss">ke-</span> (you) + <span class="gloss">nummêching</span> (see) + <span class="gloss">-i</span> (me)</div>
+            <div class="word-cell">you see me</div>
+          </div>
+          <div class="word-row">
+            <div class="word-cell"><span class="algonquian">ne-nummêching-amen</span></div>
+            <div class="word-cell"><span class="gloss">ne-</span> (I) + <span class="gloss">nummêching</span> (see) + <span class="gloss">-amen</span> (it)</div>
+            <div class="word-cell">I see it</div>
+          </div>
+        </div>
+        
+        <h3>Tense and Aspect</h3>
+        <p>Virginia Algonquian likely marked tense and aspect through a combination of specific suffixes and particles:</p>
+        
+        <table class="example-table">
+          <thead>
+            <tr>
+              <th>Tense/Aspect</th>
+              <th>Marker</th>
+              <th>Example</th>
+              <th>Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Present</td>
+              <td>Base form</td>
+              <td><span class="algonquian">ne-mecitchêh</span></td>
+              <td>I eat</td>
+            </tr>
+            <tr>
+              <td>Past</td>
+              <td><span class="algonquian">-up</span> suffix</td>
+              <td><span class="algonquian">ne-mecitchêh-up</span></td>
+              <td>I ate</td>
+            </tr>
+            <tr>
+              <td>Future</td>
+              <td><span class="algonquian">-etah</span> suffix</td>
+              <td><span class="algonquian">ne-mecitchêh-etah</span></td>
+              <td>I will eat</td>
+            </tr>
+            <tr>
+              <td>Ongoing/Progressive</td>
+              <td><span class="algonquian">-epu</span> suffix</td>
+              <td><span class="algonquian">ne-mecitchêh-epu</span></td>
+              <td>I am eating</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <h3>Mood</h3>
+        <p>Different verb forms exist for different moods:</p>
+        
+        <div class="grammar-card">
+          <h4>Common Moods</h4>
+          <p><strong>Indicative</strong>: Statements of fact (base form)</p>
+          <p><strong>Imperative</strong>: Commands (typically using specific suffixes)</p>
+          <p><strong>Subjunctive</strong>: Hypothetical situations</p>
+        </div>
+        
+        <p>Examples of imperative forms:</p>
+        
+        <table class="example-table">
+          <thead>
+            <tr>
+              <th>Base Form</th>
+              <th>Imperative</th>
+              <th>Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="algonquian">peyagh</span> (come)</td>
+              <td><span class="algonquian">peyagh-sh</span></td>
+              <td>Come! (singular)</td>
+            </tr>
+            <tr>
+              <td><span class="algonquian">mecitchêh</span> (eat)</td>
+              <td><span class="algonquian">mecitchêh-k</span></td>
+              <td>Eat! (plural)</td>
+            </tr>
+            <tr>
+              <td><span class="algonquian">kettorauog</span> (speak)</td>
+              <td><span class="algonquian">kettorauog-ken</span></td>
+              <td>Speak! (singular)</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <h3>Negation</h3>
+        <p>Negation is indicated with prefixes and suffixes that surround the verb root:</p>
+        
+        <div class="word-breakdown">
+          <div class="word-row">
+            <div class="word-cell word-header">Word</div>
+            <div class="word-cell word-header">Analysis</div>
+            <div class="word-cell word-header">Meaning</div>
+          </div>
+          <div class="word-row">
+            <div class="word-cell"><span class="algonquian">ne-pomiteyouqh</span></div>
+            <div class="word-cell"><span class="gloss">ne-</span> (I) + <span class="gloss">pomiteyouqh</span> (walk)</div>
+            <div class="word-cell">I walk</div>
+          </div>
+          <div class="word-row">
+            <div class="word-cell"><span class="algonquian">mat-ne-pomiteyouqh-wi</span></div>
+            <div class="word-cell"><span class="gloss">mat-</span> (not) + <span class="gloss">ne-</span> (I) + <span class="gloss">pomiteyouqh</span> (walk) + <span class="gloss">-wi</span> (negative suffix)</div>
+            <div class="word-cell">I do not walk</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tab-content" id="syntax-tab">
+        <h3>Word Order</h3>
+        <p>Virginia Algonquian, like other Algonquian languages, likely had a basic Subject-Object-Verb (SOV) word order, though this could vary for emphasis or pragmatic purposes.</p>
+        
+        <div class="grammar-card">
+          <h4>Basic Word Order (SOV)</h4>
+          <p><span class="algonquian">Nemarough nameeth upsummenaaw.</span></p>
+          <p class="gloss">nemarough nameeth upsummena-aw</p>
+          <p class="gloss">man fish catch-3SG.3SG</p>
+          <p class="translation">"The man catches a fish."</p>
+        </div>
+        
+        <p>However, since verbs carry information about both subject and object, the word order could be flexible:</p>
+        
+        <div class="grammar-card">
+          <h4>Verb Initial (VSO)</h4>
+          <p><span class="algonquian">Upsummenaaw nemarough nameeth.</span></p>
+          <p class="gloss">upsummena-aw nemarough nameeth</p>
+          <p class="gloss">catch-3SG.3SG man fish</p>
+          <p class="translation">"The man catches a fish." (with emphasis on the action)</p>
+        </div>
+        
+        <h3>Noun Phrases</h3>
+        <p>In noun phrases, modifiers typically precede the noun:</p>
+        
+        <table class="example-table">
+          <thead>
+            <tr>
+              <th>Virginia Algonquian</th>
+              <th>Gloss</th>
+              <th>English</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="algonquian">winger attum</span></td>
+              <td>good dog</td>
+              <td>good dog</td>
+            </tr>
+            <tr>
+              <td><span class="algonquian">nehessayew matchcôat</span></td>
+              <td>red blanket</td>
+              <td>red blanket</td>
+            </tr>
+            <tr>
+              <td><span class="algonquian">mâss yehawkan</span></td>
+              <td>big house</td>
+              <td>big house</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <h3>Demonstratives</h3>
+        <p>Demonstratives (this, that) also precede the noun:</p>
+        
+        <table class="example-table">
+          <thead>
+            <tr>
+              <th>Demonstrative</th>
+              <th>Meaning</th>
+              <th>Example</th>
+              <th>Translation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="algonquian">yôho</span></td>
+              <td>this (near)</td>
+              <td><span class="algonquian">yôho yehawkan</span></td>
+              <td>this house</td>
+            </tr>
+            <tr>
+              <td><span class="algonquian">nawwot</span></td>
+              <td>that (far)</td>
+              <td><span class="algonquian">nawwot yehawkan</span></td>
+              <td>that house</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <h3>Questions</h3>
+        <p>Question formation likely involved question words and/or specific question particles:</p>
+        
+        <table class="example-table">
+          <thead>
+            <tr>
+              <th>Question Word</th>
+              <th>Meaning</th>
+              <th>Example</th>
+              <th>Translation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="algonquian">kekoy</span></td>
+              <td>what</td>
+              <td><span class="algonquian">Kekoy kenummêchamen?</span></td>
+              <td>What do you see?</td>
+            </tr>
+            <tr>
+              <td><span class="algonquian">thuan</span></td>
+              <td>who</td>
+              <td><span class="algonquian">Thuan peyagho?</span></td>
+              <td>Who is coming?</td>
+            </tr>
+            <tr>
+              <td><span class="algonquian">tanneh</span></td>
+              <td>where</td>
+              <td><span class="algonquian">Tanneh kêmatah?</span></td>
+              <td>Where are you?</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="tab-content" id="examples-tab">
+        <h3>Example Sentences</h3>
+        <p>Here are some example sentences in Virginia Algonquian with analysis:</p>
+        
+        <div class="grammar-card">
+          <h4>Basic Sentence #1</h4>
+          <p><span class="algonquian">Ne-nattewowan attecenna.</span></p>
+          <p class="gloss">ne-nattewowan attecenna</p>
+          <p class="gloss">1SG-hunt deer</p>
+          <p class="translation">"I hunt deer."</p>
+        </div>
+        
+        <div class="grammar-card">
+          <h4>Basic Sentence #2</h4>
+          <p><span class="algonquian">Attum ne-mêheock akawheraaw.</span></p>
+          <p class="gloss">attum ne-mêheock akawheraaw</p>
+          <p class="gloss">dog 1SG-hand bite-3SG.3SG</p>
+          <p class="translation">"The dog bit my hand."</p>
+        </div>
+        
+        <div class="grammar-card">
+          <h4>Negative Sentence</h4>
+          <p><span class="algonquian">Mat-ne-nummêchamen-wi matchcôat.</span></p>
+          <p class="gloss">mat-ne-nummêchamen-wi matchcôat</p>
+          <p class="gloss">NEG-1SG-see-NEG blanket</p>
+          <p class="translation">"I don't see the blanket."</p>
+        </div>
+        
+        <div class="grammar-card">
+          <h4>Command</h4>
+          <p><span class="algonquian">Peyagh-sh yôho!</span></p>
+          <p class="gloss">peyagh-sh yôho</p>
+          <p class="gloss">come-IMP here</p>
+          <p class="translation">"Come here!"</p>
+        </div>
+        
+        <div class="grammar-card">
+          <h4>Complex Sentence with Possession</h4>
+          <p><span class="algonquian">Ne-noughts winger ahone-mehkenanahum yehawkan-ing keheightaaw.</span></p>
+          <p class="gloss">ne-noughts winger ahone-mehkenanahum yehawkan-ing keheightaaw</p>
+          <p class="gloss">1SG-father good god-box house-LOC build-3SG</p>
+          <p class="translation">"My father built a good church (god-box) in the village."</p>
+        </div>
+        
+        <h3>John Smith's Recorded Sentence</h3>
+        <p>One of the few complete sentences recorded by John Smith, with analysis:</p>
+        
+        <div class="grammar-card">
+          <h4>Historical Sentence</h4>
+          <p><span class="algonquian">Kekaten Pokahontas patiaquagh niugh tanks manotyens neer mowchick rawrenock audowgh.</span></p>
+          <p class="gloss">kekaten Pokahontas patiaquagh niugh tanks manotyens neer mowchick rawrenock audowgh</p>
+          <p class="gloss">bid Pocahontas bring-IMP two little basket here many bead give-1SG.3SG</p>
+          <p class="translation">"Bid Pocahontas bring hither two little baskets, and I will give her white beads to make her a chain."</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="grammar-section">
+      <h2>Basic Sentence Builder</h2>
+      <p>Use this tool to practice building simple sentences in Virginia Algonquian. Select elements to combine into a sentence.</p>
+      
+      <div class="sentence-builder">
+        <h3>Build Your Sentence</h3>
+        
+        <div class="element-group">
+          <div class="element-title">Subjects</div>
+          <div class="builder-elements">
+            <div class="builder-element" data-type="subject" data-value="ne" data-text="ne-" data-english="I">ne- (I)</div>
+            <div class="builder-element" data-type="subject" data-value="ke" data-text="ke-" data-english="you">ke- (you)</div>
+            <div class="builder-element" data-type="subject" data-value="nemarough" data-text="nemarough" data-english="man">nemarough (man)</div>
+            <div class="builder-element" data-type="subject" data-value="cusses" data-text="cusses" data-english="woman">cusses (woman)</div>
+            <div class="builder-element" data-type="subject" data-value="attum" data-text="attum" data-english="dog">attum (dog)</div>
+          </div>
+        </div>
+        
+        <div class="element-group">
+          <div class="element-title">Verbs</div>
+          <div class="builder-elements">
+            <div class="builder-element" data-type="verb" data-value="nummêching" data-text="nummêching" data-english="see">nummêching (see)</div>
+            <div class="builder-element" data-type="verb" data-value="mecitchêh" data-text="mecitchêh" data-english="eat">mecitchêh (eat)</div>
+            <div class="builder-element" data-type="verb" data-value="pomiteyouqh" data-text="pomiteyouqh" data-english="walk">pomiteyouqh (walk)</div>
+            <div class="builder-element" data-type="verb" data-value="nattewowan" data-text="nattewowan" data-english="hunt">nattewowan (hunt)</div>
+            <div class="builder-element" data-type="verb" data-value="kettorauog" data-text="kettorauog" data-english="speak">kettorauog (speak)</div>
+          </div>
+        </div>
+        
+        <div class="element-group">
+          <div class="element-title">Objects</div>
+          <div class="builder-elements">
+            <div class="builder-element" data-type="object" data-value="nameeth" data-text="nameeth" data-english="fish">nameeth (fish)</div>
+            <div class="builder-element" data-type="object" data-value="attecenna" data-text="attecenna" data-english="deer">attecenna (deer)</div>
+            <div class="builder-element" data-type="object" data-value="appoans" data-text="appoans" data-english="bread">appoans (bread)</div>
+            <div class="builder-element" data-type="object" data-value="yehawkan" data-text="yehawkan" data-english="house">yehawkan (house)</div>
+            <div class="builder-element" data-type="object" data-value="mehct" data-text="mehct" data-english="path">mehct (path)</div>
+          </div>
+        </div>
+        
+        <div class="element-group">
+          <div class="element-title">Modifiers</div>
+          <div class="builder-elements">
+            <div class="builder-element" data-type="modifier" data-value="winger" data-text="winger" data-english="good">winger (good)</div>
+            <div class="builder-element" data-type="modifier" data-value="matit" data-text="matit" data-english="bad">matit (bad)</div>
+            <div class="builder-element" data-type="modifier" data-value="mâss" data-text="mâss" data-english="big">mâss (big)</div>
+            <div class="builder-element" data-type="modifier" data-value="matasseyowh" data-text="matasseyowh" data-english="small">matasseyowh (small)</div>
+          </div>
+        </div>
+        
+        <h3>Your Sentence</h3>
+        <div class="sentence-area" id="sentence-area">
+          <!-- Words will be added here -->
+        </div>
+        
+        <div class="controls">
+          <button id="clear-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 6h18"></path>
+              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            </svg>
+            Clear
+          </button>
+          <button id="build-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+            Build Sentence
+          </button>
+        </div>
+        
+        <h3>Result</h3>
+        <div class="result-area">
+          <div class="result-algonquian" id="result-algonquian">...</div>
+          <div class="result-english" id="result-english">...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2025 Virginia Algonquian Language Revitalization</p>
+  </footer>
+  
+  <script>
+    // Tab functionality
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs and contents
+        tabs.forEach(t => t.classList.remove('active'));
+        tabContents.forEach(c => c.classList.remove('active'));
+        
+        // Add active class to clicked tab and corresponding content
+        tab.classList.add('active');
+        document.getElementById(`${tab.dataset.tab}-tab`).classList.add('active');
+      });
+    });
+    
+    // Sentence builder functionality
+    const builderElements = document.querySelectorAll('.builder-element');
+    const sentenceArea = document.getElementById('sentence-area');
+    const clearBtn = document.getElementById('clear-btn');
+    const buildBtn = document.getElementById('build-btn');
+    const resultAlgonquian = document.getElementById('result-algonquian');
+    const resultEnglish = document.getElementById('result-english');
+    
+    let sentenceStructure = [];
+    
+    // Add elements to sentence
+    builderElements.forEach(element => {
+      element.addEventListener('click', () => {
+        const type = element.dataset.type;
+        const value = element.dataset.value;
+        const text = element.dataset.text;
+        const english = element.dataset.english;
+        
+        // Create word element
+        const wordElement = document.createElement('div');
+        wordElement.className = 'sentence-word';
+        wordElement.dataset.type = type;
+        wordElement.dataset.value = value;
+        wordElement.dataset.english = english;
+        wordElement.textContent = text;
+        
+        // Add remove button
+        const removeBtn = document.createElement('span');
+        removeBtn.className = 'remove';
+        removeBtn.innerHTML = '×';
+        removeBtn.addEventListener('click', () => {
+          wordElement.remove();
+        });
+        
+        wordElement.appendChild(removeBtn);
+        sentenceArea.appendChild(wordElement);
+      });
+    });
+    
+    // Clear sentence
+    clearBtn.addEventListener('click', () => {
+      sentenceArea.innerHTML = '';
+      resultAlgonquian.textContent = '...';
+      resultEnglish.textContent = '...';
+    });
+    
+    // Build sentence
+    buildBtn.addEventListener('click', () => {
+      const words = sentenceArea.querySelectorAll('.sentence-word');
+      
+      // Extract data
+      const sentenceData = {
+        subject: null,
+        verb: null,
+        object: null,
+        modifiers: []
+      };
+      
+      words.forEach(word => {
+        const type = word.dataset.type;
+        const value = word.dataset.value;
+        
+        if (type === 'subject') {
+          sentenceData.subject = {
+            value: value,
+            english: word.dataset.english
+          };
+        } else if (type === 'verb') {
+          sentenceData.verb = {
+            value: value,
+            english: word.dataset.english
+          };
+        } else if (type === 'object') {
+          sentenceData.object = {
+            value: value,
+            english: word.dataset.english
+          };
+        } else if (type === 'modifier') {
+          sentenceData.modifiers.push({
+            value: value,
+            english: word.dataset.english
+          });
+        }
+      });
+      
+      // Basic grammar rules
+      let algonquianSentence = '';
+      let englishSentence = '';
+      
+      // Subject
+      if (sentenceData.subject) {
+        if (sentenceData.subject.value === 'ne' || sentenceData.subject.value === 'ke') {
+          // Personal prefix case
+          if (sentenceData.verb) {
+            algonquianSentence += sentenceData.subject.value + '-';
+          } else {
+            algonquianSentence += sentenceData.subject.value + ' ';
+          }
+        } else {
+          // Full noun case
+          // Add modifiers first if they exist
+          sentenceData.modifiers.forEach(mod => {
+            algonquianSentence += mod.value + ' ';
+          });
+          
+          algonquianSentence += sentenceData.subject.value + ' ';
+        }
+        
+        englishSentence += sentenceData.subject.english + ' ';
+      }
+      
+      // Verb
+      if (sentenceData.verb) {
+        algonquianSentence += sentenceData.verb.value + ' ';
+        englishSentence += sentenceData.verb.english + 's ';
+      }
+      
+      // Object
+      if (sentenceData.object) {
+        // If there are modifiers and they haven't been used for the subject
+        if (sentenceData.modifiers.length > 0 && sentenceData.subject && sentenceData.subject.value !== 'ne' && sentenceData.subject.value !== 'ke') {
+          // Modifiers already used for subject
+        } else {
+          // Add modifiers first if they exist
+          sentenceData.modifiers.forEach(mod => {
+            algonquianSentence += mod.value + ' ';
+          });
+        }
+        
+        algonquianSentence += sentenceData.object.value;
+        englishSentence += 'the ';
+        
+        // Add modifiers in English
+        sentenceData.modifiers.forEach(mod => {
+          englishSentence += mod.english + ' ';
+        });
+        
+        englishSentence += sentenceData.object.english;
+      }
+      
+      // Set results
+      resultAlgonquian.textContent = algonquianSentence.trim();
+      resultEnglish.textContent = englishSentence.trim();
+    });
+  </script>
+</body>
+</html>

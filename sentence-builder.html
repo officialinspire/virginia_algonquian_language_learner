@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentence Builder - Virginia Algonquian Language Learner</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Updated Navigation Styles */
+    .header-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      padding: 0 1rem;
+    }
+
+    .header-link {
+      background-color: var(--secondary);
+      color: white;
+      padding: 0.75rem 1.25rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      text-align: center;
+      min-width: 120px;
+      border: 2px solid var(--secondary);
+    }
+
+    .header-link:hover {
+      background-color: var(--primary);
+      border-color: var(--primary);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .header-link.active {
+      background-color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    /* Mobile Navigation */
+    @media (max-width: 768px) {
+      .header-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+      }
+      
+      .header-link {
+        font-size: 0.8rem;
+        padding: 0.6rem 0.8rem;
+        min-width: auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header-nav {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .builder-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .intro-section {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .intro-section h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      font-family: 'Cinzel', serif;
+    }
+
+    .intro-section h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: var(--accent);
+      border-radius: 1.5px;
+    }
+    
+    .intro-section p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .intro-section ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .intro-section li {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+    
+    .builder-card {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    
+    .builder-card h2 {
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      font-family: 'Cinzel', serif;
+    }
+    
+    .builder-card h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100px;
+      height: 3px;
+      background-color: var(--accent);
+      border-radius: 1.5px;
+    }
+    
+    .builder-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .builder-step {
+      border: 1px solid var(--light);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .step-header {
+      background-color: var(--secondary);
+      color: white;
+      padding: 1rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    
+    .step-number {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: white;
+      color: var(--secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-right: 1rem;
+    }
+    
+    .step-title {
+      font-weight: bold;
+      flex-grow: 1;
+    }
+    
+    .step-content {
+      padding: 1.5rem;
+      background-color: white;
+    }
+    
+    .word-categories {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+    }
+    
+    .word-category {
+      padding: 0.5rem 1rem;
+      background-color: var(--light);
+      border-radius: 6px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+    
+    .word-category.active {
+      background-color: var(--primary);
+      color: white;
+    }
+    
+    .words-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .word-item {
+      background-color: var(--light);
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      position: relative;
+    }
+    
+    .word-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .word-item.selected {
+      background-color: var(--accent);
+    }
+    
+    .word-value {
+      font-weight: bold;
+      color: var(--earth);
+    }
+    
+    .word-meaning {
+      font-size: 0.9rem;
+      color: var(--secondary);
+      margin-top: 0.25rem;
+    }
+    
+    .sentence-display {
+      min-height: 80px;
+      border: 2px solid var(--light);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      position: relative;
+    }
+    
+    .sentence-display-title {
+      position: absolute;
+      top: -0.75rem;
+      left: 1rem;
+      background-color: white;
+      padding: 0 0.5rem;
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+    
+    .sentence-words {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    
+    .sentence-word {
+      background-color: var(--light);
+      border-radius: 4px;
+      padding: 0.5rem 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      position: relative;
+    }
+    
+    .word-remove {
+      width: 18px;
+      height: 18px;
+      background-color: rgba(0,0,0,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .word-remove:hover {
+      background-color: var(--primary);
+      color: white;
+    }
+    
+    .sentence-placeholder {
+      color: var(--secondary);
+      font-style: italic;
+    }
+    
+    .result-section {
+      margin-top: 3rem;
+      border-top: 2px solid var(--light);
+      padding-top: 2rem;
+    }
+    
+    .result-title {
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-family: 'Cinzel', serif;
+    }
+    
+    .result-card {
+      background-color: var(--light);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .result-card-title {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+    
+    .result-content {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    
+    .result-algonquian {
+      color: var(--earth);
+      font-weight: bold;
+    }
+    
+    .result-english {
+      color: var(--secondary);
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+    
+    .word-analysis {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    
+    .analysis-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background-color: white;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+    }
+    
+    .analysis-word {
+      font-weight: bold;
+      color: var(--earth);
+      min-width: 120px;
+    }
+    
+    .analysis-description {
+      flex-grow: 1;
+      font-size: 0.9rem;
+    }
+    
+    .templates-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .template-item {
+      background-color: var(--light);
+      border-radius: 8px;
+      padding: 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .template-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .template-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+    
+    .template-example {
+      font-size: 0.9rem;
+      color: var(--earth);
+      margin-bottom: 0.25rem;
+    }
+    
+    .template-meaning {
+      font-size: 0.8rem;
+      color: var(--secondary);
+      font-style: italic;
+    }
+    
+    .action-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    
+    .custom-select {
+      position: relative;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    
+    .custom-select select {
+      appearance: none;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background-color: white;
+      border: 2px solid var(--light);
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    
+    .custom-select::after {
+      content: "▼";
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+      font-size: 0.8rem;
+      color: var(--secondary);
+      pointer-events: none;
+    }
+    
+    @media (max-width: 768px) {
+      .word-categories {
+        flex-wrap: wrap;
+      }
+      
+      .words-container {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      }
+      
+      .templates-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VIRGINIA ALGONQUIAN LANGUAGE LEARNER</h1>
+    <p class="intro">Virginia Algonquian (Powhatan) Sentence Builder</p>
+    
+    <div class="header-nav">
+      <a href="index.html" class="header-link">Learning Interface</a>
+      <a href="about.html" class="header-link">About Project</a>
+      <a href="phonetic-grammar-rules.html" class="header-link">Phonetic Rules</a>
+      <a href="grammar.html" class="header-link">Grammar Guide</a>
+      <a href="grammar02.html" class="header-link">Advanced Grammar</a>
+      <a href="modern-vocab.html" class="header-link">Modern Vocabulary</a>
+      <a href="vocab-list.html" class="header-link">Complete Vocabulary</a>
+      <a href="comparative-lexicon.html" class="header-link">Comparative Lexicon</a>
+      <a href="sentence-builder.html" class="header-link active">Sentence Builder</a>
+    </div>
+  </header>
+  
+  <div class="builder-container">
+    <div class="intro-section">
+      <h2>Create Virginia Algonquian Sentences</h2>
+      <p>This tool will help you build sentences in Virginia Algonquian (Powhatan) using reconstructed vocabulary and grammar. You can create sentences in multiple ways:</p>
+      <ul>
+        <li>Select from common sentence templates</li>
+        <li>Build a custom sentence word by word</li>
+        <li>See grammatical analysis of your created sentences</li>
+      </ul>
+      <p>Remember that this is a reconstruction based on limited historical sources and comparative linguistics. The sentences reflect our best understanding of how Virginia Algonquian might have been spoken in the early 17th century.</p>
+    </div>
+    
+    <div class="builder-card">
+      <h2>Sentence Templates</h2>
+      <p>Select a template to quickly create common sentence types:</p>
+      
+      <div class="templates-container">
+        <div class="template-item" data-template="simple">
+          <div class="template-title">Simple Statement</div>
+          <div class="template-example">Ne-pomiteyouqh</div>
+          <div class="template-meaning">"I walk"</div>
+        </div>
+        
+        <div class="template-item" data-template="transitive">
+          <div class="template-title">Transitive Action</div>
+          <div class="template-example">Ne-nummêchamen yehawkan</div>
+          <div class="template-meaning">"I see a house"</div>
+        </div>
+        
+        <div class="template-item" data-template="command">
+          <div class="template-title">Command</div>
+          <div class="template-example">Peyagh-sh!</div>
+          <div class="template-meaning">"Come!"</div>
+        </div>
+        
+        <div class="template-item" data-template="question">
+          <div class="template-title">Question</div>
+          <div class="template-example">Kekoy kenummêchamen?</div>
+          <div class="template-meaning">"What do you see?"</div>
+        </div>
+        
+        <div class="template-item" data-template="location">
+          <div class="template-title">Location Statement</div>
+          <div class="template-example">Ne-yehawkan-ing nepomiteyouqh</div>
+          <div class="template-meaning">"I walk in my house"</div>
+        </div>
+        
+        <div class="template-item" data-template="negative">
+          <div class="template-title">Negative Statement</div>
+          <div class="template-example">Mat-ne-mecitchêh-wi</div>
+          <div class="template-meaning">"I do not eat"</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="builder-card">
+      <h2>Custom Sentence Builder</h2>
+      
+      <div class="builder-steps">
+        <div class="builder-step">
+          <div class="step-header">
+            <div class="step-number">1</div>
+            <div class="step-title">Select Sentence Structure</div>
+          </div>
+          <div class="step-content">
+            <div class="custom-select">
+              <select id="structure-select">
+                <option value="simple">Simple Statement (Subject + Verb)</option>
+                <option value="transitive">Transitive Statement (Subject + Verb + Object)</option>
+                <option value="modified">Modified Statement (Subject + Adjective + Object)</option>
+                <option value="command">Command (Verb + Suffix)</option>
+                <option value="question">Question (Question Word + Verb)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <div class="builder-step">
+          <div class="step-header">
+            <div class="step-number">2</div>
+            <div class="step-title">Choose Words</div>
+          </div>
+          <div class="step-content">
+            <div id="word-selection-area">
+              <!-- Word selection will be populated here based on structure -->
+            </div>
+          </div>
+        </div>
+        
+        <div class="builder-step">
+          <div class="step-header">
+            <div class="step-number">3</div>
+            <div class="step-title">Your Sentence</div>
+          </div>
+          <div class="step-content">
+            <div class="sentence-display">
+              <div class="sentence-display-title">Your Virginia Algonquian Sentence</div>
+              <div class="sentence-words" id="sentence-display">
+                <div class="sentence-placeholder">Select words to build your sentence...</div>
+              </div>
+            </div>
+            
+            <div class="action-buttons">
+              <button id="clear-btn" class="control-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 6h18"></path>
+                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                </svg>
+                Clear Sentence
+              </button>
+              <button id="generate-btn" class="control-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+                Generate Sentence
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="result-section">
+        <h3 class="result-title">Your Virginia Algonquian Sentence</h3>
+        
+        <div class="result-card">
+          <div class="result-card-title">Complete Sentence</div>
+          <div class="result-content result-algonquian" id="result-algonquian">...</div>
+          <div class="result-content result-english" id="result-english">...</div>
+        </div>
+        
+        <div class="result-card">
+          <div class="result-card-title">Word Analysis</div>
+          <div class="word-analysis" id="word-analysis">
+            <!-- Word analysis will be populated here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2025 Virginia Algonquian Language Revitalization</p>
+  </footer>
+  
+  <script>
+    // Virginia Algonquian vocabulary data
+    const vocabularyData = {
+      subjects: [
+        { value: "ne", text: "ne-", meaning: "I", type: "prefix" },
+        { value: "ke", text: "ke-", meaning: "you", type: "prefix" },
+        { value: "nemarough", text: "nemarough", meaning: "man", type: "noun" },
+        { value: "cusses", text: "cusses", meaning: "woman", type: "noun" },
+        { value: "attum", text: "attum", meaning: "dog", type: "noun" },
+        { value: "nameeth", text: "nameeth", meaning: "fish", type: "noun" },
+        { value: "nekaupot", text: "nekaupot", meaning: "child", type: "noun" }
+      ],
+      verbs: [
+        { value: "nummêching", text: "nummêching", meaning: "see", type: "verb" },
+        { value: "mecitchêh", text: "mecitchêh", meaning: "eat", type: "verb" },
+        { value: "pomiteyouqh", text: "pomiteyouqh", meaning: "walk", type: "verb" },
+        { value: "nattewowan", text: "nattewowan", meaning: "hunt", type: "verb" },
+        { value: "kettorauog", text: "kettorauog", meaning: "speak", type: "verb" },
+        { value: "asapan", text: "asapan", meaning: "sleep", type: "verb" },
+        { value: "peyagh", text: "peyagh", meaning: "come", type: "verb" }
+      ],
+      verbSuffixes: [
+        { value: "sh", text: "-sh", meaning: "imperative (command)", type: "suffix" },
+        { value: "k", text: "-k", meaning: "plural imperative", type: "suffix" },
+        { value: "up", text: "-up", meaning: "past tense", type: "suffix" },
+        { value: "etah", text: "-etah", meaning: "future tense", type: "suffix" },
+        { value: "epu", text: "-epu", meaning: "progressive/ongoing", type: "suffix" }
+      ],
+      objects: [
+        { value: "nameeth", text: "nameeth", meaning: "fish", type: "noun" },
+        { value: "attecenna", text: "attecenna", meaning: "deer", type: "noun" },
+        { value: "appoans", text: "appoans", meaning: "bread", type: "noun" },
+        { value: "yehawkan", text: "yehawkan", meaning: "house", type: "noun" },
+        { value: "mehct", text: "mehct", meaning: "path", type: "noun" },
+        { value: "seip", text: "seip", meaning: "river", type: "noun" },
+        { value: "attum", text: "attum", meaning: "dog", type: "noun" }
+      ],
+      adjectives: [
+        { value: "winger", text: "winger", meaning: "good", type: "adjective" },
+        { value: "matit", text: "matit", meaning: "bad", type: "adjective" },
+        { value: "mâss", text: "mâss", meaning: "big", type: "adjective" },
+        { value: "matasseyowh", text: "matasseyowh", meaning: "small", type: "adjective" },
+        { value: "nâtakôam", text: "nâtakôam", meaning: "cold", type: "adjective" },
+        { value: "sucquateyough", text: "sucquateyough", meaning: "hot", type: "adjective" }
+      ],
+      questionWords: [
+        { value: "kekoy", text: "kekoy", meaning: "what", type: "question" },
+        { value: "thuan", text: "thuan", meaning: "who", type: "question" },
+        { value: "tanneh", text: "tanneh", meaning: "where", type: "question" },
+        { value: "tansheeke", text: "tansheeke", meaning: "when", type: "question" },
+        { value: "tayough", text: "tayough", meaning: "how", type: "question" }
+      ],
+      locations: [
+        { value: "ing", text: "-ing", meaning: "in, at (locative suffix)", type: "suffix" },
+        { value: "eike", text: "-eike", meaning: "to, towards (directive suffix)", type: "suffix" },
+        { value: "ewh", text: "-ewh", meaning: "from (ablative suffix)", type: "suffix" }
+      ],
+      negation: [
+        { value: "mat", text: "mat-", meaning: "not (negative prefix)", type: "prefix" },
+        { value: "wi", text: "-wi", meaning: "negative suffix", type: "suffix" }
+      ]
+    };
+    
+    // Template patterns
+    const templatePatterns = {
+      simple: {
+        subject: true,
+        verb: true,
+        example: { subject: "ne", verb: "pomiteyouqh" }
+      },
+      transitive: {
+        subject: true,
+        verb: true,
+        object: true,
+        example: { subject: "ne", verb: "nummêching", verbSuffix: "amen", object: "yehawkan" }
+      },
+      command: {
+        verb: true,
+        verbSuffix: true,
+        example: { verb: "peyagh", verbSuffix: "sh" }
+      },
+      question: {
+        questionWord: true,
+        subject: true,
+        verb: true,
+        example: { questionWord: "kekoy", subject: "ke", verb: "nummêching", verbSuffix: "amen" }
+      },
+      location: {
+        subject: true,
+        object: true,
+        locationSuffix: true,
+        verb: true,
+        example: { subject: "ne", object: "yehawkan", locationSuffix: "ing", verb: "pomiteyouqh" }
+      },
+      negative: {
+        negationPrefix: true,
+        subject: true,
+        verb: true,
+        negationSuffix: true,
+        example: { negationPrefix: "mat", subject: "ne", verb: "mecitchêh", negationSuffix: "wi" }
+      }
+    };
+    
+    // DOM elements
+    const structureSelect = document.getElementById('structure-select');
+    const wordSelectionArea = document.getElementById('word-selection-area');
+    const sentenceDisplay = document.getElementById('sentence-display');
+    const clearBtn = document.getElementById('clear-btn');
+    const generateBtn = document.getElementById('generate-btn');
+    const resultAlgonquian = document.getElementById('result-algonquian');
+    const resultEnglish = document.getElementById('result-english');
+    const wordAnalysis = document.getElementById('word-analysis');
+    const templateItems = document.querySelectorAll('.template-item');
+    
+    // Current sentence data
+    let currentSentence = {
+      structure: 'simple',
+      components: {}
+    };
+    
+    // Initialize
+    init();
+    
+    function init() {
+      // Set up event listeners
+      structureSelect.addEventListener('change', updateWordSelection);
+      clearBtn.addEventListener('click', clearSentence);
+      generateBtn.addEventListener('click', generateSentence);
+      
+      // Template selection
+      templateItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const template = item.dataset.template;
+          applyTemplate(template);
+        });
+      });
+      
+      // Initial word selection setup
+      updateWordSelection();
+    }
+    
+    function updateWordSelection() {
+      // Get selected structure
+      const structure = structureSelect.value;
+      currentSentence.structure = structure;
+      
+      // Clear current selection
+      wordSelectionArea.innerHTML = '';
+      
+      // Create appropriate selection sections based on structure
+      if (structure === 'simple') {
+        // Subject + Verb
+        createWordSelectionSection('subjects', 'Subject');
+        createWordSelectionSection('verbs', 'Verb');
+        
+      } else if (structure === 'transitive') {
+        // Subject + Verb + Object
+        createWordSelectionSection('subjects', 'Subject');
+        createWordSelectionSection('verbs', 'Verb');
+        createWordSelectionSection('objects', 'Object');
+        
+      } else if (structure === 'modified') {
+        // Subject + Adjective + Object
+        createWordSelectionSection('subjects', 'Subject');
+        createWordSelectionSection('adjectives', 'Adjective');
+        createWordSelectionSection('objects', 'Object');
+        
+      } else if (structure === 'command') {
+        // Verb + Suffix
+        createWordSelectionSection('verbs', 'Verb');
+        createWordSelectionSection('verbSuffixes', 'Command Suffix');
+        
+      } else if (structure === 'question') {
+        // Question Word + Verb
+        createWordSelectionSection('questionWords', 'Question Word');
+        createWordSelectionSection('subjects', 'Subject (optional)', true);
+        createWordSelectionSection('verbs', 'Verb');
+      }
+    }
+    
+    function createWordSelectionSection(category, title, optional = false) {
+      const section = document.createElement('div');
+      section.className = 'word-selection-section';
+      
+      const sectionTitle = document.createElement('h3');
+      sectionTitle.textContent = title + (optional ? ' (optional)' : '');
+      section.appendChild(sectionTitle);
+      
+      const wordsContainer = document.createElement('div');
+      wordsContainer.className = 'words-container';
+      
+      vocabularyData[category].forEach(word => {
+        const wordItem = document.createElement('div');
+        wordItem.className = 'word-item';
+        wordItem.dataset.category = category;
+        wordItem.dataset.value = word.value;
+        wordItem.dataset.text = word.text;
+        wordItem.dataset.meaning = word.meaning;
+        wordItem.dataset.type = word.type;
+        
+        const wordValue = document.createElement('div');
+        wordValue.className = 'word-value';
+        wordValue.textContent = word.text;
+        wordItem.appendChild(wordValue);
+        
+        const wordMeaning = document.createElement('div');
+        wordMeaning.className = 'word-meaning';
+        wordMeaning.textContent = word.meaning;
+        wordItem.appendChild(wordMeaning);
+        
+        // Add click event
+        wordItem.addEventListener('click', () => {
+          selectWord(category, word);
+          updateSentenceDisplay();
+        });
+        
+        wordsContainer.appendChild(wordItem);
+      });
+      
+      section.appendChild(wordsContainer);
+      wordSelectionArea.appendChild(section);
+    }
+    
+    function selectWord(category, word) {
+      // Update current sentence data
+      currentSentence.components[category] = word;
+      
+      // Update selection UI
+      const items = document.querySelectorAll(`.word-item[data-category="${category}"]`);
+      items.forEach(item => {
+        if (item.dataset.value === word.value) {
+          item.classList.add('selected');
+        } else {
+          item.classList.remove('selected');
+        }
+      });
+    }
+    
+    function updateSentenceDisplay() {
+      sentenceDisplay.innerHTML = '';
+      
+      // Check if any components are selected
+      const hasComponents = Object.keys(currentSentence.components).length > 0;
+      
+      if (!hasComponents) {
+        const placeholder = document.createElement('div');
+        placeholder.className = 'sentence-placeholder';
+        placeholder.textContent = 'Select words to build your sentence...';
+        sentenceDisplay.appendChild(placeholder);
+        return;
+      }
+      
+      // Order matters for display - define the order based on structure
+      const componentOrder = getComponentOrder(currentSentence.structure);
+      
+      // Add words in the correct order
+      componentOrder.forEach(category => {
+        if (currentSentence.components[category]) {
+          const word = currentSentence.components[category];
+          
+          const wordElement = document.createElement('div');
+          wordElement.className = 'sentence-word';
+          
+          const wordText = document.createElement('span');
+          wordText.textContent = word.text;
+          wordElement.appendChild(wordText);
+          
+          const removeBtn = document.createElement('div');
+          removeBtn.className = 'word-remove';
+          removeBtn.textContent = '×';
+          removeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            delete currentSentence.components[category];
+            updateSentenceDisplay();
+            
+            // Update selection UI
+            const items = document.querySelectorAll(`.word-item[data-category="${category}"]`);
+            items.forEach(item => item.classList.remove('selected'));
+          });
+          wordElement.appendChild(removeBtn);
+          
+          sentenceDisplay.appendChild(wordElement);
+        }
+      });
+    }
+    
+    function getComponentOrder(structure) {
+      switch (structure) {
+        case 'simple':
+          return ['subjects', 'verbs'];
+        case 'transitive':
+          return ['subjects', 'verbs', 'objects'];
+        case 'modified':
+          return ['subjects', 'adjectives', 'objects'];
+        case 'command':
+          return ['verbs', 'verbSuffixes'];
+        case 'question':
+          return ['questionWords', 'subjects', 'verbs'];
+        default:
+          return Object.keys(currentSentence.components);
+      }
+    }
+    
+    function clearSentence() {
+      currentSentence.components = {};
+      updateSentenceDisplay();
+      
+      // Clear UI selections
+      const items = document.querySelectorAll('.word-item');
+      items.forEach(item => item.classList.remove('selected'));
+      
+      // Clear results
+      resultAlgonquian.textContent = '...';
+      resultEnglish.textContent = '...';
+      wordAnalysis.innerHTML = '';
+    }
+    
+    function generateSentence() {
+      if (Object.keys(currentSentence.components).length === 0) {
+        resultAlgonquian.textContent = '...';
+        resultEnglish.textContent = 'Please select words for your sentence first.';
+        return;
+      }
+      
+      let algonquianSentence = '';
+      let englishSentence = '';
+      const structure = currentSentence.structure;
+      
+      // Generate sentence based on structure and selected components
+      if (structure === 'simple') {
+        // Subject + Verb
+        const subject = currentSentence.components['subjects'];
+        const verb = currentSentence.components['verbs'];
+        
+        if (subject && verb) {
+          if (subject.type === 'prefix') {
+            algonquianSentence = `${subject.text}${verb.text}`;
+            englishSentence = `${subject.meaning} ${verb.meaning}`;
+          } else {
+            algonquianSentence = `${subject.text} ${verb.text}`;
+            englishSentence = `The ${subject.meaning} ${verb.meaning}s`;
+          }
+        }
+        
+      } else if (structure === 'transitive') {
+        // Subject + Verb + Object
+        const subject = currentSentence.components['subjects'];
+        const verb = currentSentence.components['verbs'];
+        const object = currentSentence.components['objects'];
+        
+        if (subject && verb && object) {
+          if (subject.type === 'prefix') {
+            // Add appropriate transitive suffix
+            const suffix = object.type === 'noun' ? 'amen' : 'āw';
+            algonquianSentence = `${subject.text}${verb.text}${suffix} ${object.text}`;
+            englishSentence = `${subject.meaning} ${verb.meaning} the ${object.meaning}`;
+          } else {
+            algonquianSentence = `${subject.text} ${verb.text} ${object.text}`;
+            englishSentence = `The ${subject.meaning} ${verb.meaning}s the ${object.meaning}`;
+          }
+        }
+        
+      } else if (structure === 'modified') {
+        // Subject + Adjective + Object
+        const subject = currentSentence.components['subjects'];
+        const adjective = currentSentence.components['adjectives'];
+        const object = currentSentence.components['objects'];
+        
+        if (subject && adjective && object) {
+          if (subject.type === 'prefix') {
+            algonquianSentence = `${subject.text}nummêching ${adjective.text} ${object.text}`;
+            englishSentence = `${subject.meaning} see the ${adjective.meaning} ${object.meaning}`;
+          } else {
+            algonquianSentence = `${subject.text} nummêching ${adjective.text} ${object.text}`;
+            englishSentence = `The ${subject.meaning} sees the ${adjective.meaning} ${object.meaning}`;
+          }
+        }
+        
+      } else if (structure === 'command') {
+        // Verb + Suffix
+        const verb = currentSentence.components['verbs'];
+        const suffix = currentSentence.components['verbSuffixes'];
+        
+        if (verb && suffix) {
+          algonquianSentence = `${verb.text}${suffix.text}!`;
+          englishSentence = `${verb.meaning.charAt(0).toUpperCase() + verb.meaning.slice(1)}!`;
+        }
+        
+      } else if (structure === 'question') {
+        // Question Word + Subject + Verb
+        const questionWord = currentSentence.components['questionWords'];
+        const subject = currentSentence.components['subjects'];
+        const verb = currentSentence.components['verbs'];
+        
+        if (questionWord && verb) {
+          if (subject) {
+            if (subject.type === 'prefix') {
+              algonquianSentence = `${questionWord.text} ${subject.text}${verb.text}${questionWord.value === 'kekoy' ? 'amen' : ''}?`;
+              englishSentence = `${questionWord.meaning.charAt(0).toUpperCase() + questionWord.meaning.slice(1)} do ${subject.meaning} ${verb.meaning}?`;
+            } else {
+              algonquianSentence = `${questionWord.text} ${subject.text} ${verb.text}?`;
+              englishSentence = `${questionWord.meaning.charAt(0).toUpperCase() + questionWord.meaning.slice(1)} does the ${subject.meaning} ${verb.meaning}?`;
+            }
+          } else {
+            algonquianSentence = `${questionWord.text} ${verb.text}?`;
+            englishSentence = `${questionWord.meaning.charAt(0).toUpperCase() + questionWord.meaning.slice(1)} ${verb.meaning}?`;
+          }
+        }
+      }
+      
+      // Update results
+      resultAlgonquian.textContent = algonquianSentence || '...';
+      resultEnglish.textContent = englishSentence || '...';
+      
+      // Generate word analysis
+      generateWordAnalysis();
+    }
+    
+    function generateWordAnalysis() {
+      wordAnalysis.innerHTML = '';
+      
+      // Add analysis for each component
+      Object.entries(currentSentence.components).forEach(([category, word]) => {
+        const analysisItem = document.createElement('div');
+        analysisItem.className = 'analysis-item';
+        
+        const analysisWord = document.createElement('div');
+        analysisWord.className = 'analysis-word';
+        analysisWord.textContent = word.text;
+        analysisItem.appendChild(analysisWord);
+        
+        const analysisDescription = document.createElement('div');
+        analysisDescription.className = 'analysis-description';
+        
+        // Generate description based on word type and category
+        let description = '';
+        if (category === 'subjects' && word.type === 'prefix') {
+          description = `1st person singular prefix meaning "${word.meaning}". Attaches to verbs.`;
+        } else if (category === 'subjects') {
+          description = `Animate noun meaning "${word.meaning}". Subject of the sentence.`;
+        } else if (category === 'verbs') {
+          description = `Verb root meaning "to ${word.meaning}".`;
+        } else if (category === 'verbSuffixes') {
+          description = `Verbal suffix indicating ${word.meaning}.`;
+        } else if (category === 'objects') {
+          description = `Noun meaning "${word.meaning}". Object of the action.`;
+        } else if (category === 'adjectives') {
+          description = `Descriptive word meaning "${word.meaning}". Modifies a noun.`;
+        } else if (category === 'questionWords') {
+          description = `Interrogative word meaning "${word.meaning}". Used to form questions.`;
+        }
+        
+        analysisDescription.textContent = description;
+        analysisItem.appendChild(analysisDescription);
+        
+        wordAnalysis.appendChild(analysisItem);
+      });
+      
+      // Add grammar note about the structure
+      const grammarNote = document.createElement('div');
+      grammarNote.className = 'analysis-item';
+      
+      const noteTitle = document.createElement('div');
+      noteTitle.className = 'analysis-word';
+      noteTitle.textContent = 'Grammar Note';
+      grammarNote.appendChild(noteTitle);
+      
+      const noteText = document.createElement('div');
+      noteText.className = 'analysis-description';
+      
+      // Note based on sentence structure
+      let note = '';
+      if (currentSentence.structure === 'simple') {
+        note = 'Basic subject-verb sentence. In Virginia Algonquian, personal prefixes attach directly to the verb.';
+      } else if (currentSentence.structure === 'transitive') {
+        note = 'Transitive sentence with an object. The verb is marked with a suffix that shows it is acting on an object.';
+      } else if (currentSentence.structure === 'modified') {
+        note = 'Sentence with an adjective modifying a noun. In Algonquian languages, adjectives typically come before the noun they modify.';
+      } else if (currentSentence.structure === 'command') {
+        note = 'Imperative sentence (command). The suffix changes the verb into a command form.';
+      } else if (currentSentence.structure === 'question') {
+        note = 'Interrogative sentence. Question words typically come at the beginning of the sentence.';
+      }
+      
+      noteText.textContent = note;
+      grammarNote.appendChild(noteText);
+      
+      wordAnalysis.appendChild(grammarNote);
+    }
+    
+    function applyTemplate(template) {
+      // Clear current sentence
+      clearSentence();
+      
+      // Set structure
+      const structure = template;
+      structureSelect.value = structure;
+      currentSentence.structure = structure;
+      
+      // Update word selection area
+      updateWordSelection();
+      
+      // Apply example from template pattern
+      const pattern = templatePatterns[template];
+      if (pattern && pattern.example) {
+        Object.entries(pattern.example).forEach(([category, value]) => {
+          // Find the word in vocabulary
+          let wordList;
+          if (category === 'subject') wordList = vocabularyData.subjects;
+          else if (category === 'verb') wordList = vocabularyData.verbs;
+          else if (category === 'verbSuffix') wordList = vocabularyData.verbSuffixes;
+          else if (category === 'object') wordList = vocabularyData.objects;
+          else if (category === 'questionWord') wordList = vocabularyData.questionWords;
+          else if (category === 'locationSuffix') wordList = vocabularyData.locations;
+          else if (category === 'negationPrefix') wordList = vocabularyData.negation.filter(n => n.type === 'prefix');
+          else if (category === 'negationSuffix') wordList = vocabularyData.negation.filter(n => n.type === 'suffix');
+          
+          if (wordList) {
+            const word = wordList.find(w => w.value === value);
+            if (word) {
+              // Map to the correct category name as stored in currentSentence
+              let mappedCategory;
+              if (category === 'subject') mappedCategory = 'subjects';
+              else if (category === 'verb') mappedCategory = 'verbs';
+              else if (category === 'verbSuffix') mappedCategory = 'verbSuffixes';
+              else if (category === 'object') mappedCategory = 'objects';
+              else if (category === 'questionWord') mappedCategory = 'questionWords';
+              else if (category === 'locationSuffix') mappedCategory = 'locations';
+              else if (category === 'negationPrefix' || category === 'negationSuffix') mappedCategory = 'negation';
+              
+              if (mappedCategory) {
+                currentSentence.components[mappedCategory] = word;
+                
+                // Update UI selection
+                const items = document.querySelectorAll(`.word-item[data-category="${mappedCategory}"]`);
+                items.forEach(item => {
+                  if (item.dataset.value === word.value) {
+                    item.classList.add('selected');
+                  }
+                });
+              }
+            }
+          }
+        });
+      }
+      
+      // Update sentence display
+      updateSentenceDisplay();
+      
+      // Generate the sentence
+      generateSentence();
+    }
+  </script>
+</body>
+</html>
