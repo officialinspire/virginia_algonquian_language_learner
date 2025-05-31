@@ -2426,31 +2426,62 @@ function shuffleArray(array) {
   }
 }
 
-// Try to load vocabulary data from external file
+// Improved function to load vocabulary data from external file
 async function tryLoadExternalVocabulary() {
   console.log("Attempting to load external vocabulary data...");
   try {
     // First try with fetch
+    console.log("Fetching vocabulary-data.json...");
     const response = await fetch('vocabulary-data.json');
-    if (response.ok) {
-      const data = await response.json();
-      // Clear sample data and add loaded data
-      vocabularyData.length = 0;
-      vocabularyData.push(...data);
-      console.log("Successfully loaded vocabulary data from external file");
-      
-      // Update the display
-      filteredVocabulary = [...vocabularyData];
-      shuffleArray(filteredVocabulary);
-      updateStats();
-      displayWord();
-      return true;
-    } else {
-      throw new Error(`Failed to load vocabulary data: ${response.status}`);
+    
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
     }
+    
+    console.log("File fetched successfully, parsing JSON...");
+    const text = await response.text(); // Get as text first
+    console.log(`JSON file size: ${text.length} characters`);
+    
+    // Try to parse the JSON
+    const data = JSON.parse(text);
+    
+    if (!Array.isArray(data)) {
+      throw new Error("Vocabulary data is not an array");
+    }
+    
+    console.log(`Found ${data.length} vocabulary entries`);
+    
+    // Check if entries have emoji hints
+    const entriesWithEmojis = data.filter(word => word.emojiHint);
+    console.log(`Entries with emoji hints: ${entriesWithEmojis.length}`);
+    
+    // Clear built-in data and add loaded data
+    vocabularyData.length = 0;
+    vocabularyData.push(...data);
+    console.log("Successfully loaded vocabulary data from external file");
+    
+    // Update the display
+    filteredVocabulary = [...vocabularyData];
+    shuffleArray(filteredVocabulary);
+    updateStats();
+    displayWord();
+    return true;
+    
   } catch (error) {
+    console.error("Detailed error loading vocabulary data:", error);
+    
+    if (error instanceof SyntaxError) {
+      console.error("JSON Syntax Error Details:", error.message);
+      // Try to extract line number from error message
+      const match = error.message.match(/position (\d+)/);
+      if (match) {
+        const position = parseInt(match[1]);
+        console.error(`Error near character position: ${position}`);
+      }
+    }
+    
     console.log(`Using built-in vocabulary data due to: ${error.message}`);
-    // Continue with sample data
+    // Continue with built-in data
     return false;
   }
 }
