@@ -437,7 +437,7 @@
     "notes": "Food gathering activity",
     "category": "actions",
     "audio": "audio/nattewowan.mp3",
-    "emojiHint": "🏹 + 🦌"
+    "emojiHint": "🏹🦌"
   },
   {
     "english": "canoe",
@@ -457,7 +457,7 @@
     "notes": "Important ceremonial plant",
     "category": "nature",
     "audio": "",
-    "emojiHint": "🌱 + 💨"
+    "emojiHint": "🍂"
   },
   {
     "english": "acorn",
@@ -1047,7 +1047,7 @@
     "notes": "Wooded area",
     "category": "nature",
     "audio": "audio/matac_k.mp3",
-    "emojiHint": "🌲 + 🌳"
+    "emojiHint": "🌳🌳🌳"
   },
   {
     "english": "four",
@@ -1117,7 +1117,7 @@
     "notes": "Supreme deity",
     "category": "spiritual",
     "audio": "audio/ahone.mp3",
-    "emojiHint": "✨"
+    "emojiHint": "👁️✨"
   },
   {
     "english": "goose",
@@ -1147,7 +1147,7 @@
     "notes": "Large, important",
     "category": "basic",
     "audio": "audio/w_roan.mp3",
-    "emojiHint": "👑"
+    "emojiHint": "💪💯"
   },
   {
     "english": "green",
@@ -1237,7 +1237,7 @@
     "notes": "Temperature term",
     "category": "weather",
     "audio": "audio/sucquateyough.mp3",
-    "emojiHint": "🔥"
+    "emojiHint": "🥵♨️"
   },
   {
     "english": "house",
@@ -1317,10 +1317,10 @@
     "notes": "Cause death",
     "category": "actions",
     "audio": "audio/nepaham_n.mp3",
-    "emojiHint": "💀"
+    "emojiHint": "🗡️💀"
   },
   {
-    "english": "king",
+    "english": "COMMANDER",
     "algonquian": "werowance",
     "pronunciation": "we-ro-wan-ce",
     "source": "Smith",
@@ -1807,7 +1807,7 @@
     "notes": "Fine earth material",
     "category": "nature",
     "audio": "audio/aggonshet_ck.mp3",
-    "emojiHint": "🏝️"
+    "emojiHint": "⌛🏝️"
   },
   {
     "english": "say",
@@ -2287,7 +2287,7 @@
     "notes": "Fighting man",
     "category": "social",
     "audio": "audio/nemarough.mp3",
-    "emojiHint": "🏹"
+    "emojiHint": "🪖🏹"
   },
   {
     "english": "weak",
