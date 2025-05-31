@@ -2271,6 +2271,17 @@ function displayWord() {
   document.getElementById('pronunciation').textContent = word.pronunciation;
   document.getElementById('source').textContent = `Source: ${word.source}`;
   document.getElementById('notes').textContent = word.notes;
+
+  // Update emoji hints
+const emojiHintFront = document.getElementById('emoji-hint-front');
+const emojiHintBack = document.getElementById('emoji-hint-back');
+
+if (emojiHintFront) {
+  emojiHintFront.textContent = word.emojiHint || '';
+}
+if (emojiHintBack) {
+  emojiHintBack.textContent = word.emojiHint || '';
+}
   
   // Reset audio player
   audioPlayer.pause();
